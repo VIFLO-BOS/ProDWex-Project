@@ -1,0 +1,485 @@
+﻿
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>PRODWEX</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	
+
+
+	<style>
+		/* ---------Loader -----------------
+		.posts { height: 100%; overflow: auto; width: 100%; }
+		.loading { color: green; }
+		li {font-size:20px;}
+		#loading { display:none; color:green; font-size:20px; } 
+		
+		*/
+	</style>
+
+
+	<style type="text/css">
+    	body{margin-top:20px;}
+		/* ---------Box Product ----------------- */
+		.box-product-outer {
+			/* margin-bottom: 5px;*/
+			padding-top: 15px;
+			padding-bottom: 15px;
+			outline: 1px solid #E8EAED;
+		}
+		.box-product-outer:hover {
+			outline: 1px solid #aaa;
+			-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+					box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+		}
+		.tab-content .box-product-outer { margin-bottom: 0 }
+		.box-product-slider-outer { padding: 10px }
+		.box-product .img-wrapper {
+			position: relative;
+			overflow: hidden
+		}
+		.box-product .img-wrapper > :first-child {
+			position: relative;
+			display: block
+		}
+		.box-product .img-wrapper > a > img { width: 100% }
+		.box-product .img-wrapper .tags {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: inline-block;
+			overflow: visible;
+			width: auto;
+			height: auto;
+			margin: 0;
+			padding: 0;
+			vertical-align: inherit;
+			border-width: 0;
+			background-color: transparent;
+			direction: rtl
+		}
+		.box-product .img-wrapper .tags-left {
+			left: 0;
+			direction: ltr
+		}
+		.box-product .img-wrapper .tags > .label-tags {
+			display: table;
+			margin: 1px 0 0 0;
+			text-align: left;
+			opacity: .92;
+			filter: alpha(opacity=92);
+			direction: ltr
+		}
+		.box-product .img-wrapper .tags > .label-tags:hover {
+			opacity: 1;
+			filter: alpha(opacity=100)
+		}
+		.box-product .img-wrapper .tags > .label-tags a:hover { text-decoration: none }
+		.box-product .img-wrapper > .option {
+			position: absolute;
+			top: auto;
+			right: 0;
+			bottom: -30px;
+			left: 0;
+			width: auto;
+			height: 28px;
+			-webkit-transition: all .2s ease;
+				 -o-transition: all .2s ease;
+					transition: all .2s ease;
+			text-align: center;
+			vertical-align: middle;
+			background-color: rgba(0, 0, 0, .55)
+		}
+		.box-product .img-wrapper .option > a {
+			font-size: 18px;
+			font-weight: normal;
+			display: inline-block;
+			padding: 0 4px;
+			color: #fff
+		}
+		.box-product .img-wrapper:hover > .option {
+			top: auto;
+			bottom: 0
+		}
+		.box-product h6 a { line-height: 1.4 }
+		.price {
+			margin-bottom: 5px;
+			color: #f44336
+		}
+		.price .price-down {
+			margin-left: 5px;
+			padding: 2px 5px;
+			color: #fff;
+			background: #f44336
+		}
+		.price-old {
+			position: relative;
+			display: inline-block;
+			margin-right: 7px;
+			color: #666
+		}
+		.price-old:before {
+			position: absolute;
+			width: 100%;
+			height: 60%;
+			content: '';
+			border-bottom: 1px solid #666
+		}
+		.rating i { color: #fc0 }
+		.product-sorting-bar { border: 1px solid #e5e5e5 }
+		/* -------------------- End of Box Product ---------------- */
+
+		.connectimg{
+			text-align: center;
+		}
+		.tinyimg {
+			box-sizing: border-box;
+			background-clip: content-box;
+			border: 1px solid #fff;
+			border-radius: 49.9%;
+			width: 36px;
+			height: 36px;
+		}
+		.lap {
+			margin-left: -16px;
+		}
+		
+		
+		.chat-avatar {
+		  width: 40px;
+		  height: 40px;
+		  float: left;
+		  margin-right: 10px;
+		}
+		.chat-user-name {
+		  padding: 10px;
+		}
+		.chat-user {
+			outline: 1px solid #E8EAED;
+			border-bottom: 1px solid #e7eaec; 
+			/*background: #324b77;*/
+			padding: 0px 0px 0px 0px;
+			
+		}
+		.chat-user a {
+		  color: inherit;
+		}
+
+	</style>
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default  navbar-fixed-top">
+        <div id="navbar">
+			<div class="container" style="height:50px;">
+				<a class="navbar-brand" style="padding-left: 0px;" href="index.php.html">
+					<img alt="ProdWex" width="100" height="24" src="images/logo24x100.png">
+				</a> 
+				<ul class="nav navbar-nav pull-right mobile-bar">
+					
+					<li class="navbar-button">
+						<a href="index.php.html">
+							<span class="menu-icon fa fa-home"></span>
+							<small>Home</small>
+						</a>
+					</li>
+					<li class="navbar-button" style="padding-left:0px; width:60px; important!;">
+						<a href="platform.php.html">
+							<span class="menu-icon fa fa-diamond"></span>
+							<small>Platform</small>
+						</a>
+					</li>
+					<li class="active navbar-button" style="padding-left:0px; width:60px; important!;">
+						<a href="dashboard.php.html">
+							<span class="menu-icon fa fa-th"></span>
+							<small>Dashboard</small>
+						</a>
+					</li>
+				</ul>
+			</div>
+        </div>	
+	  
+	    <div>
+		  <div class="navbar-links">
+			<div class="container">
+			  <ul>
+				<li class="current"><a href="platform.php.html"><small>ProDWexians</small></a></li>
+				<li class=""><a href="#"><small>Partners</small></a></li>
+				<li><a href="login.php.html"><small>Notifications</small> <span class="label label-danger label-as-badge">0</span></a></li>
+				<li class="pull-right"><a href="login.php.html"><span class="menu-icon fa fa-lock"></span><small> Logout</small></a></li>
+			  </ul>
+			</div><!--/.nav-collapse -->
+		  </div>
+	    </div>
+    </nav>
+
+    <div class="container">
+	
+		<!-- Main component for a primary marketing message or call to action -->
+		<div class="row">
+			<div class="col-xs-12 col-md-12">
+				
+				<!--<small><div class="conresults" id="conresults"></div><span id="connect">...</span></small>-->
+				<link href="font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+				
+				<div class="row">
+					<div class="col-xs-18 col-sm-12 col-md-3" style="margin-left:-10px;">
+						<h4> <b>My ProDWex Connections</b></h4><hr>
+						<div class="thumbnail">
+							<p>
+								<form class="navbar-form" accept-charset="UTF-8" action="platform.search.php" method="post">
+									<div class="input-group pull-right">
+										<input type="text" class="form-control" placeholder="Search" name="q">
+										<div class="input-group-btn">
+											<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+										</div>
+									</div>
+								</form>
+							
+							<div class="connectimg">
+								<p style=" text-align: center;"><small> <a href="mynetwork_invite.php.html"><b>Click here for more connection options</b></a></small></p>
+																<p style=" text-align: center;"><b> Connections</b><br><small><a href="platform.view.php.html">View All</a></small></p>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Load pending invitations -->
+					<div class="col-xs-18 col-sm-12 col-md-9" style="margin-left:-10px;">
+						
+												
+						<div class="col-xs-18 col-sm-12 col-md-12">
+							<h4><b>Suggested connections for you</b></h4>
+							<hr>
+						</div>
+						
+						
+						
+						<div class="results" id="results"></div>
+						
+						<div class="col-xs-18 col-sm-12 col-md-12">
+							<span id="loading">
+								<img alt="Loading..." src="images/loading.gif">
+							</span>
+						</div>
+						
+					</div>
+					<!-- / Load members --> 
+				</div>
+				
+			</div>
+		</div>	
+    </div> <!-- /container -->
+
+
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+	  <div class="container">
+		<div class="footer">
+			<div class="footer-links"> 
+				<a href="privacypolicy.php.html">Privacy policy</a> | 
+				<a href="contactus.php">Contact us</a> | 
+				<a href="legal.php.html">©2018 ProdWex</a>
+			</div> 
+        </div> 
+	  </div>	
+	</nav>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script> 
+	 
+	
+	<!-- ==== Profile Loader ==== -->
+	<script>
+	$(document).ready(function(){
+		$(function() {
+		   loadResults(0);
+		   
+			$(window).on("scroll", function(){
+				
+				var scrollHeight = $(document).height();
+				var scrollPosition = $(window).height() + $(window).scrollTop();
+				 
+				/* //if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+				if ((scrollPosition >= scrollHeight - 20 && scrollPosition < scrollHeight + 20)) {
+					var limitStart = $('.box-product-outer').length;
+				    //alert(limitStart);
+					loadResults(limitStart);
+				}*/			 
+				if (Math.round($(window).scrollTop()) + $(window).innerHeight()  == $(document).height()){
+					//loadPagination();
+					//$(".go-up").css("display","block").show("slow");
+					var limitStart = $('.box-product-outer').length;
+				    loadResults(limitStart);
+				}
+				
+			});
+			
+			function loadResults(limitStart) {
+				$("#loading").show();
+				$.ajax({
+					url: "platform.loader.php",
+					type: "post",
+					dataType: "json",
+					data: {
+						limitStart: limitStart
+					},
+					success: function(data) {
+						$.each(data, function(key, value) {
+						$("#results").append('<div id="'+value.username+'" class="col-xs-6 col-sm-3 col-md-3 box-product-outer">\
+									<div class="box-product">\
+										<div class="img-wrapper">\
+											<a href="#">\
+												<img alt="'+value.username+'" src="'+value.profileimg+'" width="200px" height="150px">\
+											</a>\
+											<div class="tags">\
+												<span class="label-tags"><span class="label label-danger">'+value.instcode+'</span></span>\
+											</div>\
+										</div>\
+										<h6>'+value.fullname+'</h6>\
+										<button type="button" value="'+value.username+'" id="btnConnect" class="btn btn-info btn-xs"><span class="glyphicon glyphicon-link"></span> Connect</button>\
+										<small><i class="ace-icon glyphicon glyphicon-link"></i>'+value.connections+'</small>\
+									</div>\
+								</div>'); 
+						}); 
+						$("#loading").hide();   
+					}
+				});
+			};
+		});
+	});
+	</script>
+	
+	<!-- ==== Establish Connection ==== -->
+	<script>
+	$(document).ready(function(){	
+		$(function() {
+			loadConnect(0);
+			$(document).on('click','#btnConnect',function(){
+				var connectMem = $(this).val();
+				loadConnect(connectMem);
+			});
+			function loadConnect(connectMem) {
+				//$("#connect").show();
+				$.ajax({
+					url: "platform.connect.php",
+					type: "post",
+					dataType: "json",
+					data: {
+						connectMem: connectMem
+					},
+					success: function(data) {
+						$.each(data, function(key, value) {
+							$("#"+value.username).html('<div style="height:205px;">A connection request has been sent to '+value.fullname+'</div>');
+							$("#"+value.username).delay(1000).fadeOut('slow');
+						   setTimeout(function() {
+							   $("#"+value.username).hide(); 
+						   }, 1500);
+						}); 
+						//$("#connect").hide(); 
+					}
+				});
+			};
+		});	
+	});
+	</script>
+	
+	<!-- ==== Accept Connection ==== -->
+	<script>
+	$(document).ready(function(){	
+		$(function() {
+			loadAccept(0);
+			$(document).on('click','#btnAccept',function(){
+				var connRequest = $(this).val();
+				//alert('Connet to '+connRequest);
+				loadAccept(connRequest);
+			});
+			function loadAccept(connRequest) {
+				//$("#connect").show();
+				$.ajax({
+					url: "platform.accept.php",
+					type: "post",
+					dataType: "json",
+					data: {
+						connRequest: connRequest
+					},
+					success: function(data) {
+						$.each(data, function(key, value) {
+							$("#r"+value.username).html('<div style="height:205px;">You are now connected with '+value.fullname+'</div>');
+							$("#r"+value.username).delay(1000).fadeOut('slow');
+						   setTimeout(function() {
+							   $("#r"+value.username).hide(); 
+						   }, 1500);
+						}); 
+						//$("#connect").hide(); 
+					}
+				});
+			};
+		});	
+	});
+	</script>
+	
+	<!-- ==== Ignore Connection ==== -->
+	<script>
+	$(document).ready(function(){	
+		$(function() {
+			loadAccept(0);
+			$(document).on('click','#btnIgnore',function(){
+				var connRequest = $(this).val();
+				//alert('Connet to '+connRequest);
+				loadAccept(connRequest);
+			});
+			function loadAccept(connRequest) {
+				//$("#connect").show();
+				$.ajax({
+					url: "platform.ignore.php",
+					type: "post",
+					dataType: "json",
+					data: {
+						connRequest: connRequest
+					},
+					success: function(data) {
+						$.each(data, function(key, value) {
+							$("#r"+value.username).html('<div style="height:205px;">You ignored connection with '+value.fullname+'</div>');
+							$("#r"+value.username).delay(1000).fadeOut('slow');
+						   setTimeout(function() {
+							   $("#r"+value.username).hide(); 
+						   }, 1500);
+						}); 
+						//$("#connect").hide(); 
+					}
+				});
+			};
+		});	
+	});
+	</script>
+	
+  </body>
+</html>

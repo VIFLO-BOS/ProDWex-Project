@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>PRODWEX</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+	<link href="css/docs.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->    
+	<nav class="navbar navbar-default  navbar-fixed-top">
+		<div id="navbar">
+			<div class="container" style="height:50px;">
+				<a class="navbar-brand" style="padding-left: 0px;" href="index.php.html">
+					<img alt="ProdWex" width="100" height="24" src="images/logo24x100.png">
+				</a> 
+				<ul class="nav navbar-nav pull-right mobile-bar">
+					
+					<li class="navbar-button">
+						<a href="index.php.html">
+							<span class="menu-icon fa fa-home"></span>
+							<small>Home</small>
+						</a>
+					</li>
+					<li class="navbar-button">
+						<a href="courses.php.html">
+							<span class="menu-icon fa fa-home"></span>
+							<small>Courses</small>
+						</a>
+					</li>
+					<li class="navbar-button"> 
+						<a href="news.php.html">
+							<span class="menu-icon fa fa-newspaper-o"></span>
+							<small>News</small>
+						</a>
+					</li>
+					
+										<li class="navbar-button" style="padding-left:0px; width:60px; important!;">
+						<a href="dashboard.php.html">
+							<span class="menu-icon fa fa-diamond"></span>
+							<small>Platform</small>
+						</a>
+					</li>
+									</ul>
+			</div>
+        </div>	
+		<div class="navbar-links">
+			<!--<div class="container" style="padding-top:2px;">
+				<small>Professional Development & Work Experience Consotrium</small>
+			</div>-->
+			<div class="container">
+				<ul>
+											<li class="current"><a href="register.php"><span class="menu-icon fa fa-user"></span><small> Click here to Register  &nbsp;&nbsp; / </small></a></li>
+						<li><a href="login.php.html"><span class="menu-icon fa fa-shield"></span><small> Login</small></a></li>
+									</ul>
+			</div>
+		</div>	
+	</nav>
+	<!--/.nav-collapse -->
+
+
+    <div class="container">
+
+		<!-- Main component for a primary marketing message or call to action -->
+		<div class="row">
+			<div class="col-xs-18 col-sm-12 col-md-6">
+				<form accept-charset="UTF-8" action="/forgotpass.php" method="post">
+				<div class="bs-docs-section"> 
+					<h3>Password Reset</h3>
+					<p>
+						You can reset your password either through your <b>phone number</b> or 
+						through <b>email address</b> using either of the options available below
+					</p>
+					<p>
+						<br>
+																	</p>
+					
+										
+						<!-- //////////Phone Option -->
+						<div class="btn-group btn-group-justified" role="group" aria-label="Justified button group"> 
+							<a href="forgotpass.php-1.html?opt=email" class="btn btn-default" role="button">With my Email</a>
+							<a href="forgotpass.php-2.html?opt=phone" class="btn btn-info" role="button">With my Phone no</a> 
+						</div>
+						<div class="bs-callout bs-callout-info" id="callout-glyphicons-dont-mix">
+							<h4>Enter your phone number</h4>
+							<div class="input-group col-xs-12 col-sm-12">
+							  <br>
+							  <p><span class="s">*</span> Phone Number </p>
+							  <input type="text" name="phone" class="form-control" value="">
+							</div>
+							
+							
+							<div class="input-group col-sm-12 ">
+							  <br>
+							  <input type="hidden" name="opt" class="form-control" value="phone">
+							  <button name="submit" type="submit" value="phone" class="btn btn-info pull-right">Reset</button>
+							</div>
+							
+						</div>
+										
+					<div class="bs-callout bs-callout-info" id="callout-glyphicons-empty-only">
+						<h5>Already a member? <a href="login.php.html">Click here to login</a></h5>
+					</div>
+					
+					<div class="bs-callout bs-callout-info" id="callout-glyphicons-empty-only">
+						<h5>New Members? <a href="register.php">Click here to register</a></h5>
+					</div>
+				  
+					
+				</div>
+				</form>
+			</div>
+		  
+		  
+		</div>
+		
+    </div> <!-- /container -->
+
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+	  <div class="container">
+		<div class="footer">
+			<div class="footer-links">
+				<a href="#">Blog</a>
+				<a href="#">Privacy policy</a>
+				<a href="#">Contact us</a>
+				<span href="#">(c) 2017 PRODWEX</span>
+				<br>
+			</div> 
+        </div>
+	  </div>	
+	</nav>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

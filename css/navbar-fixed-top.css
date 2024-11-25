@@ -1,0 +1,843 @@
+/**/
+@import url("../ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");
+
+body {
+	height: auto;
+	padding-top: 90px;
+	padding-bottom: 100px;
+	min-width: 360px;
+	width: auto !important;
+	width: 360px;
+}
+
+
+
+#container {
+	height: auto;
+	min-height: 400px;
+
+}
+
+.jumbotron {
+	position: relative;
+	background: #000 url("../images/bkg2b.jpg") center center;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	color: white;
+
+	font-family: Poppins Custom, sans-serif;
+}
+
+.navbar-default {
+	background: #23334e;
+	/* background: #fff; */
+	box-shadow:inset 10px 0px 20px 10px #1b1b1b70;
+}
+
+
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #23334e;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+	color: #e0e0e0;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+	color: #FFF;
+}
+
+.navbar-default .navbar-nav>li>a {
+	font-family: "Poppins",
+		"Montserrat",
+		"Lato",
+		sans-serif;
+	;
+	font-weight: 500;
+	color: #e0e0e0;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	background: #324b77;
+	color: #e0e0e0 ;
+}
+
+.navbar-links {
+	background-color: #324b77;
+	width: 100%;
+	height: 25px;
+	color: #a2b5d5;
+	font-size: 12px;
+}
+
+.navbar-links a {
+	color: #a2b5d5;
+	text-decoration: none;
+}
+
+.navbar-links ul {
+	margin-left: -40px;
+}
+
+.navbar-links li {
+	float: left;
+	list-style: none;
+	padding: 2px 12px 7px 12px;
+	height: 25px;
+	border-right: solid 1px #3d5580;
+	border-left: solid 1px #3d5580;
+}
+
+.navbar-links li.current {
+	border-bottom: solid 2px #f75d5c;
+	border-right: solid 1px #3d5580;
+	border-left: solid 1px #3d5580;
+}
+
+.navbar-links li.current a {
+	color: #fffdff;
+	font-weight: bold;
+}
+
+.navbar-fixed-bottom {
+	height: 20px;
+	min-height: 40px;
+}
+
+/*Text Fix */
+@media screen and (max-width: 767px) {
+	.h2-left {
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+}
+
+/*Navbar Fix */
+.navbar-nav.mobile-bar {
+	list-style: none;
+	-ms-box-orient: horizontal;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-align-items: stretch;
+	align-items: stretch;
+	margin: 0px 0px;
+}
+
+.navbar-nav.mobile-bar>li {
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	text-align: center;
+}
+
+.navbar-button {
+	display: flex;
+	padding-top: 0px;
+	padding-left: 0px;
+	width: 70px;
+	height: 50px;
+	font-size: 0.8em;
+}
+
+.navbar-nav.mobile-bar>li>a>span.menu-icon {
+	display: block;
+	font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+	.navbar-button {
+		display: none;
+		width: 45px;
+		height: 50px;
+		font-size: 0.8em;
+		margin-left: -5px;
+	}
+
+	.nav>li>a {
+		position: relative;
+		padding: 10px 5px;
+		/* */
+		height: 50px;
+		padding-left: 0px;
+	}
+
+	.navbar-nav.mobile-bar>li>a>span.menu-icon {
+		display: none;
+	}
+
+	.navbar-nav>li>a {
+		display: none;
+		padding-top: 10px;
+		padding-bottom: 15px;
+		height: 50px;
+		padding-left: 5px;
+	}
+
+
+	hr.message-inner-separator {
+		clear: both;
+		margin-top: 10px;
+		margin-bottom: 13px;
+		border: 0;
+		height: 1px;
+		background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+		background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+		background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+		background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+	}
+
+	/* CSS used to color Use Label as Badges : For Alerts */
+	.label-as-badge {
+		border-radius: 1em;
+	}
+
+	/* CSS used here will be applied after bootstrap.css */
+	.badge-notify {
+		background: red;
+		position: relative;
+		top: -20px;
+		left: -35px;
+	}
+
+	.carbonad {
+		display: block;
+		background: #fdfdfd;
+		background-image: -moz-linear-gradient(top, #f8f8f8, #fdfdfd);
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f8f8f8), color-stop(1, #fdfdfd));
+		border: 1px solid #d5d5d5;
+		font-family: Lucida Grande, Arial, Helvetica, sans-serif;
+		font-size: 11px;
+		height: 118px;
+		line-height: 15px;
+		overflow: hidden;
+		width: 300px;
+	}
+
+	@media (min-width: 992px) .carbonad {
+		position: absolute;
+		top: 0;
+		right: 15px;
+		width: 330px !important;
+		padding: 15px !important;
+		margin: 0 !important;
+	}
+
+	@media (min-width: 768px) .carbonad {
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+
+	@media (min-width: 480px) .carbonad {
+		width: 330px !important;
+		margin: 20px auto !important;
+		border-width: 1px !important;
+		border-radius: 4px;
+	}
+
+	.carbonad {
+		width: auto !important;
+		height: auto !important;
+		padding: 20px !important;
+		margin: 30px -15px -31px !important;
+		overflow: hidden;
+		font-size: 13px !important;
+		line-height: 16px !important;
+		text-align: left;
+		background: 0 0 !important;
+		border: solid #866ab3 !important;
+		border-width: 1px 0 !important;
+	}
+
+	/*CourseView - Skill Level Starts Here*/
+	.Panel h3 {
+		font-size: 1.125em;
+		border-bottom: solid 1px #bbbbbb;
+		padding-bottom: 8px;
+		margin-bottom: 10px;
+		line-height: 24px;
+	}
+
+	.Panelheader {
+		background: #E5E5E5;
+		padding: 10px 15px 4px 15px;
+	}
+
+	.Panelheader h4 {
+		font-size: 1em;
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		font-weight: normal;
+		line-height: 20px;
+	}
+
+	/*Styling of Courses*/
+	.courses {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.skill {
+		background: #f4f4f4;
+		border: solid 1px #ececec;
+		padding: 5px 15px 5px 15px;
+	}
+
+	.skill .level {
+		font-size: 1em;
+		line-height: 30px;
+		color: #36A8E1;
+		font-weight: bold;
+	}
+
+	.skill h4 {
+		font-size: 1em;
+		border-bottom: solid 1px #c9c9c9;
+		margin: 0px 0px 5px 0px;
+		padding: 0px 0px 5px 0px;
+		font-weight: normal;
+		line-height: 20px;
+	}
+
+	.skill .begin {
+		background: #6fb5b7;
+		padding: 5px;
+		color: #fff;
+		font-size: 0.9em;
+		margin-bottom: 20px;
+	}
+
+
+	.skillLevel {
+		background: #f4f4f4;
+		border: solid 1px #c9c9c9;
+		padding: 15px 15px 5px 15px;
+		border-radius: 5px;
+	}
+
+	.skillLevel h4 {
+		font-size: 1em;
+		border-bottom: solid 1px #c9c9c9;
+		margin: 0px 0px 5px 0px;
+		padding: 0px 0px 5px 0px;
+		font-weight: normal;
+		line-height: 20px;
+	}
+
+	.skillLevel .begin {
+		background: #6fb5b7;
+		padding: 5px;
+		color: #fff;
+		font-size: 1.125em;
+		margin-bottom: 20px;
+	}
+
+	.taughtPanel {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.taughtContent {
+		padding-left: 0px;
+		text-align: right;
+		padding-top: 10px;
+	}
+
+	.taughtContent h3 {
+		font-size: 1em;
+		margin: 0px 0px 5px 0px;
+		padding: 0px;
+		line-height: 20px;
+	}
+
+	.taughtPanel .taughtContent p {
+		font-size: 11px;
+		font-style: italic;
+		margin-bottom: 10px;
+	}
+
+	.taughtPanel p {
+		font-size: 12px;
+	}
+
+	.skillLevel ul {
+		margin: 10px 0px 10px 0px;
+		padding: 0px;
+	}
+
+	.skillLevel ul li {
+		background: url(../images/round-icon.jpg) 0px 4px no-repeat;
+		padding: 0px 0px 5px 20px;
+		list-style: none;
+	}
+
+	.skillLevel .blueBtn {
+		display: block;
+	}
+
+	.midPanel {
+		margin-bottom: 15px;
+	}
+
+	.midPanel .banner {
+		margin-bottom: 15px;
+	}
+
+	.midPanel .banner img {
+		width: 100%;
+	}
+
+	.midPanel h3.title {
+		background: url(../images/border-line.jpg) repeat-x left center;
+		font-weight: normal;
+		font-size: 1.5em;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+
+	.midPanel h3.title span {
+		display: inline-block;
+		padding: 5px;
+		margin: 0px 0px 0px 20px;
+		background: #fafafa;
+	}
+
+	.starRating {
+		margin-bottom: 20px;
+		display: inline-block;
+		background: #f4f4f4;
+		padding: 2px 5px 3px 5px;
+	}
+
+	.starRating a {
+		float: left;
+	}
+
+	.starRating span {
+		float: left;
+		margin: 2px 0px 0px 5px;
+	}
+
+	.tableList {
+		background: #fff;
+		box-shadow: 0px 0px 5px #ccc;
+		margin-bottom: 20px;
+	}
+
+	.tableList h4 {
+		background: #f0f0f0;
+		font-weight: normal;
+		padding: 5px 10px;
+		line-height: 24px;
+		font-size: 1.125em;
+		margin: 0px;
+	}
+
+	.tableList .table-bordered {
+		margin: 0px;
+	}
+
+	.tableList .table-bordered>thead>tr>th,
+	.tableList .table-bordered>tbody>tr>th,
+	.tableList .table-bordered>tfoot>tr>th,
+	.tableList .table-bordered>thead>tr>td,
+	.tableList .table-bordered>tbody>tr>td,
+	.tableList .table-bordered>tfoot>tr>td {
+		border-color: #f0f0f0;
+		padding: 8px 15px;
+	}
+
+	.tableList .table-bordered>tbody>tr>td:first-child {
+		text-align: center;
+	}
+
+	.tableList .table-bordered>tbody>tr>td p {
+		background: url(../images/play-icon.jpg) no-repeat 0px 3px;
+		float: left;
+		width: 70%;
+		padding: 0px 0px 0px 20px;
+		margin: 0px;
+	}
+
+	.tableList .table-bordered>tbody>tr>td span {
+		text-align: right;
+		padding: 0px 5px;
+		background: #f0f0f0;
+	}
+
+	.skillLevel .col-sm-12 {
+		padding-top: 15px;
+	}
+
+	.ratingBlock p {
+		margin-bottom: 10px;
+	}
+
+	.ratingBlock span {
+		float: left;
+		margin: 2px 5px 0px 0px;
+		font-size: 12px;
+		width: 30px;
+		text-align: right;
+	}
+
+	.averageRating {
+		text-align: right;
+		text-transform: uppercase;
+	}
+
+	.averageRating p {
+		margin-bottom: 10px;
+	}
+
+	.ratingNumber {
+		margin-top: 30px;
+	}
+
+	.ratingNumber b {
+		font-size: 2.5em;
+		line-height: 30px;
+	}
+
+	.review .row {
+		margin-bottom: 15px;
+	}
+
+	.review .row:last-child {
+		margin-bottom: 0px
+	}
+
+	.review h4 {
+		font-size: 1.125em;
+		font-weight: normal;
+		line-height: 20px;
+		margin: 0px 0px 5px 0px;
+	}
+
+	.review span {
+		display: block;
+		margin-top: 5px;
+		color: #666;
+		font-size: 12px;
+	}
+
+	.review p {
+		margin: 0px;
+		padding-top: 10px;
+	}
+
+	.rightPanel h3 {
+		font-size: 1.125em;
+		border-bottom: solid 1px #bbbbbb;
+		padding-bottom: 8px;
+		margin-bottom: 10px;
+		line-height: 24px;
+	}
+
+
+	.courseLanguage {
+		background: #F4F4F4;
+		padding: 10px 10px;
+	}
+
+	.courseLanguage ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.courseLanguage ul li {
+		list-style: none;
+		margin: 0px;
+		padding: 0px 0px 8px 25px;
+		position: relative;
+		font-size: 12px;
+	}
+
+	.courseLanguage ul li .icon {
+		background: url(../images/state-icon.png) no-repeat 0px 0px;
+		display: inline-block;
+		width: 16px;
+		height: 15px;
+		position: absolute;
+		left: 0px;
+		top: 4px;
+	}
+
+	.courseLanguage ul li .us {
+		background-position: 0px 0px;
+	}
+
+	.courseLanguage ul li .er {
+		background-position: -19px 0px;
+	}
+
+	.courseLanguage ul li .fr {
+		background-position: -37px 0px;
+	}
+
+	.courseLanguage ul li .ar {
+		background-position: -56px 0px;
+	}
+
+	.courseLanguage ul li span {
+		float: right;
+	}
+
+	.priceAndWishList {
+		border: solid 1px #ececec;
+		overflow: hidden;
+	}
+
+	.priceBox {
+		background: #f7faf4;
+		padding: 20px 15px;
+		text-align: center;
+		border-bottom: solid 1px #ececec;
+	}
+
+	.priceBox p {
+		margin-bottom: 10px;
+	}
+
+	.priceBox p span.price {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	.priceBox p span.free {
+		font-size: 1.5em;
+		line-height: 30px;
+		color: #54b551;
+		font-weight: bold;
+	}
+
+	.priceBox .moreReview .blueBtn {
+		box-shadow: none;
+		text-transform: inherit;
+		font-weight: normal;
+	}
+
+	.wishListPanel {
+		background: #fff;
+		float: left;
+		width: 100%;
+	}
+
+	.wishListPanel ul {
+		margin: 0px 0px 20px 0px;
+		padding: 0px;
+	}
+
+	.wishListPanel ul li {
+		border-bottom: solid 1px #ececec;
+		padding: 8px 20px;
+		list-style: none;
+		font-size: 12px;
+		overflow: hidden;
+	}
+
+	.wishListPanel ul li a {
+		color: #4a4a4f;
+		padding: 0px 0px 5px 30px;
+		float: left
+	}
+
+	.wishListPanel ul li.wishlist a {
+		background: url(../images/wishlist-icon.jpg) no-repeat 0px 0px;
+		line-height: 16px;
+	}
+
+	.wishListPanel ul li.preview a {
+		background: url(../images/preview-icon.jpg) no-repeat 0px 0px;
+		line-height: 16px;
+	}
+
+	.wishListPanel ul li.gift a {
+		background: url(../images/gift-icon.jpg) no-repeat 0px 0px;
+		line-height: 16px;
+	}
+
+	.wishListPanel p {
+		padding: 0px 20px 10px 20px;
+		margin: 0px;
+	}
+
+	.viewCourse {
+		float: left;
+		width: 100%;
+		margin: 20px 0px;
+	}
+
+	.viewCourse h4 {
+		font-size: 0.85em;
+		font-weight: normal;
+		margin-bottom: 10px;
+		line-height: 18px;
+	}
+
+	.viewCourse ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.viewCourse ul li {
+		float: left;
+		width: 100%;
+		padding: 10px 0px 10px 0px;
+		border-top: solid 1px #e5e5e5;
+		list-style: none;
+	}
+
+	.viewCourse ul li figure {
+		float: left;
+		width: 30%;
+		margin-right: 2%;
+	}
+
+	.viewCourse img {
+		width: 100%;
+	}
+
+	.viewCourse ul li .viewCourseContent {
+		float: left;
+		width: 68%;
+	}
+
+	.viewCourse ul li h5 {
+		font-size: 1em;
+		font-weight: normal;
+		margin-top: 0px;
+		margin-bottom: 5px;
+		line-height: 18px;
+	}
+
+	.viewCourse .viewStar {
+		display: inline-block;
+		margin-bottom: 5px;
+		width: 100%;
+	}
+
+	.viewCourse .viewStar a {
+		float: left;
+	}
+
+	.viewCourse .viewStar span {
+		float: left;
+		margin: 1px 0px 0px 8px;
+		font-size: 12px;
+	}
+
+	.viewCourse .viewCourseContent p {
+		margin-bottom: 5px;
+		font-weight: bold;
+		color: #54b551;
+		font-size: 16px;
+	}
+
+	.onlineCoursesView .col-sm-8 h3 {
+		font-size: 1.320em;
+		margin: 55px 0px 10px 0px
+	}
+
+	.sortViewForm {
+		background: #f4f4f4;
+		padding: 10px;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+
+	.sortViewForm ul {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.sortViewForm ul li {
+		list-style: none;
+	}
+
+	.sortViewForm ul li label {
+		font-weight: normal;
+		margin-bottom: 5px;
+		text-transform: uppercase;
+		display: block;
+	}
+
+	.sortViewForm .sort {
+		float: left;
+		width: 48%;
+		margin-right: 1%;
+	}
+
+	.sortViewForm .gridViewList {
+		float: left;
+		width: 48%;
+		margin-left: 1%;
+	}
+
+	.sortViewForm .gridViewList a {
+		float: left;
+		background: #fff;
+		border-radius: 4px;
+		width: 50%;
+		padding: 10px 0px;
+		text-align: center;
+		height: 34px;
+	}
+
+	.sortViewForm .gridViewList a.first {
+		border-radius: 4px 0px 0px 4px;
+		background: #fff url(../images/grid-icon.png) no-repeat center center;
+	}
+
+	.sortViewForm .gridViewList a.first.active {
+		background: #e6e6e6 url(../images/grid-icon-hover.png) no-repeat center center;
+	}
+
+	.sortViewForm .gridViewList a.second {
+		border-radius: 0px 4px 4px 0px;
+		background: #fff url(../images/list-icon.png) no-repeat center center;
+	}
+
+	.sortViewForm .gridViewList a.second.active {
+		background: #e6e6e6 url(../images/list-icon-hover.png) no-repeat center center;
+	}
+
+	/*CourseView - Skill Level Ends Here*/
+
+	.footer {
+		background: #23334e;
+		color: #fff;
+		width: 100%;
+		float: left;
+		padding: 5px 0 5px 0;
+		text-align: center;
+		font-size: 11px
+	}
+
+	.footer-links {
+		margin: 3px auto;
+		padding: 5px;
+		width: 95%
+	}
+
+	.footer-links a,
+	.footer-links a:visited {
+		color: #a2b5d5;
+		margin: 0 3px;
+		cursor: pointer
+	}

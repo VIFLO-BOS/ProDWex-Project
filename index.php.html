@@ -51,7 +51,6 @@
 	<link rel="stylesheet" href="./style/main.module.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-
 </head>
 
 <body>
@@ -61,7 +60,7 @@
 		<div class="container">
 			<div id="nav-bar" style="height:50px;">
 				<div class="nav-logo-cont"> <!--THIS IS THE NAV LOGO SECTION-->
-					<a class="navbar-brand" style="padding-left: 0px;" href="index.php.html">
+					<a class="navbar-brand" href="index.php.html">
 						<img alt="ProdWex" width="100" height="24" src="images/logo24x100.png">
 					</a>
 				</div>
@@ -69,7 +68,7 @@
 				<!--THIS IS THE SECTION FOR THE NAVBAR MENU-->
 				<div id="nav-bar">
 					<div class="collapse navbar-collapse">
-						<ul class="nav navbar-nav"> 
+						<ul class="nav navbar-nav">
 
 							<li class="item">
 								<a class="nav-link" href="#">Home</a>
@@ -96,62 +95,54 @@
 								</a>
 							</li>
 
-							
+
 						</ul>
 					</div>
 
-				
 
-<!-- register button  start here-->
-<div id="nav-drop-menu">
-	<button class="btn " type="button">Register?</button>
-	<button class="btn " type="button">Enroll!</button>
-</div>
-<!-- register button  endhere-->
+
+					<!-- register button  start here-->
+					<div id="reg-btn">
+						<button class="btn register" type="button">Register?</button>
+						<button class="btn enroll" type="button">Enroll</button>
+					</div>
+					<!-- register button  end here-->
+
 					<!-- hamburger icons here -->
 
 					<div class="nav-dropdown-btn">
-						<span class="fa fa-bars" id="ham-bars"></span>
-						<span class="fa fa-times close" id="ham-times"></span>
+						<div id="ham-bars">
+							<span class="fa fa-bars"></span>
+						</div>
+
+						<div id="ham-times">
+							<span class="fa fa-times" id="ham-times"></span>
+						</div>
 					</div>
 
 					<!-- end of hamburger icons heres -->
-
-
-
 
 				</div>
 
 			</div>
 		</div>
 
-		<!-- <div class="navbar-links">
-			
-			<!--<div class="container" style="padding-top:2px;">
-						<small>Professional Development & Work Experience Consotrium</small>
-					</div>
-			<div class="container nav">
-				<ul>
-					<li><span class="menu-icon fa fa-server" style="padding-top:2px; "></span><a
-							href="register.php"><small> Click here to Register</small></a></li>
-					<li><span class="menu-icon fa fa-shield"></span><a href="login.php.html"><small> Login</small></a>
-					</li>
-					<li><span class="menu-icon fa fa-clone"></span><a href="blog.php.html"><small> Blog &
-								Events</small></a></li>
-				</ul>
-			</div>
-		</div>  -->
+		<!-- Dropdown menu start here -->
 
 
-
+		<div class="container-fluid" id="dropdown-menu">
+			<ul class="navbar">
+				<li><a class="dropdown-item" href="#">Action</a></li>
+				<li><a class="dropdown-item" href="#">Another action</a></li>
+				<li><a class="dropdown-item" href="#">Something else here</a></li>
+			</ul>
+		</div>
+		<!-- Dropdown menu end here -->
 
 	</nav>
 
-	<nav class="navbar container ">
 
 
-
-	</nav>
 
 	<!--/.nav-collapse -->
 

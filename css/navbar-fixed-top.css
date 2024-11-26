@@ -8,6 +8,7 @@ body {
 	min-width: 360px;
 	width: auto !important;
 	width: 360px;
+	box-sizing: border-box;
 }
 
 
@@ -26,15 +27,16 @@ body {
 	background-size: cover;
 	overflow: hidden;
 	background-repeat: no-repeat;
-	color: white;
-
+	color: #fff;
 	font-family: Poppins Custom, sans-serif;
 }
 
 .navbar-default {
-	background: #23334e;
-	/* background: #fff; */
-	box-shadow:inset 10px 0px 20px 10px #1b1b1b70;
+	background: #fff;
+	color: #000;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 0px 0px 1px 0px #000000;
 }
 
 
@@ -46,12 +48,24 @@ body {
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-	color: #e0e0e0;
+	color: #000000;
 	background-color: transparent;
 }
 
 .navbar-default .navbar-brand {
-	color: #FFF;
+	background: black;
+	padding: 5px;
+	height: auto;
+	object-fit: cover;
+	color: #ffffff;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px 1px #d1cbcb;
+}
+
+.navbar-default .navbar-brand:focus {
+	color: #000000;
+	background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -60,15 +74,15 @@ body {
 		"Lato",
 		sans-serif;
 	;
-	font-weight: 500;
-	color: #e0e0e0;
+	font-weight: 600;
+	color: #000000;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
 	background: #324b77;
-	color: #e0e0e0 ;
+	color: #e0e0e0;
 }
 
 .navbar-links {

@@ -51,60 +51,98 @@
                 margin-left:110px;
             }
         </style>
+
+		<link rel="stylesheet" href="./style/main.module.css">
   </head>
 
   <body>
 
     <!-- Static navbar -->    
 	<nav class="navbar navbar-default  navbar-fixed-top">
-		<div id="navbar">
-			<div class="container" style="height:50px;">
-				<a class="navbar-brand" style="padding-left: 0px;" href="index.php.html">
-					<img alt="ProdWex" width="100" height="24" src="images/logo24x100.png">
-				</a> 
-				<ul class="nav navbar-nav pull-right mobile-bar">
-					
-					<li class="navbar-button">
-						<a href="index.php.html">
-							<span class="menu-icon fa fa-home"></span>
-							<small>Home</small>
-						</a>
-					</li>
-					<li class="navbar-button">
-						<a href="courses.php.html">
-							<span class="menu-icon fa fa-home"></span>
-							<small>Courses</small>
-						</a>
-					</li>
-					
-					<li class="active navbar-button">
-						<a href="blog.php.html">
-							<span class="menu-icon fa fa-newspaper-o"></span>
-							<small>Blog</small>
-						</a>
-					</li>
-					
-										<li class="navbar-button" style="padding-left:0px; width:60px; important!;">
-						<a href="platform.php.html">
-							<span class="menu-icon fa fa-diamond"></span>
-							<small>Platform</small>
-						</a>
-					</li>
-									</ul>
+		<div class="container">
+			<div id="nav-bar" style="height:50px;">
+				<div class="nav-logo-cont"> <!--THIS IS THE NAV LOGO SECTION-->
+					<a class="navbar-brand" href="index.php.html">
+						<img alt="ProdWex" width="100" height="24" src="images/logo24x100.png">
+					</a>
+				</div>
+	
+				<!--THIS IS THE SECTION FOR THE NAVBAR MENU-->
+				<div id="nav-bar">
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+	
+							<li class="item">
+								<a class="nav-link" href="#">Home</a>
+							</li>
+	
+							<li class="item">
+								<a class="nav-link" href="#">
+									Organization
+								</a>
+							</li>
+							<li class="item">
+								<a class="nav-link" href="#">
+									Courses
+								</a>
+							</li>
+							<li class="item">
+								<a class="nav-link" href="#">
+									About
+								</a>
+							</li>
+							<li class="item">
+								<a class="nav-link" href="#">
+									Scholarship
+								</a>
+							</li>
+	
+	
+						</ul>
+					</div>
+	
+	
+	
+					<!-- register button  start here-->
+					<div id="reg-btn">
+						<button class="btn register" type="button">Register?</button>
+						<button class="btn enroll" type="button">Enroll</button>
+					</div>
+					<!-- register button  end here-->
+	
+					<!-- hamburger icons here -->
+	
+					<div class="nav-dropdown-btn">
+						<div id="ham-bars">
+							<span class="fa fa-bars"></span>
+						</div>
+	
+						<div id="ham-times">
+							<span class="fa fa-times" id="ham-times"></span>
+						</div>
+					</div>
+	
+					<!-- end of hamburger icons heres -->
+	
+				</div>
+	
 			</div>
-        </div>	
-		<div class="navbar-links">
-			<!--<div class="container" style="padding-top:2px;">
-				<small>Professional Development & Work Experience Consotrium</small>
-			</div>-->
-			<div class="container">
-				<ul>
-											<li><span class="menu-icon fa fa-user"></span><a href="register.php"><small> Click here to Register  &nbsp;&nbsp; / </small></a></li>
-						<li><span class="menu-icon fa fa-shield"></span><a href="login.php.html"><small> Login</small></a></li>
-									</ul>
-			</div>
-		</div>	
+		</div>
+	
+		<!-- Dropdown menu start here -->
+	
+	
+		<div class="container-fluid" id="dropdown-menu">
+			<ul class="navbar">
+				<li><a class="dropdown-item" href="#">Action</a></li>
+				<li><a class="dropdown-item" href="#">Another action</a></li>
+				<li><a class="dropdown-item" href="#">Something else here</a></li>
+			</ul>
+		</div>
+		<!-- Dropdown menu end here -->
+	
 	</nav>
+
 	<!--/.nav-collapse -->
 
 

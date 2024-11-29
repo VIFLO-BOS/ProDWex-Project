@@ -9,29 +9,32 @@
 }
 
 .item {
-    padding: 4px;
+    margin-right: 5px;
     font-size: 13px;
+    border-radius: 5px;
 }
 
 .nav>li>a {
-    padding: 4px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
 }
 
 /* Change background color of the entire nav-item on hover */
 .item:hover {
-    background-color: #f0f0f0;
+    background-color: #324b77;
     border: none;
-    border-bottom: 2px solid #000;
     outline: none;
     box-shadow: none;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out
+    color: #fff;
+    transition: all 1s ease-in-out
         /* Replace with desired background color */
 }
 
 /* Change text color of the link on hover */
 .item:hover .nav-link {
-    color: #000;
+    color: #fff;
+    transition: all 0.3s ease-in-out
 }
 
 .nav-dropdown-btn {
@@ -44,22 +47,113 @@
 }
 
 #ham-bars,
-#ham-times {
+#ham-time {
     font-weight: light;
-    /* transition: all 0.5s ease-in-out; */
-    /* animation: slowHams 1s ease-in-out; */
+    transition: all 0.5s ease-in-out;
+    animation: slowHams 1s ease-in-out;
+
 
 }
 
-#nav-drop-menu {
+
+#ham-time {
+    margin-top: 19px;
+    margin-right: 20px;
+    /* border: 2px solid #000; */
+    padding: 10px;
+    box-shadow: 0px 1px 2px 0px #0e0e0e7a;
+    outline: none;
+    border: none;
+}
+
+#ham-time:hover {
+    box-shadow: 1px 0px 2px 0px #0e0e0e7a;
+
+}
+
+#dropdown-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    border-top: 1px solid #00000025;
+
+    overflow: hidden;
+}
+
+
+
+
+.drop-ul {
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: 22%;
+}
+
+.drop-ul li {
+    margin-top: 5px;
+    /* color: #000; */
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #0000001c;
+}
+
+
+
+.drop-ul li a {
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    font-family: "Poppins", "Montserrat", "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    line-height: normal;
+    animation: opacity-animation 0.8s ease-in-out;
+    /* 2 seconds for the animation */
+}
+
+@keyframes opacity-animation {
+    0% {
+        opacity: 0;
+        /* Start fully transparent */
+    }
+
+    100% {
+        opacity: 1;
+        /* Fully visible */
+    }
+}
+
+.drop-ul li a:hover {
+    background: #324b77;
+    color: #fff;
+    transition: all 0.3s ease-in-out
+}
+
+.dropdown-ctn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
-#dropdown-menu{
-    padding-top: 5px;
-    border-top: 1px solid #00000025;
+#dropdown-footer {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    text-align: center;
+}
+
+#dropdown-menu ul {
+    text-decoration: none;
 }
 
 
@@ -68,7 +162,7 @@
 }
 
 .open {
-    display: block;
+    display: flex;
 }
 
 /* #ham-times{
@@ -76,7 +170,7 @@
 } */
 
 .register {
-    background: #337ab7;
+    background: #1064ad;
     color: #fff;
     font-weight: 300;
     transition: all 0.3s ease-in-out
@@ -88,28 +182,111 @@
     font-weight: 300;
 }
 
+.footer-register {
+    width: 100%;
+    background: #1064ad;
+    color: #fff;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out
+}
+
+.footer-enroll {
+    width: 100%;
+    background: #d9534f;
+    color: #fff;
+    font-weight: 300;
+}
+
 .register:hover,
-.enroll:hover {
+.enroll:hover,
+.footer-enroll:hover,
+.footer-register:hover {
     color: #fff;
 }
 
-.register:hover {
+.register:hover,
+.footer-register:hover {
     background: #02447e;
     color: #fff;
     font-weight: 300;
 }
 
-.enroll:hover {
+.enroll:hover,
+.footer-enroll:hover {
     background: #c4312c;
     color: #fff;
     font-weight: 300;
 }
 
+
+/* THIS IS THE HERO /JUMBOTRON CODE SECTION */
+
+@media screen and (min-width: 768px) {
+    .hero-text h2 {
+        padding-bottom: 10px;
+        font-family: "Poppins",
+            "Montserrat",
+            "Roboto Slab",
+            sans-serif;
+        font-size: 48px;
+
+    }
+
+    .hero-text p {
+        font-family:
+            "Nunito",
+            "Open Sans",
+            sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: justify;
+        width: 80%;
+    }
+
+    .label {
+        padding: 12px;
+    }
+
+
+    .hero-btn a {
+        text-decoration: none;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THIS IS THE MEDIA QUERY CODE SECTION BELOW */
+
+
 /* For screens larger than 768px */
 @media screen and (min-width: 769px) {
     #nav-drop-menu {
         display: none;
+        /* transition: all 0.5s ease-in-out; */
     }
+
+    .dropdown-ctn {
+        display: none !important;
+    }
+
 
     .nav-dropdown-btn {
         display: none;
@@ -128,14 +305,13 @@
 }
 
 
-
-
-
 /* For screens smaller than or equal to 768px */
 @media screen and (max-width: 768px) {
     #nav-drop-menu {
         display: block;
+        /* transition: all 0.5s ease-in-out; */
     }
+
 
     .nav-dropdown-btn {
         display: block;

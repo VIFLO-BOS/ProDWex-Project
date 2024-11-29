@@ -33,93 +33,107 @@
 
   <body>
 
-    <!-- Static navbar -->    
-	<nav class="navbar navbar-default  navbar-fixed-top">
-		<div class="container">
-			<div id="nav-bar" style="height:50px;">
-				<div class="nav-logo-cont"> <!--THIS IS THE NAV LOGO SECTION-->
-					<a class="navbar-brand" href="index.php.html">
-						<img alt="ProdWex" width="100" height="24" src="images/logo24x100.png">
-					</a>
-				</div>
-	
-				<!--THIS IS THE SECTION FOR THE NAVBAR MENU-->
-				<div id="nav-bar">
-					<div class="collapse navbar-collapse">
-						<ul class="nav navbar-nav">
-	
-							<li class="item">
-								<a class="nav-link" href="#">Home</a>
-							</li>
-	
-							<li class="item">
-								<a class="nav-link" href="#">
-									Organization
-								</a>
-							</li>
-							<li class="item">
-								<a class="nav-link" href="#">
-									Courses
-								</a>
-							</li>
-							<li class="item">
-								<a class="nav-link" href="#">
-									About
-								</a>
-							</li>
-							<li class="item">
-								<a class="nav-link" href="#">
-									Scholarship
-								</a>
-							</li>
-	
-	
-						</ul>
-					</div>
-	
-	
-	
-					<!-- register button  start here-->
-					<div id="reg-btn">
-						<button class="btn register" type="button">Register?</button>
-						<button class="btn enroll" type="button">Enroll</button>
-					</div>
-					<!-- register button  end here-->
-	
-					<!-- hamburger icons here -->
-	
-					<div class="nav-dropdown-btn">
-						<div id="ham-bars">
-							<span class="fa fa-bars"></span>
-						</div>
-	
-						<div id="ham-times">
-							<span class="fa fa-times" id="ham-times"></span>
-						</div>
-					</div>
-	
-					<!-- end of hamburger icons heres -->
-	
-				</div>
-	
+<!-- Static navbar -->
+<nav class="navbar navbar-default  navbar-fixed-top">
+	<div class="container">
+		<div id="nav-bar" style="height:50px;">
+			<div class="nav-logo-cont"> <!--THIS IS THE NAV LOGO SECTION-->
+				<a class="navbar-brand" href="index.php.html">
+					<img alt="ProdWex" width="100" height="24" src="images/logo24x100.png">
+				</a>
 			</div>
-		</div>
-	
-		<!-- Dropdown menu start here -->
-	
-	
-		<div class="container-fluid" id="dropdown-menu">
-			<ul class="navbar">
-				<li><a class="dropdown-item" href="#">Action</a></li>
-				<li><a class="dropdown-item" href="#">Another action</a></li>
-				<li><a class="dropdown-item" href="#">Something else here</a></li>
-			</ul>
-		</div>
-		<!-- Dropdown menu end here -->
-	
-	</nav>
 
-	<!--/.nav-collapse -->
+			<!--THIS IS THE SECTION FOR THE NAVBAR MENU-->
+			<div id="nav-bar">
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+
+						<li class="item">
+							<a class="nav-link full-active" href="#">Home</a>
+						</li>
+
+						<li class="item">
+							<a class="nav-link" href="#">
+								Organization
+							</a>
+						</li>
+						<li class="item">
+							<a class="nav-link" href="#">
+								Courses
+							</a>
+						</li>
+						<li class="item">
+							<a class="nav-link" href="#">
+								About
+							</a>
+						</li>
+						<li class="item">
+							<a class="nav-link" href="#">
+								Scholarship
+							</a>
+						</li>
+
+
+					</ul>
+				</div>
+
+
+
+				<!-- register button  start here-->
+				<div id="reg-btn">
+					<button class="btn register" type="button">Register?</button>
+					<button class="btn enroll" type="button">Enroll</button>
+				</div>
+				<!-- register button  end here-->
+
+				<!-- hamburger icons here -->
+
+				<div class="nav-dropdown-btn">
+					<div id="ham-bars">
+						<span class="fa fa-bars"></span>
+					</div>
+
+				</div>
+
+				<!-- end of hamburger icons heres -->
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Dropdown menu start here -->
+	<div class="container navbar-default ">
+		<div class="dropdown-ctn">
+			<div id="dropdown-menu">
+				<ul class="nav navbar drop-ul">
+					<li><a class="dropdown-item drop-active" href="#">Home</a></li>
+					<li><a class="dropdown-item" href="#">Organization</a></li>
+					<li><a class="dropdown-item" href="#">Courses</a></li>
+					<li><a class="dropdown-item" href="#">About</a></li>
+					<li><a class="dropdown-item" href="#">Scholarship</a></li>
+					<li><a class="dropdown-item" href="#">Courses</a></li>
+				</ul>
+
+				<div class="close-btn">
+					<button class="btn btn-outline-light" type="button" id="ham-time">
+						<span class="fa fa-times" id="ham-times"></span>
+					</button>
+				</div>
+
+			</div>
+			<!-- register button  start here-->
+			<div id="dropdown-footer">
+				<button class=" btn footer-register" type="button">Register?</button>
+				<button class="btn footer-enroll" type="button">Enroll</button>
+			</div>
+			<!-- register button  end here-->
+		</div>
+	</div>
+	<!-- Dropdown menu end here -->
+
+</nav>
+<!--/.nav-collapse -->
 
 
     <div class="container">

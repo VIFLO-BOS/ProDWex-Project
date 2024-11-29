@@ -3280,57 +3280,57 @@ table th[class*="col-"] {
   .h3 {
     margin-top: 20px;
     /*margin-left: 20px;*/
-  } 
+}
 
-  .table-responsive {
-    width: 100%;
-    margin-bottom: 15px;
-    overflow-y: hidden;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #ddd;
-  }
+.table-responsive {
+  width: 100%;
+  margin-bottom: 15px;
+  overflow-y: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  border: 1px solid #ddd;
+}
 
-  .table-responsive>.table {
-    margin-bottom: 0;
-  }
+.table-responsive>.table {
+  margin-bottom: 0;
+}
 
-  .table-responsive>.table>thead>tr>th,
-  .table-responsive>.table>tbody>tr>th,
-  .table-responsive>.table>tfoot>tr>th,
-  .table-responsive>.table>thead>tr>td,
-  .table-responsive>.table>tbody>tr>td,
-  .table-responsive>.table>tfoot>tr>td {
-    white-space: nowrap;
-  }
+.table-responsive>.table>thead>tr>th,
+.table-responsive>.table>tbody>tr>th,
+.table-responsive>.table>tfoot>tr>th,
+.table-responsive>.table>thead>tr>td,
+.table-responsive>.table>tbody>tr>td,
+.table-responsive>.table>tfoot>tr>td {
+  white-space: nowrap;
+}
 
-  .table-responsive>.table-bordered {
-    border: 0;
-  }
+.table-responsive>.table-bordered {
+  border: 0;
+}
 
-  .table-responsive>.table-bordered>thead>tr>th:first-child,
-  .table-responsive>.table-bordered>tbody>tr>th:first-child,
-  .table-responsive>.table-bordered>tfoot>tr>th:first-child,
-  .table-responsive>.table-bordered>thead>tr>td:first-child,
-  .table-responsive>.table-bordered>tbody>tr>td:first-child,
-  .table-responsive>.table-bordered>tfoot>tr>td:first-child {
-    border-left: 0;
-  }
+.table-responsive>.table-bordered>thead>tr>th:first-child,
+.table-responsive>.table-bordered>tbody>tr>th:first-child,
+.table-responsive>.table-bordered>tfoot>tr>th:first-child,
+.table-responsive>.table-bordered>thead>tr>td:first-child,
+.table-responsive>.table-bordered>tbody>tr>td:first-child,
+.table-responsive>.table-bordered>tfoot>tr>td:first-child {
+  border-left: 0;
+}
 
-  .table-responsive>.table-bordered>thead>tr>th:last-child,
-  .table-responsive>.table-bordered>tbody>tr>th:last-child,
-  .table-responsive>.table-bordered>tfoot>tr>th:last-child,
-  .table-responsive>.table-bordered>thead>tr>td:last-child,
-  .table-responsive>.table-bordered>tbody>tr>td:last-child,
-  .table-responsive>.table-bordered>tfoot>tr>td:last-child {
-    border-right: 0;
-  }
+.table-responsive>.table-bordered>thead>tr>th:last-child,
+.table-responsive>.table-bordered>tbody>tr>th:last-child,
+.table-responsive>.table-bordered>tfoot>tr>th:last-child,
+.table-responsive>.table-bordered>thead>tr>td:last-child,
+.table-responsive>.table-bordered>tbody>tr>td:last-child,
+.table-responsive>.table-bordered>tfoot>tr>td:last-child {
+  border-right: 0;
+}
 
-  .table-responsive>.table-bordered>tbody>tr:last-child>th,
-  .table-responsive>.table-bordered>tfoot>tr:last-child>th,
-  .table-responsive>.table-bordered>tbody>tr:last-child>td,
-  .table-responsive>.table-bordered>tfoot>tr:last-child>td {
-    border-bottom: 0;
-  }
+.table-responsive>.table-bordered>tbody>tr:last-child>th,
+.table-responsive>.table-bordered>tfoot>tr:last-child>th,
+.table-responsive>.table-bordered>tbody>tr:last-child>td,
+.table-responsive>.table-bordered>tfoot>tr:last-child>td {
+  border-bottom: 0;
+}
 }
 
 fieldset {
@@ -6166,7 +6166,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 75%;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1;
   color: #fff;
   text-align: center;
@@ -6207,8 +6207,9 @@ a.label:focus {
   background-color: #337ab7;
 }
 
-.label-primary:hover{
+.label-primary:hover {
   background-color: #02447e;
+  transition: all 0.5s ease-in-out;
 }
 
 .label-primary[href]:hover,
@@ -6247,9 +6248,11 @@ a.label:focus {
   background-color: #d9534f;
 }
 
-.label-danger:hover{
-    background-color: #c4312c;
+.label-danger:hover {
+  background-color: #c4312c;
+  transition: all 0.5s ease-in-out;
 }
+
 
 .label-danger[href]:hover,
 .label-danger[href]:focus {
@@ -6397,7 +6400,7 @@ a.badge:focus {
   .jumbotron {
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
   }

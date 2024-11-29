@@ -219,6 +219,8 @@
 }
 
 
+
+
 /* THIS IS THE HERO /JUMBOTRON CODE SECTION */
 
 @media screen and (min-width: 768px) {
@@ -240,6 +242,7 @@
         font-size: 16px;
         font-weight: 400;
         text-align: justify;
+        color: #d6d4d4;
         width: 80%;
     }
 
@@ -253,14 +256,82 @@
     }
 
 
+}
+
+@media screen and (max-width: 768px) {
+    .hero-text h2 {
+        padding-bottom: 5px;
+        font-family: "Poppins",
+            "Montserrat",
+            "Roboto Slab",
+            sans-serif;
+        font-size: 32px;
+
+    }
+
+    .hero-text p {
+        font-family:
+            "Nunito",
+            "Open Sans",
+            sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #d6d4d4;
+        width: 90%;
+    }
+
+    .label {
+        padding: 12px;
+    }
+
+    .hero-btn{
+        margin-bottom: 5px;
+    }
+
+    .hero-btn a {
+        text-decoration: none;
+    }
 
 }
 
 
 
 
+/* THIS IS THE TOP ORGANIZATION CODE SECTIONS */
 
+.top-org-sec{
+    background-color: #f1f6fa;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        padding: 3rem 5rem;
+        display: block;
+}
 
+.top-org{
+    grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 1300px;
+        display: flex
+}
+
+.top-org img{
+    margin: 10px;
+}
+
+/* @media screen and (min-width: 1280px) {
+    .top-org-sec{
+        padding-left: 0;
+            padding-right: 0;
+            display: flex;
+    }
+} */
 
 
 

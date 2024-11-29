@@ -17,13 +17,16 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="icon" href="images/favicon.ico">
-
 	<title>ProDWex</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+
+
+
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
 	<link href="css/navbar-fixed-top.css" rel="stylesheet">
+
+
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -44,6 +47,10 @@
 			border-radius: 10px;
 		}
 	</style>
+
+	<link rel="stylesheet" href="./style/main.module.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -57,16 +64,16 @@
 						<img alt="ProdWex" width="100" height="24" src="images/logo24x100.png">
 					</a>
 				</div>
-	
+
 				<!--THIS IS THE SECTION FOR THE NAVBAR MENU-->
 				<div id="nav-bar">
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav">
-	
+
 							<li class="item">
 								<a class="nav-link full-active" href="#">Home</a>
 							</li>
-	
+
 							<li class="item">
 								<a class="nav-link" href="#">
 									Organization
@@ -87,36 +94,36 @@
 									Scholarship
 								</a>
 							</li>
-	
-	
+
+
 						</ul>
 					</div>
-	
-	
-	
+
+
+
 					<!-- register button  start here-->
 					<div id="reg-btn">
 						<button class="btn register" type="button">Register?</button>
 						<button class="btn enroll" type="button">Enroll</button>
 					</div>
 					<!-- register button  end here-->
-	
+
 					<!-- hamburger icons here -->
-	
+
 					<div class="nav-dropdown-btn">
 						<div id="ham-bars">
 							<span class="fa fa-bars"></span>
 						</div>
-	
+
 					</div>
-	
+
 					<!-- end of hamburger icons heres -->
-	
+
 				</div>
-	
+
 			</div>
 		</div>
-	
+
 		<!-- Dropdown menu start here -->
 		<div class="container navbar-default ">
 			<div class="dropdown-ctn">
@@ -129,13 +136,13 @@
 						<li><a class="dropdown-item" href="#">Scholarship</a></li>
 						<li><a class="dropdown-item" href="#">Courses</a></li>
 					</ul>
-	
+
 					<div class="close-btn">
 						<button class="btn btn-outline-light" type="button" id="ham-time">
 							<span class="fa fa-times" id="ham-times"></span>
 						</button>
 					</div>
-	
+
 				</div>
 				<!-- register button  start here-->
 				<div id="dropdown-footer">
@@ -146,30 +153,47 @@
 			</div>
 		</div>
 		<!-- Dropdown menu end here -->
-	
+
 	</nav>
 	<!--/.nav-collapse -->
+
+
+
+	<!-- MAIN CONTENT SECTION START HERE -->
 
 	<div class="container">
 
 
 		<!-- Main component for a primary marketing message or call to action -->
-		<div class="jumbotron">
-			<h1 class="h2-left">ProDWex</h1>
-			<h2 class="h2-left">Professional Development & Work Experience</h2>
-			<p>
-				<!--
+		<div class="jumbotron" id="hero-ctn"> <!--this is the hero section redesign-->
+
+			<div class="hero-text">
+				<div class="hero-heading" id="hero-heading">
+					<h2>Professional Development & Work Experience - ProDWex</h2>
+				</div>
+
+				<div class="hero-subhd" id="hero-subheading">
+					<p>
+						<!--
 				Equipping tertiary institution students to become professionals in the fields of 
 				Human Resource Management, Customer Relationship Management, Project Management and Health Safety
-				
-				A platform where members are trained, coached, mentored with reflective supervision, 
-				provided technical assistance to gain mastery of the work place and accrue the necessary 
-				experience in line with their course of study in school and their passions. -->
-			</p>
-			<p>
-				<a href="login.php-1.html?user=student"><span class="label label-primary">Students Portal</span></a>
-				<a href="login.php-2.html?user=partner"><span class="label label-danger">Partners Portal</span></a>
-			</p>
+				-->
+						A platform where members are trained, coached, mentored with reflective supervision,
+						provided technical assistance to gain mastery of the work place and accrue the necessary
+						experience in line with their course of study in school and their passions.
+					</p>
+				</div>
+
+			</div>
+
+
+
+			<div class="hero-btn" id="hero-btn">
+				<a class="std" id="login.php-1.html?user=student"><span class="label label-primary">Students
+						Portal</span></a>
+				<a class="pat" href="login.php-2.html?user=partner"><span class="label label-danger">Partners
+						Portal</span></a>
+			</div>
 
 		</div>
 
@@ -702,62 +726,62 @@
 		</div>
 
 
-
+		<!--
 		<div class="row">
-			<div class="col-md-3 col-sm-6 col-xs-12">
-				<div class="thumbnail">
-					<img src="images/board/adebayo.jpg" alt="...">
-					<div class="caption">
-						<h4>Abayomi Adebayo</h4>
-						<p>Professor Of Economics, OAU</p>
-						<p>
-							<a href="#" class="btn btn-default btn-sm" role="button">View Profile</a>
-						</p>
-					</div>
-				</div>
+		  <div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+			  <img src="images/board/adebayo.jpg" alt="...">
+			  <div class="caption">
+				<h4>Abayomi Adebayo</h4>
+				<p>Professor Of Economics, OAU</p>
+				<p>
+					<a href="#" class="btn btn-default btn-sm" role="button">View Profile</a> 
+				</p>
+			  </div>
 			</div>
-
-			<div class="col-md-3 col-sm-6 col-xs-12">
-				<div class="thumbnail">
-					<img src="images/board/dayo.jpg" alt="...">
-					<div class="caption">
-						<h4>Dayo Aduroja</h4>
-						<p>Diamond Bank</p>
-						<p>
-							<a href="#" class="btn btn-default btn-sm" role="button">View Profile</a>
-						</p>
-					</div>
-				</div>
+		  </div>
+		  
+		  <div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+			  <img src="images/board/dayo.jpg" alt="...">
+			  <div class="caption">
+				<h4>Dayo Aduroja</h4>
+				<p>Diamond Bank</p>
+				<p>
+					<a href="#" class="btn btn-default btn-sm" role="button">View Profile</a>				
+				</p>
+			  </div>
 			</div>
-
-			<div class="col-md-3 col-sm-6 col-xs-12">
-				<div class="thumbnail">
-					<img src="images/board/victor.jpg" alt="...">
-					<div class="caption">
-						<h4>Victor Ariyibi-Oke</h4>
-						<p>Founding Partner at BlueSlip Ltd.</p>
-						<p>
-							<a href="#" class="btn btn-default btn-sm" role="button">View profile</a>
-						</p>
-					</div>
-				</div>
+		  </div>
+		  
+		  <div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+			  <img src="images/board/victor.jpg" alt="...">
+			  <div class="caption">
+				<h4>Victor Ariyibi-Oke</h4>
+				<p>Founding Partner at BlueSlip Ltd.</p>
+				<p>
+					<a href="#" class="btn btn-default btn-sm" role="button">View profile</a>
+				</p>
+			  </div>
 			</div>
-
-			<div class="col-md-3 col-sm-6 col-xs-12">
-				<div class="thumbnail">
-					<img src="images/board/debo.jpg" alt="...">
-					<div class="caption">
-						<h4>Adenle Gbadebo</h4>
-						<p>CEO, Ultra Brains Technology</p>
-						<p>
-							<a href="#" class="btn btn-default btn-sm" role="button">View profile</a>
-						</p>
-					</div>
-				</div>
+		  </div>
+		  
+		  <div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="thumbnail">
+			  <img src="images/board/debo.jpg" alt="...">
+			  <div class="caption">
+				<h4>Adenle Gbadebo</h4>
+				<p>CEO, Ultra Brains Technology</p>
+				<p>
+					<a href="#" class="btn btn-default btn-sm" role="button">View profile</a>
+				</p>
+			  </div>
 			</div>
-
-		</div>
-		<!---->
+		  </div>
+		  
+	  </div>
+	  -->
 
 
 		<!--
@@ -818,19 +842,26 @@
 			</div>
 		  </div>
 	  </div>-->
-	</div> <!-- /container -->
+	</div>
+	<!-- MAIN CONTENT SECTION END HERE -->
 
-	<nav class="navbar navbar-default navbar-fixed-bottom">
-		<div class="container">
-			<div class="footer">
-				<div class="footer-links">
-					<a href="privacypolicy.php.html">Privacy policy</a> |
-					<a href="contactus.php">Contact us</a> |
-					<a href="legal.php.html">©2022 ProdWex</a>
-				</div>
+
+
+
+
+	<!-- <nav class="navbar navbar-default navbar-fixed-bottom">
+		
+	</nav> -->
+
+	<div class="container">
+		<div class="footer">
+			<div class="footer-links">
+				<a href="privacypolicy.php.html">Privacy policy</a> |
+				<a href="contactus.php">Contact us</a> |
+				<a href="legal.php.html">©2022 ProdWex</a>
 			</div>
 		</div>
-	</nav>
+	</div>
 
 
 	<!-- Bootstrap core JavaScript
@@ -844,44 +875,24 @@
 
 	<!-- WhatsApp=================================== -->
 	<script>
-		var url = 'js/user_main.js';
-		var s = document.createElement('script');
-		s.type = 'text/javascript';
-		s.async = true;
-		s.src = url;
-		var options = {
-			"enabled": true,
-			"chatButtonSetting": {
-				"backgroundColor": "#4dc247",
-				"ctaText": "Message Us",
-				"borderRadius": "25",
-				"marginLeft": "0",
-				"marginBottom": "50",
-				"marginRight": "50",
-				"position": "right"
-			},
-			"brandSetting": {
-				"brandName": "ProdWex Team",
-				"brandSubTitle": "Replies within 1 day",
-				"brandImg": "https://prodwex.com/images/logo24x100.png",
-				"welcomeText": "Hi,there!\nHow can I help you?",
-				"messageText": "Hello, I have a question about {{page_link}}",
-				"backgroundColor": "#0a5f54",
-				"ctaText": "Start Chat",
-				"borderRadius": "25",
-				"autoShow": false,
-				"phoneNumber": "+2348070660356"
+		var url = ' js/user_main.js'; var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+		s.src = url; var options = {
+			"enabled": true, "chatButtonSetting": {
+				"backgroundColor": "#4dc247", "ctaText"
+					: "Message Us", "borderRadius": "25", "marginLeft": "0", "marginBottom": "50", "marginRight": "50"
+				, "position": "right"
+			}, "brandSetting": {
+				"brandName": "ProdWex Team", "brandSubTitle"
+					: "Replies within 1 day", "brandImg": "https://prodwex.com/images/logo24x100.png", "welcomeText"
+					: "Hi,there!\nHow can I help you?", "messageText": "Hello, I have a question about {{page_link}}"
+				, "backgroundColor": "#0a5f54", "ctaText": "Start Chat", "borderRadius": "25", "autoShow":
+					false, "phoneNumber": "+2348070660356"
 			}
-		};
-		s.onload = function () {
-			CreateWhatsappChatWidget(options);
-		};
-		var x = document.getElementsByTagName('script')[0];
-		x.parentNode.insertBefore(s, x);
+		}; s.onload = function () { CreateWhatsappChatWidget(options); };
+		var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); 
 	</script>
 
-	<script src="./scripts/navbar.js"></script> <!--This is the navbar script for dropdown menu-->
-
+	<script src="./scripts/navbar.js"></script>
 </body>
 
 </html>

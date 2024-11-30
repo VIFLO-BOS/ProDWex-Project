@@ -2,167 +2,155 @@
 /* using media screen to control the nav-menu */
 
 #nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .item {
-    margin-right: 5px;
-    font-size: 13px;
-    border-radius: 5px;
+	margin-right: 5px;
+	font-size: 13px;
+	border-radius: 5px;
 }
 
-.nav>li>a {
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
+.nav > li > a {
+	padding: 8px;
+	border: none;
+	border-radius: 5px;
 }
 
 /* Change background color of the entire nav-item on hover */
 .item:hover {
-    background-color: #324b77;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    color: #fff;
-    transition: all 1s ease-in-out
-        /* Replace with desired background color */
+	background-color: #324b77;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	color: #fff;
+	transition: all 1s ease-in-out;
+	/* Replace with desired background color */
 }
 
 /* Change text color of the link on hover */
 .item:hover .nav-link {
-    color: #fff;
-    transition: all 0.3s ease-in-out
+	color: #fff;
+	transition: all 0.3s ease-in-out;
 }
 
 .nav-dropdown-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 12px;
-    color: #000;
-    font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 12px;
+	color: #000;
+	font-size: 20px;
 }
 
 #ham-bars,
 #ham-time {
-    font-weight: light;
-    transition: all 0.5s ease-in-out;
-    animation: slowHams 1s ease-in-out;
-
-
+	font-weight: light;
+	transition: all 0.5s ease-in-out;
+	animation: slowHams 1s ease-in-out;
 }
 
-
 #ham-time {
-    margin-top: 19px;
-    margin-right: 20px;
-    /* border: 2px solid #000; */
-    padding: 10px;
-    box-shadow: 0px 1px 2px 0px #0e0e0e7a;
-    outline: none;
-    border: none;
+	margin-top: 19px;
+	margin-right: 20px;
+	/* border: 2px solid #000; */
+	padding: 10px;
+	box-shadow: 0px 1px 2px 0px #0e0e0e7a;
+	outline: none;
+	border: none;
 }
 
 #ham-time:hover {
-    box-shadow: 1px 0px 2px 0px #0e0e0e7a;
-
+	box-shadow: 1px 0px 2px 0px #0e0e0e7a;
 }
 
 #dropdown-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 5px;
-    border-top: 1px solid #00000025;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 5px;
+	border-top: 1px solid #00000025;
 
-    overflow: hidden;
+	overflow: hidden;
 }
 
-
-
-
 .drop-ul {
-    width: 80%;
-    margin-top: 2%;
-    margin-bottom: 22%;
+	width: 80%;
+	margin-top: 2%;
+	margin-bottom: 22%;
 }
 
 .drop-ul li {
-    margin-top: 5px;
-    /* color: #000; */
-    border: none;
-    border-radius: 5px;
-    border-bottom: 1px solid #0000001c;
+	margin-top: 5px;
+	/* color: #000; */
+	border: none;
+	border-radius: 5px;
+	border-bottom: 1px solid #0000001c;
 }
 
-
-
 .drop-ul li a {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: "Poppins", "Montserrat", "Lato", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    line-height: normal;
-    animation: opacity-animation 0.8s ease-in-out;
-    /* 2 seconds for the animation */
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: "Poppins", "Montserrat", "Lato", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: #000;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	line-height: normal;
+	animation: opacity-animation 0.8s ease-in-out;
+	/* 2 seconds for the animation */
 }
 
 @keyframes opacity-animation {
-    0% {
-        opacity: 0;
-        /* Start fully transparent */
-    }
+	0% {
+		opacity: 0;
+		/* Start fully transparent */
+	}
 
-    100% {
-        opacity: 1;
-        /* Fully visible */
-    }
+	100% {
+		opacity: 1;
+		/* Fully visible */
+	}
 }
 
 .drop-ul li a:hover {
-    background: #324b77;
-    color: #fff;
-    transition: all 0.3s ease-in-out
+	background: #324b77;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
 }
 
 .dropdown-ctn {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
 }
 
-
 #dropdown-footer {
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    text-align: center;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+	text-align: center;
 }
 
 #dropdown-menu ul {
-    text-decoration: none;
+	text-decoration: none;
 }
 
-
 .close {
-    display: none;
+	display: none;
 }
 
 .open {
-    display: flex;
+	display: flex;
 }
 
 /* #ham-times{
@@ -170,168 +158,220 @@
 } */
 
 .register {
-    background: #1064ad;
-    color: #fff;
-    font-weight: 300;
-    transition: all 0.3s ease-in-out
+	background: #1064ad;
+	color: #fff;
+	font-weight: 300;
+	transition: all 0.3s ease-in-out;
 }
 
 .enroll {
-    background: #d9534f;
-    color: #fff;
-    font-weight: 300;
+	background: #d9534f;
+	color: #fff;
+	font-weight: 300;
 }
 
 .footer-register {
-    width: 100%;
-    background: #1064ad;
-    color: #fff;
-    font-weight: 300;
-    transition: all 0.3s ease-in-out
+	width: 100%;
+	background: #1064ad;
+	color: #fff;
+	font-weight: 300;
+	transition: all 0.3s ease-in-out;
 }
 
 .footer-enroll {
-    width: 100%;
-    background: #d9534f;
-    color: #fff;
-    font-weight: 300;
+	width: 100%;
+	background: #d9534f;
+	color: #fff;
+	font-weight: 300;
 }
 
 .register:hover,
 .enroll:hover,
 .footer-enroll:hover,
 .footer-register:hover {
-    color: #fff;
+	color: #fff;
 }
 
 .register:hover,
 .footer-register:hover {
-    background: #02447e;
-    color: #fff;
-    font-weight: 300;
+	background: #02447e;
+	color: #fff;
+	font-weight: 300;
 }
 
 .enroll:hover,
 .footer-enroll:hover {
-    background: #c4312c;
-    color: #fff;
-    font-weight: 300;
+	background: #c4312c;
+	color: #fff;
+	font-weight: 300;
 }
-
-
-
 
 /* THIS IS THE HERO /JUMBOTRON CODE SECTION */
 
 @media screen and (min-width: 768px) {
-    .hero-text h2 {
-        padding-bottom: 10px;
-        font-family: "Poppins",
-            "Montserrat",
-            "Roboto Slab",
-            sans-serif;
-        font-size: 48px;
+	.hero-text h2 {
+		padding-bottom: 10px;
+		font-family: "Poppins", "Montserrat", "Roboto Slab", sans-serif;
+		font-size: 48px;
+	}
 
-    }
+	.hero-text p {
+		font-family: "Nunito", "Open Sans", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		text-align: justify;
+		color: #d6d4d4;
+		width: 80%;
+	}
 
-    .hero-text p {
-        font-family:
-            "Nunito",
-            "Open Sans",
-            sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        text-align: justify;
-        color: #d6d4d4;
-        width: 80%;
-    }
+	.label {
+		padding: 12px;
+	}
 
-    .label {
-        padding: 12px;
-    }
-
-
-    .hero-btn a {
-        text-decoration: none;
-    }
-
-
+	.hero-btn a {
+		text-decoration: none;
+	}
 }
 
 @media screen and (max-width: 768px) {
-    .hero-text h2 {
-        padding-bottom: 5px;
-        font-family: "Poppins",
-            "Montserrat",
-            "Roboto Slab",
-            sans-serif;
-        font-size: 32px;
+	.hero-text h2 {
+		padding-bottom: 5px;
+		font-family: "Poppins", "Montserrat", "Roboto Slab", sans-serif;
+		font-size: 32px;
+	}
 
-    }
+	.hero-text p {
+		font-family: "Nunito", "Open Sans", sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		color: #d6d4d4;
+		width: 90%;
+	}
 
-    .hero-text p {
-        font-family:
-            "Nunito",
-            "Open Sans",
-            sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        color: #d6d4d4;
-        width: 90%;
-    }
+	.label {
+		padding: 12px;
+	}
 
-    .label {
-        padding: 12px;
-    }
+	.hero-btn {
+		margin-bottom: 5px;
+	}
 
-    .hero-btn{
-        margin-bottom: 5px;
-    }
-
-    .hero-btn a {
-        text-decoration: none;
-    }
-
+	.hero-btn a {
+		text-decoration: none;
+	}
 }
-
-
-
 
 /* THIS IS THE TOP ORGANIZATION CODE SECTIONS */
 
-.top-org-sec{
-    background-color: #f1f6fa;
-        justify-content: center;
-        align-items: center;
-        min-width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-        padding: 3rem 5rem;
-        display: block;
+.top-org-sec {
+	background-color: #f1f6fa;
+	justify-content: center;
+	align-items: center;
+	min-width: 100%;
+	margin-top: 5%;
+	margin-bottom: 2rem;
+	padding: 3rem 5rem;
+	display: block;
 }
 
-.top-org{
-    grid-column-gap: 40px;
-        grid-row-gap: 40px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 1300px;
-        display: flex
+.top-org {
+	grid-column-gap: 40px;
+	grid-row-gap: 40px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 1300px;
+	display: flex;
 }
 
-.top-org img{
-    margin: 10px;
+.top-org img {
+	margin: 10px;
 }
 
-/* @media screen and (min-width: 1280px) {
-    .top-org-sec{
-        padding-left: 0;
-            padding-right: 0;
-            display: flex;
-    }
-} */
+
+
+/* THIS IS FOR THE ABOUT ME SECTION */
+/* General Styles */
+/* Container Styles */
+#abt-ctn {
+	
+   /* max-width: 1140px;  */
+  width: 100%;
+  margin: 5% 0px 0px 0px; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center; 
+}
+
+/* Card Styles */
+.abt-bdy {
+  flex: 1 1 calc(33.333% - 20px); 
+  max-width: 250px;
+  min-width: 320px;
+  height: auto;   box-shadow: 0 4px 8px rgba(172, 170, 170, 0.562); 
+  border-radius: 10px; 
+  overflow: hidden;
+  background-color: #fff; 
+  padding: 0px 10px 0 10px; 
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+/* Hover Effect for Cards */
+.abt-bdy:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+
+.abt-hdr {
+	width: 100%;
+}
+.text-chip-3 {
+	margin-top: 6px;
+	font-family: "Nunito", "Roboto", "Source Sans Pro", sans-serif;
+	font-size: 14px;
+	/* border: 1px solid grey; */
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.abt-hdr h3 {
+	font-family: "Open Sans", "Lato", "Roboto", sans-serif;
+	font-size: 1.75rem;
+	color: #000;
+}
+
+.abt-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.abt-icon img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.abt-txt {
+	margin-top: 5px;
+	font-family: "Roboto", "Nunito", "Inter", sans-serif;
+	font-size: 16px;
+	color: #0e0e0e;
+	text-align: justify;
+}
+
+
+
+
+
+
+
 
 
 
@@ -346,52 +386,60 @@
 
 /* THIS IS THE MEDIA QUERY CODE SECTION BELOW */
 
-
 /* For screens larger than 768px */
 @media screen and (min-width: 769px) {
-    #nav-drop-menu {
-        display: none;
-        /* transition: all 0.5s ease-in-out; */
-    }
+	#nav-drop-menu {
+		display: none;
+		/* transition: all 0.5s ease-in-out; */
+	}
 
-    .dropdown-ctn {
-        display: none !important;
-    }
+	.dropdown-ctn {
+		display: none !important;
+	}
 
+	.nav-dropdown-btn {
+		display: none;
+		/* Show dropdown on larger screens */
+	}
 
-    .nav-dropdown-btn {
-        display: none;
-        /* Show dropdown on larger screens */
-    }
-
-    #reg-btn {
-        margin-left: 20px;
-        display: block;
-        outline: none;
-        border: none;
-
-    }
-
-
+	#reg-btn {
+		margin-left: 20px;
+		display: block;
+		outline: none;
+		border: none;
+	}
 }
-
 
 /* For screens smaller than or equal to 768px */
 @media screen and (max-width: 768px) {
-    #nav-drop-menu {
-        display: block;
-        /* transition: all 0.5s ease-in-out; */
-    }
+	#nav-drop-menu {
+		display: block;
+		/* transition: all 0.5s ease-in-out; */
+	}
+
+	.nav-dropdown-btn {
+		display: block;
+		/* Show dropdown menu */
+	}
+
+	#reg-btn {
+		display: none;
+	}
+}
 
 
-    .nav-dropdown-btn {
-        display: block;
-        /* Show dropdown menu */
-    }
+/* this is the about prodWex section */
 
-    #reg-btn {
-        display: none;
-    }
+/* Responsive Layouts */
+@media (max-width: 991px) {
+  .abt-bdy {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row on medium screens */
+  }
+}
 
-
+@media (max-width: 767px) {
+  .abt-bdy {
+    flex: 1 1 calc(100% - 20px); /* 1 card per row on small screens */
+    max-width: 90%; /* Full-width cards on small screens */
+  }
 }

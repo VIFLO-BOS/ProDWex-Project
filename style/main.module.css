@@ -301,9 +301,9 @@
 	flex-wrap: wrap;
 	gap: 20px;
 	justify-content: center;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	background: #fffbfbea;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	background: #011542;
 }
 
 /* Card Styles */
@@ -366,7 +366,7 @@
 .abt-icon img {
 	width: 100%;
 	height: 230px;
-	object-position: center center;
+	object-position: center;
 	object-fit: cover;
 	border-radius: 2px;
 	box-shadow: 1px 1px 3px 0px #0e0e0e2f;
@@ -376,7 +376,7 @@
 	margin-top: 5px;
 	padding: 10px;
 	font-family: "Roboto", "Nunito", "Inter", sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	color: #383838;
 	text-align: left;
 	border-radius: 5px;
@@ -407,6 +407,47 @@
 background: #c4312c;
 transform: scale(1.05);
 }
+
+
+/* THE FOLLOWING CODE IS FOR THE COURSE CAROUSEL */
+
+
+.course-ctn{
+	margin-top: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 8%;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+	
+}
+
+.course-ctn::-webkit-scrollbar{
+	display: none;
+}
+
+
+
+.crd-ctn{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	background: grey;
+}
+
+
+
+
+
+
+
+
 
 /* THIS IS THE MEDIA QUERY CODE SECTION BELOW */
 
@@ -463,6 +504,6 @@ transform: scale(1.05);
 @media (max-width: 767px) {
 	.abt-bdy {
 		flex: 1 1 calc(100% - 20px); /* 1 card per row on small screens */
-		max-width: 60%; /* Full-width cards on small screens */
+		max-width: 90%; /* Full-width cards on small screens */
 	}
 }

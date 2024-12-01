@@ -1485,6 +1485,10 @@ body {
   background-color: #fff;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 input,
 button,
 select,

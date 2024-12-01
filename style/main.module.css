@@ -5,6 +5,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 50px;
 }
 
 .item {
@@ -289,100 +290,123 @@
 	margin: 10px;
 }
 
-
-
 /* THIS IS FOR THE ABOUT ME SECTION */
 /* General Styles */
 /* Container Styles */
 #abt-ctn {
-	
-   /* max-width: 1140px;  */
-  width: 100%;
-  margin: 5% 0px 0px 0px; 
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; 
-  justify-content: center; 
+	/* max-width: 1140px;  */
+	width: 100%;
+	margin: 10% 0px 0px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background: #fffbfbea;
 }
 
 /* Card Styles */
 .abt-bdy {
-  flex: 1 1 calc(33.333% - 20px); 
-  max-width: 250px;
-  min-width: 320px;
-  height: auto;   box-shadow: 0 4px 8px rgba(172, 170, 170, 0.562); 
-  border-radius: 10px; 
-  overflow: hidden;
-  background-color: #fff; 
-  padding: 0px 10px 0 10px; 
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+	flex: 1 1 calc(33.333% - 20px);
+	max-width: 250px;
+	min-width: 330px;
+	height: auto;
+	/* box-shadow: 0 4px 8px rgba(172, 170, 170, 0.562); */
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: #fff;
+	padding: 0px 20px 0 20px;
+	display: flex;
+	flex-direction: column;
+	transition: all 0.5s ease-in-out;
 }
 
 /* Hover Effect for Cards */
 .abt-bdy:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+	transform: translateY(-5px); /* Slight lift on hover */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /*#Deeper shadow on hover */
 }
-
 
 .abt-hdr {
-	width: 100%;
+	width: 80%;
 }
 .text-chip-3 {
-	margin-top: 6px;
+	margin-top: 16px;
+	padding: 5px;
+	width: 45%;
 	font-family: "Nunito", "Roboto", "Source Sans Pro", sans-serif;
-	font-size: 14px;
+	font-size: 10px;
 	/* border: 1px solid grey; */
 	border-radius: 10px;
 	display: flex;
 	align-items: center;
+	background: #042d86;
+	color: #ffffff;
+	font-weight: 600;
+	box-shadow: 1px 1px 3px 0px #0e0e0e2f;
 }
 
 .abt-hdr h3 {
 	font-family: "Open Sans", "Lato", "Roboto", sans-serif;
-	font-size: 1.75rem;
+	font-size: 1.4rem;
+	font-weight: bold;
 	color: #000;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.055);
+	line-height: 200%;
 }
 
 .abt-icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 1%;
 }
 
 .abt-icon img {
 	width: 100%;
-	height: auto;
+	height: 230px;
+	object-position: center center;
 	object-fit: cover;
+	border-radius: 2px;
+	box-shadow: 1px 1px 3px 0px #0e0e0e2f;
 }
 
 .abt-txt {
 	margin-top: 5px;
+	padding: 10px;
 	font-family: "Roboto", "Nunito", "Inter", sans-serif;
-	font-size: 16px;
-	color: #0e0e0e;
-	text-align: justify;
+	font-size: 14px;
+	color: #383838;
+	text-align: left;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px 0px #0e0e0e2f;
 }
 
+.abt-ftr {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	width: 30%;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	text-align: center;
+	border: none;
+	border-radius: 10px;
+	background: #d9534f;
+	color: #fff;
+	box-shadow: 1px 1px 5px 0px #0e0e0e2f;
+	transition: all .5s ease-in-out;
+}
 
+.abt-ftr a {
+	text-decoration: none;
+	color: #fff;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.abt-ftr:hover{
+background: #c4312c;
+transform: scale(1.05);
+}
 
 /* THIS IS THE MEDIA QUERY CODE SECTION BELOW */
 
@@ -427,19 +451,18 @@
 	}
 }
 
-
 /* this is the about prodWex section */
 
 /* Responsive Layouts */
 @media (max-width: 991px) {
-  .abt-bdy {
-    flex: 1 1 calc(50% - 20px); /* 2 cards per row on medium screens */
-  }
+	.abt-bdy {
+		flex: 1 1 calc(50% - 20px); /* 2 cards per row on medium screens */
+	}
 }
 
 @media (max-width: 767px) {
-  .abt-bdy {
-    flex: 1 1 calc(100% - 20px); /* 1 card per row on small screens */
-    max-width: 90%; /* Full-width cards on small screens */
-  }
+	.abt-bdy {
+		flex: 1 1 calc(100% - 20px); /* 1 card per row on small screens */
+		max-width: 60%; /* Full-width cards on small screens */
+	}
 }

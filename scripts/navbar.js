@@ -22,22 +22,28 @@ time.addEventListener('click', () => {
 })
 
 
-console.log(window.scrollY)
 
 
 
-// this is to listen to the window event for some animation efffect
+// this is to listen to the window event for some animation effect
 
 const hrhead = document.getElementById('hero-heading');
 const hrsub = document.getElementById('hero-subheading');
 const hrbtn = document.getElementById('hero-btn');
 
 // Listen for the scroll event
+
+
+// setInterval(() => {
+//     console.log(window.scrollY)
+// }, 1000);
+
+
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY; // Get the vertical scroll position
 
     // Check if the scroll position reaches a certain point
-    if (scrollPosition > 100) {
+    if (scrollPosition > 30) {
         hrhead.style.transition = 'all 3s ease-in-out';
         hrhead.style.opacity = '1'; // Ensure the element appears
     }
@@ -52,4 +58,3 @@ window.addEventListener('scroll', () => {
         hrbtn.style.opacity = '1';
     }
 });
-

@@ -374,9 +374,9 @@
 
 .abt-txt {
 	margin-top: 5px;
-	padding: 10px;
+	/* padding: 10px; */
 	font-family: "Roboto", "Nunito", "Inter", sans-serif;
-	font-size: 12px;
+	font-size: 16px;
 	color: #383838;
 	text-align: left;
 	border-radius: 5px;
@@ -411,15 +411,16 @@
 /* THE FOLLOWING CODE IS FOR THE COURSE CAROUSEL */
 
 .course-parent-cont {
-	/* width: 100%;
-	background: linear-gradient(to right, rgb(177, 73, 73), rgba(0, 0, 0, 0)); */
+	margin-top: 5%;
+
+	/* width: 100%;*/
 }
 .course-ctn {
 	/* width: 100%; */
 	margin-left: 5%;
 	margin-right: 5%;
-	margin-bottom: 10%;
-	/* margin: 5%; */
+	margin-bottom: 3%;
+	padding: 1%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -428,51 +429,146 @@
 	overflow-x: auto;
 	scroll-behavior: smooth;
 	scroll-snap-type: x mandatory;
+	background: #c7c6c627;
+	box-shadow: 0px 0px 2px 0px #888888;
+	border-radius: 5px;
 }
 
 .course-header {
-	margin: 0px;
-	padding: 5%;
+	padding: 3%;
 	display: flex;
-	flex-direction: row-reverse;
-	flex-wrap: nowrap;
-	justify-content: center;
+	width: 100%;
+	/* flex-direction: row-reverse; */
+	/* flex-wrap: nowrap; */
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.192);
+	background: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.575),
+			rgba(0, 0, 0, 0)
+		),
+		url("https://i.pinimg.com/736x/0f/0c/7e/0f0c7e8a4861e554fba0db16521e1cf9.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
+.course-bg-ctn {
+	margin-top: 5%;
+	background: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.644),
+			rgba(0, 0, 0, 0.377)
+		),
+		url("https://i.pinimg.com/736x/16/e4/4a/16e44a1228db05d403459cc8010a4a5e.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .course-header h1 {
 	margin-top: -10px;
-	padding: 0px 5% 5% 5%;
 	font-family: "Poppins", "Montserrat", "Roboto Slab", sans-serif;
 	font-size: 5rem;
-	font-weight: 500;
-	color: #000;
+	font-weight: bold;
+	color: #fff;
 	line-height: normal;
 }
 
 .course-header p {
+	padding-top: 5%;
+	padding-right: 5%;
 	font-family: "Roboto", "Nunito", "Open Sans", sans-serif;
-	padding: 0px 5% 5% 5%;
-	color: #333;
+	color: #c2bebe;
 }
 
 .course-credit {
-	padding: 0px 5% 0px 0px;
+	padding: 5px;
+	margin-top: 5%;
+	margin-bottom: 5%;
 	font-family: "Nunito", "Roboto", "Source Sans Pro", sans-serif;
-	background-color: red;
-	width: 30%;
-	text;
+	font-size: 12px;
+	font-weight: bold;
+	background: #9493930e;
+	width: 26%;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px 0px #3e3e3e8f;
 }
 
-/* .cor */
+.course-credit a {
+	text-decoration: none;
+	color: #c5c4c4d8;
+}
 
+.course-credit:hover,
+.course-credit a:hover {
+	transform: translateX(5%);
+	transition: all 0.3s ease-in-out;
+	font-size: 14px;
+	background: #012f99;
+	color: #c4c4c4;
+}
+
+.course-credit-img {
+	border-radius: 20px;
+	width: 100%;
+	box-shadow: 1px 1px 5px 0px #3e3e3ed8;
+}
+
+.course-credit-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 20px;
+}
+
+.course-subhdr {
+	margin-left: 3%;
+	padding: 2%;
+	font-weight: 500;
+	font-family: "Poppins", "Montserrat", "Roboto Slab", sans-serif;
+	font-size: 3rem;
+	color: #c2c2c2;
+}
+
+.slide-indicator {
+	padding: 2px;
+	font-size: 2rem;
+	text-transform: capitalize;
+	text-align: center;
+	font-weight: bold;
+	color: #c2c2c2;
+}
+
+@media screen and (min-width: 769px) {
+	.course-header h1 {
+		margin-right: 5%;
+	}
+}
 @media screen and (max-width: 768px) {
 	.course-header {
 		flex-direction: column;
-		align-items: center;
+		/* align-items: center; */
 	}
 
 	.course-header h1 {
 		font-size: 3rem;
+	}
+
+	.course-subhdr {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 560px) {
+	.course-credit {
+		width: 60%;
+		text-align: center;
+	}
+
+	.course-subhdr {
+		margin-top: 4%;
+		/* text-align: center; */
+		font-size: 2.2rem;
 	}
 }
 
@@ -482,13 +578,14 @@
 
 .crd-ctn {
 	margin: 5px;
-	padding: 5px;
+	padding: 2px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 300px;
-	min-width: 300px;
+	max-width: 250px;
+	min-width: 350px;
 	background: #fff;
+
 	border-radius: 5px;
 	box-shadow: 0.5px 1px 5px 0.5px #0000005b;
 }
@@ -513,13 +610,13 @@
 
 .crd-tle {
 	font-family: "Poppins", "Montserrat", "Roboto Slab", sans-serif;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: bolder;
 	color: #000;
 }
 
 .crd-txt {
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	color: #b3b3b3;
 }
 

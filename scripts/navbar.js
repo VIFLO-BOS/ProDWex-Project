@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
 
 
 // the following is for the course header animation
-const hdrTxt = 'Build your confidence and shape your future by advancing your skills through professional development today';
+const hdrTxt = 'Build your confidence and shape your future by advancing your skills through professional development today.';
 const courseHeader = document.getElementById('crse-hdr');
 let index = 0;  // Track the character index
     setInterval(() => {

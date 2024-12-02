@@ -1,3 +1,5 @@
+
+
 //the following is toggle the navbar menu for screen resolutions
 
 // getting the ham bars and times element
@@ -21,40 +23,39 @@ time.addEventListener('click', () => {
     bars.classList.remove('close');
 })
 
+//  the following is for the hero-header text animations
+const heroTxt = 'Professional Development & Work Experience - ProDWex';
+const heroEL = document.getElementById('hero-hdr');
+window.addEventListener('load', () => {
+    let i = 0;
+    setInterval(() => {
+        if (i < heroTxt.length) {
+            heroEL.innerHTML += heroTxt.charAt(i);
+            i++
+        }
+    }, 50)
+})
 
 
 
 
-// this is to listen to the window event for some animation effect
-
-const hrhead = document.getElementById('hero-heading');
-const hrsub = document.getElementById('hero-subheading');
-const hrbtn = document.getElementById('hero-btn');
-
-// Listen for the scroll event
-
-
-// setInterval(() => {
-//     console.log(window.scrollY)
-// }, 1000);
+// the following is for the course header animation
+const hdrTxt = 'Build your confidence and shape your future by advancing your skills through professional development today';
+const courseHeader = document.getElementById('crse-hdr');
+let index = 0;  // Track the character index
+    setInterval(() => {
+        if (index < hdrTxt.length) {
+            courseHeader.innerHTML += hdrTxt.charAt(index);  // Add one character at a time
+            index++;  // Move to the next character
+        }
+    }, 100);  // Adjust speed by changing the interval (100ms)
 
 
-window.addEventListener('scroll', () => {
-    const scrollPosition = window.scrollY; // Get the vertical scroll position
 
-    // Check if the scroll position reaches a certain point
-    if (scrollPosition > 30) {
-        hrhead.style.transition = 'all 3s ease-in-out';
-        hrhead.style.opacity = '1'; // Ensure the element appears
-    }
 
-    if (scrollPosition > 200) {
-        hrsub.style.transition = 'all 3s ease-in-out';
-        hrsub.style.opacity = '1';
-    }
 
-    if (scrollPosition > 300) {
-        hrbtn.style.transition = 'all 3s ease-in-out';
-        hrbtn.style.opacity = '1';
-    }
-});
+
+
+
+
+

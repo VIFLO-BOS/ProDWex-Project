@@ -2,9 +2,11 @@
 @import url("../ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");
 
 body {
-	height: auto;
-	padding-top: 90px;
-	padding-bottom: 100px;
+	padding: 0px;
+	margin: 0px;
+	/* height: auto; */
+	/* padding-top: 90px; */
+	/* padding-bottom: 100px; */
 	min-width: 360px;
 	width: auto !important;
 	width: 360px;
@@ -20,6 +22,7 @@ body {
 }
 
 .jumbotron {
+	
 	position: relative;
 	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)),url("../images/bkg2b.jpg"), center center;
 	background-size: cover;
@@ -35,9 +38,10 @@ body {
 .navbar-default {
 	background: #fff;
 	color: #000;
-	border-bottom-left-radius: 5px;
+	border: none;
+	/* border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	box-shadow: 0px 0px 1px 0px #000000;
+	box-shadow: 0px 0px 1px 0px #000000; */
 }
 
 
@@ -61,7 +65,7 @@ body {
 	color: #ffffff;
 	border: none;
 	border-radius: 5px;
-	box-shadow: 1px 1px 1px 0px #d1cbcb8e;
+	/* box-shadow: 1px 1px 1px 0px #d1cbcb8e; */
 }
 
 .navbar-default .navbar-brand:focus {
@@ -75,8 +79,9 @@ body {
 		"Lato",
 		sans-serif;
 	;
-	font-weight: 600;
+	font-weight: light;
 	color: #000000;
+	
 }
 
 /* .navbar-default .navbar-nav>.active>a,

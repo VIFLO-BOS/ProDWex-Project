@@ -1,6 +1,15 @@
 /* the following  code is for responsive navbar using armbugger menu */
 /* using media screen to control the nav-menu */
 
+#hero-ctn {
+	margin-top: 10%;
+}
+
+@media screen and (max-width: 768px) {
+	#hero-ctn{
+    margin-top: 25% !important;
+	}
+}
 #nav-bar {
 	display: flex;
 	justify-content: space-between;
@@ -296,26 +305,27 @@
 #abt-ctn {
 	/* max-width: 1140px;  */
 	width: 100%;
-	margin: 10% 0px 0px 0px;
+	margin: 5% 0px 0px 0px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
 	justify-content: center;
-	padding-top: 8%;
-	padding-bottom: 8%;
-	background: #011542;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	border-top: 1px solid #f5f5f5;
+	border-bottom: 1px solid #f5f5f5;
+	/* background: #011542; */
 }
 
 /* Card Styles */
 .abt-bdy {
-	flex: 1 1 calc(33.333% - 20px);
+	margin-top: 2%;
+	flex: 1 1 calc(37.333% - 20px);
 	max-width: 250px;
-	min-width: 330px;
+	min-width: 350px;
 	height: auto;
-	/* box-shadow: 0 4px 8px rgba(172, 170, 170, 0.562); */
-	border-radius: 10px;
 	overflow: hidden;
-	background-color: #fff;
+	background-color: #ffffff;
 	padding: 0px 20px 0 20px;
 	display: flex;
 	flex-direction: column;
@@ -323,24 +333,23 @@
 }
 
 /* Hover Effect for Cards */
-.abt-bdy:hover {
-	transform: translateY(-5px); /* Slight lift on hover */
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /*#Deeper shadow on hover */
-}
+/* .abt-bdy:hover {
+	transform: translateY(-5px); /* Slight lift on hover 
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
 
 .abt-hdr {
-	width: 80%;
+	width: 100%;
 }
 .text-chip-3 {
-	margin-top: 16px;
+	margin-top: 10px;
 	padding: 5px;
-	width: 45%;
+	/* width: 35%; */
 	font-family: "Nunito", "Roboto", "Source Sans Pro", sans-serif;
 	font-size: 10px;
 	/* border: 1px solid grey; */
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
+	border-radius: 5px;
+	/* */
 	background: #042d86;
 	color: #ffffff;
 	font-weight: 600;
@@ -352,8 +361,6 @@
 	font-size: 1.4rem;
 	font-weight: bold;
 	color: #000;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.055);
-	line-height: 200%;
 }
 
 .abt-icon {
@@ -365,33 +372,36 @@
 
 .abt-icon img {
 	width: 100%;
-	height: 230px;
-	object-position: center;
-	object-fit: cover;
+	height: 200px;
+	/* object-position: center; */
+	object-fit:cover;
 	border-radius: 2px;
-	box-shadow: 1px 1px 3px 0px #0e0e0e2f;
+	/* box-shadow: 1px 1px 3px 0px #0e0e0e2f; */
 }
 
 .abt-txt {
-	margin-top: 5px;
+	/* margin-top: 5px; */
 	/* padding: 10px; */
 	font-family: "Roboto", "Nunito", "Inter", sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	color: #383838;
-	text-align: left;
+	text-align: justify;
+	word-spacing: -2px;
 	border-radius: 5px;
-	box-shadow: 1px 1px 5px 0px #0e0e0e2f;
+	/* box-shadow: 1px 1px 5px 0px #0e0e0e2f; */
 }
 
 .abt-ftr {
-	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	width: 30%;
 	font-family: "Roboto", sans-serif;
-	font-size: 14px;
+	font-size: 13px;
 	text-align: center;
 	border: none;
-	border-radius: 10px;
+	border-radius: 2px;
 	background: #d9534f;
 	color: #fff;
 	box-shadow: 1px 1px 5px 0px #0e0e0e2f;
@@ -454,21 +464,23 @@
 
 .course-bg-ctn {
 	margin-top: 5%;
-	background: linear-gradient(
+	/* background: linear-gradient(
 			to top,
 			rgba(0, 0, 0, 0.644),
 			rgba(0, 0, 0, 0.377)
 		),
-		url("https://i.pinimg.com/736x/16/e4/4a/16e44a1228db05d403459cc8010a4a5e.jpg");
+		url("https://i.pinimg.com/736x/16/e4/4a/16e44a1228db05d403459cc8010a4a5e.jpg"); */
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .course-header h1 {
 	margin-top: -10px;
-	font-family: "Poppins", "Montserrat", "Roboto Slab", sans-serif;
-	font-size: 5rem;
-	font-weight: bold;
+	font-family: "Roboto Slab", sans-serif;
+	font-size: 4rem;
+	font-weight: light;
 	color: #fff;
+	width: 9 0%;
+	text-align: left;
 	line-height: normal;
 }
 
@@ -536,7 +548,7 @@
 	text-transform: capitalize;
 	text-align: center;
 	font-weight: bold;
-	color: #c2c2c2;
+	color: #c2c2c233;
 }
 
 @media screen and (min-width: 769px) {
@@ -618,6 +630,80 @@
 .crd-txt {
 	font-size: 1.5rem;
 	color: #b3b3b3;
+}
+
+/* THIS IS THE CALL TO ACTION SECTION */
+
+.parent-insti-cont {
+	margin-top: 8%;
+	margin-bottom: 8%;
+	background: rgba(247, 242, 242, 0.315);
+}
+
+#Insti-cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	gap: 10px;
+}
+
+.insti-detail {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+	/* border: 1px solid grey; */
+	box-shadow: 0px 0px 2px 0px grey;
+	border-radius: 5px;
+}
+
+.insti-detail div {
+	padding: 10px;
+}
+
+.insti-detail-img {
+	width: 20%;
+}
+.insti-detail img {
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+}
+
+.insti-txt {
+	width: 100%;
+	/* border-left: 1px solid grey; */
+}
+
+.insti-txt h4 {
+	padding: 0px;
+	font-size: 1.5rem;
+}
+
+.insti-txt p {
+	padding: 0px;
+	font-size: 1.3rem;
+}
+
+.insti-footer {
+	margin-top: 3%;
+	width: 100%;
+}
+
+.insti-footer button {
+	margin-bottom: 5%;
+	padding: 8px;
+	font-size: 12px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px 0px grey;
+}
+
+.insti-footer button a {
+	text-decoration: none;
+	color: #000;
 }
 
 /* THIS IS THE MEDIA QUERY CODE SECTION BELOW */

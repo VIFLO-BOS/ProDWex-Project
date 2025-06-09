@@ -1,0 +1,241 @@
+
+
+.prod-header-style,
+.prod-footer-style {
+	background-color: #23334e !important ;
+}
+
+.navbar-brand img {
+	width: 100px !important;
+	height: 25px !important;
+	object-fit: cover !important;
+	object-position: center !important;
+}
+/* Set dropdown menu items to #337ab7 for all screens */
+/* General dropdown item color (both screens) */
+.dropdown-menu .dropdown-item {
+	color: #337ab7 !important;
+}
+
+/* Active and hover states for dropdown items */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+	color: #23527c !important;
+	background-color: transparent !important;
+	font-weight: 400;
+}
+
+/* Default: Small screens (<768px) */
+.navbar-nav .nav-link {
+	color: #337ab7 !important;
+}
+
+/* Small screen nav-link hover/focus */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+	color: #ffffff !important;
+}
+
+/* All screen sizes: Active nav-link */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link.show,
+.navbar-nav .nav-link:hover {
+	color: #ffffff !important;
+	font-weight: 400;
+	background-color: #324b77 !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+	color: #fff !important;
+}
+
+.Services {
+	background: #23334e;
+}
+
+.Service-card {
+	box-shadow: 0px 0px 3px 0px #00000027;
+}
+
+.inst-fullname {
+	font-size: 10px;
+	color: grey;
+}
+
+.bg-nav-bottom {
+	background-color: #324b77;
+}
+
+.courses-tabs {
+	display: flex;
+	overflow-x: auto;
+	white-space: nowrap;
+	gap: 1rem; /* Adds spacing between items */
+	padding-bottom: 8px;
+	scrollbar-width: thin;
+	scrollbar-color: #23334e #f1f1f1;
+}
+.courses-tabs::-webkit-scrollbar {
+	height: 6px;
+}
+
+.courses-tabs::-webkit-scrollbar-thumb {
+	background-color: #23334e;
+	border-radius: 4px;
+}
+
+.courses-tabs::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+.courses-tabs div {
+	flex: 0 0 auto;
+	min-width: 160px;
+	margin-top: 5px;
+	margin-left: 5px;
+	border-radius: 2px;
+}
+
+.courses-tabs div:hover {
+	font-weight: bolder;
+	color: #23334e;
+	background-color: transparent;
+	border-radius: 5px;
+}
+
+.courses-tabs div .nav-link.active {
+	font-weight: bolder;
+	color: #23334e;
+	background-color: #b8cbd6;
+}
+
+.courses-tabs .nav-link {
+	display: block;
+	padding: 0.5rem 1rem;
+	font-size: 14px;
+	white-space: nowrap;
+	background: #f8f9fa; /* Optional background for clarity */
+	border-radius: 5px;
+	text-align: center;
+}
+
+.main-course-card {
+	height: 250px !important;
+}
+
+footer .nav-link {
+	color: #fff;
+}
+
+footer .nav-link:hover {
+	color: #337ab7;
+}
+
+.whatsapp-icons {
+	min-width: 20px !important;
+	height: 30px !important;
+}
+
+/*
+.card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 8px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Optional shadow initially 
+  box-shadow: 0px 0px 3px 2px rgba(46, 46, 46, 0.096);
+  background-clip: padding-box;  Prevent shadow clipping 
+  position: relative;
+  /* overflow: hidden; 
+  /* min-height: 300px; 
+} 
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 3px 2px rgba(46, 46, 46, 0.171) ;
+  z-index:10;
+}
+Optional: Overlay for better text contrast */
+/* .course-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.637); /* Adjust contrast *
+  z-index: 0;
+  border-radius: 5px;
+} */
+
+/* .card > * {
+  position: relative;
+  z-index: 1;
+} */
+
+/* .card-body{
+  margin: 5px !important;
+  padding: 8px !important;
+} */
+
+.card .org-card {
+	box-shadow: 0px 0px 1px 0px #23334e;
+	border-radius: 5px;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: all 0.5s ease-in-out;
+}
+
+.card .org-card.showed {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.visible {
+	display: block !important;
+}
+
+.hidden{
+	display: none !important;
+}
+
+
+
+#grid-organization,
+#grid-institution {
+	margin-top: 7%;
+	margin-bottom: 7%;
+	overflow-y: scroll;
+	height: 60vh !important;
+}
+
+#grid-organization::-webkit-scrollbar, 
+#grid-institution::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive screen code here */
+
+/* Large screens (≥768px): nav-link should be white */
+@media (min-width: 768px) {
+	.navbar-nav .nav-link {
+		color: #fff !important;
+	}
+
+	.navbar-nav .nav-link:hover,
+	.navbar-nav .nav-link:focus {
+		color: #57a7ec !important;
+	}
+}
+
+@media (max-width: 767.99px) {
+	.navbar-nav .nav-link {
+		color: #337ab7 !important;
+	}
+
+	.navbar-nav .nav-link:hover,
+	.navbar-nav .nav-link:focus {
+		color: #23334e !important;
+	}
+}

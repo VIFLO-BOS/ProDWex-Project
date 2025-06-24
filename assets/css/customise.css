@@ -64,7 +64,10 @@
 	color: #23334e;
 }
 
-
+.custom-p{
+	font-size: 16px;
+	/* text-align: center !important; */
+}
 .Service-card {
 	box-shadow: 0px 0px 3px 0px #00000027;
 }

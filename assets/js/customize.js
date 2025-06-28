@@ -112,10 +112,10 @@ eventBtn.style.cursor = "pointer";
 
 if (blogBtn || eventBtn) {
 	blogBtn.addEventListener("click", () => {
-		window.location.href = "/blog.html";
+		window.location.href = "./blog.html";
 	});
 	eventBtn.addEventListener("click", () => {
-		window.location.href = "/events.html";
+		window.location.href = "./events.html";
 	});
 }
 // BLOG & EVENT LOGIC ENDS HERE...

@@ -96,192 +96,299 @@
 </head>
 
 <body>
-	<!-- Header START -->
-	<header class="header-sticky header-absolut prod-header-style">
-		<!-- Logo Nav START -->
-		<nav class="navbar navbar-expand-xl">
-			<div class="container">
-				<!-- Logo START -->
-				<a class="navbar-brand me-0 py-0" href="index-2.html">
-					<img class="light-mode-item navbar-brand-item" src="assets/images/logo24x100.png" alt="logo"
-						width="20" />
-				</a>
-				<!-- Logo END -->
-
-				<!-- Main navbar START -->
-				<div class="navbar-collapse collapse" id="navbarCollapse">
-					<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
-						<!-- Nav Home -->
-						<li class="nav-item ">
-							<a class="nav-link  nav-item-white active" href="./index.html">Home</a>
-						</li>
-
-						<!-- Nav item Courses-->
-						<li class="nav-item dropdown">
-							<a class="nav-link  nav-item-white dropdown-toggle" href="./courses.html"
-								data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Courses</a>
-							<span data-bs-toggle="dropdown"></span>
-							<ul class="dropdown-menu">
-								<li class="dropdown dropend">
-									<a class="dropdown-item d" href="/courses.html">All Categories</a>
-								</li>
-
-
-								<li class="dropdown dropend">
-									<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-										href="#">Sub-Categories</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="shop-grid.html">Professonal Development</a>
-										</li>
-										<li><a class="dropdown-item" href="shop-single.html">Information Technology</a>
-										</li>
-										<li><a class="dropdown-item" href="shop-single.html">Designs and
-												Web-Development</a>
-										</li>
-										<li><a class="dropdown-item" href="shop-cart.html">Human & Project Managment</a>
-										</li>
-										<li><a class="dropdown-item" href="shop-cart.html">Data Science & Analytics</a>
-										</li>
-										<li><a class="dropdown-item" href="shop-cart.html">Artificial Intelligence</a>
-										</li>
-										<li><a class="dropdown-item" href="shop-cart.html">Office Managment</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-
-						<!-- Nav item Partners -->
-						<li class="nav-item dropdown">
-							<a class="nav-link  nav-item-white dropdown-toggle" href="./partner.html"
-								data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Partners</a>
-							<span data-bs-toggle="dropdown"></span>
-							<ul class="dropdown-menu">
-								<li class="dropdown dropend">
-									<a class="dropdown-item dropdown-toggle" href="#">Organisations</a>
-									<span data-bs-toggle="dropdown"></span>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">International Organisation</a></li>
-										<li><a class="dropdown-item" href="#">Governmental Organisation</a></li>
-										<li><a class="dropdown-item" href="#">Private Organisation</a></li>
-									</ul>
-								</li>
-								<li class="dropdown dropend">
-									<a class="dropdown-item dropdown-toggle" href="#">Institutions</a>
-									<span data-bs-toggle="dropdown"></span>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Global Institution</a></li>
-										<li><a class="dropdown-item" href="#">Federal Institution</a></li>
-										<li><a class="dropdown-item" href="#">State Institution</a></li>
-										<li><a class="dropdown-item" href="#">Private Institution</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-
-						<!-- Nav item Event & Blog -->
-						<li class="nav-item dropdown">
-							<a class="nav-link  nav-item-white dropdown-toggle" href="./blog.html"
-								data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Blog &amp;
-								Events</a>
-							<span data-bs-toggle="dropdown"></span>
-							<ul class="dropdown-menu">
-								<li class="dropdown dropend">
-									<a href="./blog.html" class="dropdown-item">Blogs</a>
-									<!-- <span data-bs-toggle="dropdown"></span>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Blog One</a></li>
-										<li><a class="dropdown-item" href="#">Blog Two</a></li>
-										<li><a class="dropdown-item" href="#">Blog Three</a></li>
-									</ul> -->
-								</li>
-								<li class="dropdown dropend">
-									<a class="dropdown-item" href="./events.html">Events</a>
-									<!-- <span data-bs-toggle="dropdown"></span>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Events One</a></li>
-										<li><a class="dropdown-item" href="#">Events Two</a></li>
-										<li><a class="dropdown-item" href="#">Events Three</a></li>
-									</ul> -->
-								</li>
-							</ul>
-						</li>
-						<!-- Item Team -->
-						<li class="nav-item">
-							<a class="nav-link  nav-item-white" href="./team.html">Team</a>
-						</li>
-
-						<!-- Register & Login for small screens -->
-						<li class="nav-item d-xl-none d-flex d-xs-flex align-items-center justify-content-between mt-2">
-							<a href="./signUp.html" class="btn btn-sm btn-danger  mb-2"><i
-									class="bi bi-person-circle me-1"></i>Register</a>
-							<button class="btn btn-sm btn-primary ">
-								<a href="./signIn.html">
-									<i class="bi bi-box-arrow-up-right me-1"></i>Member-Login
-								</a>
+		<!-- Header START -->
+		<header class="header-sticky header-absolut prod-header-style">
+			<!-- Logo Nav START -->
+			<!-- ...existing code... -->
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<!-- Logo START -->
+					<a class="navbar-brand me-0 py-0" href="index.html">
+						<img class="light-mode-item navbar-brand-item" src="assets/images/logo24x100.png" alt="logo"
+							width="20" />
+					</a>
+					<!-- Logo END -->
+					<!-- theme button switch START-->
+		
+		
+					<!-- theme button switch END -->
+					<!-- Offcanvas toggler for mobile -->
+					<ul class="nav align-items-center gap-2 dropdown-hover ms-sm-2 d-lg-none">
+						<!-- Dark mode option START -->
+						<li class="nav-item dropdown dropdown-animation">
+							<button class="btn btn-link mb-0 px-2 lh-1" type="button" data-bs-toggle="dropdown"
+								data-bs-display="static">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+									class="bi bi-circle-half theme-icon-active fill-white fa-fw" viewBox="0 0 16 16">
+									<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+								</svg>
 							</button>
+							<ul class="dropdown-menu min-w-auto dropdown-menu-end">
+								<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center"
+										data-bs-theme-value="light">Light</button></li>
+								<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center active"
+										data-bs-theme-value="dark">Dark</button></li>
+								<li><button type="button" class="dropdown-item d-flex align-items-center"
+										data-bs-theme-value="auto">Auto</button></li>
+							</ul>
 						</li>
+						<!-- Dark mode option END -->
+						<button class="navbar-toggler ms-auto d-xl-none text-white" type="button" data-bs-toggle="offcanvas"
+							data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon text-white"></span>
+						</button>
+					</ul>
+		
+		
+					<!-- Desktop Navbar -->
+					<div class="navbar-collapse collapse d-none d-lg-block" id="navbarCollapse">
+						<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+							<!-- Nav Home -->
+							<li class="nav-item ">
+								<a class="nav-link  nav-item-white active " href="./index.html">Home</a>
+							</li>
+		
+							<!-- Nav item Courses-->
+							<li class="nav-item dropdown">
+								<a class="nav-link  nav-item-white dropdown-toggle" href="./courses.html"
+									data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Courses</a>
+								<span data-bs-toggle="dropdown"></span>
+								<ul class="dropdown-menu">
+									<li class="dropdown dropend">
+										<a class="dropdown-item d" href="/courses.html">All Categories</a>
+									</li>
+		
+		
+									<li class="dropdown dropend">
+										<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+											href="#">Sub-Categories</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Professional Development</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Information Technology</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Designs and
+													Web-Development</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Human & Project
+													Management</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Data Science & Analytics</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Artificial Intelligence</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Office Management</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+		
+							<!-- Nav item Partners -->
+							<li class="nav-item dropdown">
+								<a class="nav-link  nav-item-white dropdown-toggle" href="./partner.html"
+									data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Partners</a>
+								<span data-bs-toggle="dropdown"></span>
+								<ul class="dropdown-menu">
+									<li class="dropdown dropend">
+										<a class="dropdown-item dropdown-toggle" href="#" id="grid-org-menu">Organizations</a>
+										<span data-bs-toggle="dropdown"></span>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">International Organization</a></li>
+											<li><a class="dropdown-item" href="#">Governmental Organization</a></li>
+											<li><a class="dropdown-item" href="#">Private Organization</a></li>
+										</ul>
+									</li>
+									<li class="dropdown dropend">
+										<a class="dropdown-item dropdown-toggle" href="#" id="grid-insti-menu">Institutions</a>
+										<span data-bs-toggle="dropdown"></span>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Global Institution</a></li>
+											<li><a class="dropdown-item" href="#">Federal Institution</a></li>
+											<li><a class="dropdown-item" href="#">State Institution</a></li>
+											<li><a class="dropdown-item" href="#">Private Institution</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+		
+							<!-- Nav item Event & Blog -->
+							<li class="nav-item dropdown">
+								<a class="nav-link  nav-item-white dropdown-toggle" href="./blog.html"
+									data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Blog &amp;
+									Events</a>
+								<span data-bs-toggle="dropdown"></span>
+								<ul class="dropdown-menu">
+									<li class="dropdown dropend">
+										<a href="./blog.html" class="dropdown-item">Blogs</a>
+		
+									</li>
+									<li class="dropdown dropend">
+										<a class="dropdown-item " href="./events.html">Events</a>
+		
+									</li>
+								</ul>
+							</li>
+							<!-- Item Team -->
+							<li class="nav-item">
+								<a class="nav-link  nav-item-white" href="./team.html">Team</a>
+							</li>
+		
+		
+							</li>
+						</ul>
+						<!-- Right-side buttons -->
+		
+						<ul class="nav align-items-center dropdown-hover ms-sm-2">
+							<!-- Dark mode option START -->
+							<li class="nav-item dropdown dropdown-animation">
+								<button class="btn btn-link mb-0 px-2 lh-1" type="button" data-bs-toggle="dropdown"
+									data-bs-display="static">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+										class="bi bi-circle-half theme-icon-active fill-white fa-fw" viewBox="0 0 16 16">
+										<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+									</svg>
+								</button>
+								<ul class="dropdown-menu min-w-auto dropdown-menu-end">
+									<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center"
+											data-bs-theme-value="light">Light</button></li>
+									<li class="mb-1"><button type="button"
+											class="dropdown-item d-flex align-items-center active"
+											data-bs-theme-value="dark">Dark</button></li>
+									<li><button type="button" class="dropdown-item d-flex align-items-center"
+											data-bs-theme-value="auto">Auto</button></li>
+								</ul>
+							</li>
+							<!-- Dark mode option END -->
+						</ul>
+						<div class="d-flex align-items-center ms-3">
+							<a href="./signUp.html" class="btn  btn-sm btn-outline-danger me-2"><i
+									class="bi bi-person-circle me-1"></i>Register</a>
+							<a href="./signIn.html" class="btn btn-sm  btn-primary"><i
+									class="bi bi-box-arrow-up-right me-1"></i>Member-Login</a>
+						</div>
+					</div>
+		
 					</ul>
 				</div>
-				<!-- Main navbar END -->
-
-				<!-- Buttons for large screens -->
-				<ul class="nav align-items-center dropdown-hover ms-sm-2">
-					<!-- Dark mode option START -->
-					<li class="nav-item dropdown dropdown-animation">
-						<button class="btn btn-link mb-0 px-2 lh-1" type="button" data-bs-toggle="dropdown"
-							data-bs-display="static">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-								class="bi bi-circle-half theme-icon-active fill-white fa-fw" viewBox="0 0 16 16">
-								<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
-							</svg>
-						</button>
-						<ul class="dropdown-menu min-w-auto dropdown-menu-end">
-							<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center"
-									data-bs-theme-value="light">Light</button></li>
-							<li class="mb-1"><button type="button"
-									class="dropdown-item d-flex align-items-center active"
-									data-bs-theme-value="dark">Dark</button></li>
-							<li><button type="button" class="dropdown-item d-flex align-items-center"
-									data-bs-theme-value="auto">Auto</button></li>
+		
+				<!-- Offcanvas Mobile Navbar -->
+				<div class="offcanvas offcanvas-end d-lg-none w-auto" tabindex="-1" id="mobileNav"
+					aria-labelledby="mobileNavLabel">
+					<div class="offcanvas-header p-3">
+						<h5 class="offcanvas-title" id="mobileNavLabel"><a class="navbar-brand me-0 py-0 " href="index.html">
+								<img class="light-mode-item navbar-brand-item" src="assets/iimages/logo-with-Orod -blue.png"
+									alt="logo" width="20" />
+							</a></h5>
+						<button type="button" class="btn btn-close  text-white" data-bs-dismiss="offcanvas"
+							aria-label="Close"></button>
+					</div>
+		
+		
+					<div class="offcanvas-body">
+						<ul class="navbar-nav">
+							<!-- Nav Home -->
+							<li class="nav-item ">
+								<a class="nav-link px-2 rounded-1 active" href="./index.html">Home</a>
+							</li>
+							<!-- Nav item Courses-->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle px-2 rounded-1" href="./courses.html"
+									id="mobileCoursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Courses
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="mobileCoursesDropdown">
+									<li><a class="dropdown-item" href="/courses.html">All Categories</a></li>
+									<li class="dropdown dropend">
+										<a class="nav-link dropdown-toggle" href="#" id="mobileSubCatDropdown"
+											data-bs-toggle="dropdown" aria-expanded="false">Sub-Categories</a>
+										<ul class="dropdown-menu" aria-labelledby="mobileSubCatDropdown">
+											<li><a class="dropdown-item" href="shop-grid.html">Professonal Development</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Information Technology</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Designs and
+													Web-Development</a></li>
+											<li><a class="dropdown-item" href="#">Human & Project Managment</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Data Science & Analytics</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Artificial Intelligence</a>
+											</li>
+											<li><a class="dropdown-item" href="#">Office Managment</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<!-- Partners -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle px-2 rounded-1" href="./partner.html"
+									id="mobilePartnersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Partners
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="mobilePartnersDropdown">
+									<li class="dropdown dropend">
+										<a class="dropdown-item dropdown-toggle" href="#" id="mobileOrgDropdown"
+											data-bs-toggle="dropdown" aria-expanded="false">Organisations</a>
+										<ul class="dropdown-menu" aria-labelledby="mobileOrgDropdown">
+											<li><a class="dropdown-item" href="#">International Organisation</a></li>
+											<li><a class="dropdown-item" href="#">Governmental Organisation</a></li>
+											<li><a class="dropdown-item" href="#">Private Organisation</a></li>
+										</ul>
+									</li>
+									<li class="dropdown dropend">
+										<a class="dropdown-item dropdown-toggle" href="#" id="mobileInstDropdown"
+											data-bs-toggle="dropdown" aria-expanded="false">Institutions</a>
+										<ul class="dropdown-menu" aria-labelledby="mobileInstDropdown">
+											<li><a class="dropdown-item" href="#">Global Institution</a></li>
+											<li><a class="dropdown-item" href="#">Federal Institution</a></li>
+											<li><a class="dropdown-item" href="#">State Institution</a></li>
+											<li><a class="dropdown-item" href="#">Private Institution</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<!-- Blog & Events -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle px-2 rounded-1" href="./blog.html" id="mobileBlogDropdown"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Blog & Events
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="mobileBlogDropdown">
+									<li><a class="dropdown-item" href="./blog.html">Blogs</a></li>
+									<li><a class="dropdown-item" href="./events.html">Events</a></li>
+								</ul>
+							</li>
+							<!-- Team -->
+							<li class="nav-item">
+								<a class="nav-link px-2 rounded-1" href="./team.html">Team</a>
+							</li>
+		
+		
+		
+		
+							<!-- Register & Login -->
+							<li class="nav-item mt-3">
+								<a href="./signUp.html" class="btn btn-danger w-100 mb-2"><i
+										class="bi bi-person-circle me-1"></i>Register</a>
+								<a href="./signIn.html" class="btn btn-primary w-100"><i
+										class="bi bi-box-arrow-up-right me-1"></i>Member-Login</a>
+							</li>
+		
 						</ul>
-					</li>
-					<!-- Dark mode option END -->
-
-					<!-- Sign up button for large screen -->
-					<li class="nav-item me-2 d-none d-xl-block">
-						<a href="./signUp.html" class="btn btn-sm btn-outline-danger mb-0"><i
-								class="bi bi-person-circle me-1"></i>Register</a>
-					</li>
-					<!-- Login button for large screen -->
-					<li class="nav-item d-none d-xl-block">
-						<a href="./signIn.html">
-							<button class="btn btn-sm btn-primary mb-0"><i
-									class="bi bi-box-arrow-up-right me-1"></i>Member-Login</button>
-						</a>
-					</li>
-
-					<!-- Navbar toggler -->
-					<li class="nav-item p-2">
-						<button class="navbar-toggler ms-sm-3 p-2 " type="button" data-bs-toggle="collapse"
-							data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-							aria-label="Toggle navigation">
-							<span class="navbar-toggler-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</span>
-						</button>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-
-		<!-- Logo Nav END -->
-
-		<div class="head-stick header-relative bg-nav-bottom w-100 h-25 py-2"></div>
-	</header>
-	<!-- Header END -->
+						</ul>
+					</div>
+		
+				</div>
+				<!-- End Offcanvas -->
+				</div>
+			</nav>
+			<!-- ...existing code... -->
+		
+			<!-- Logo Nav END -->
+		
+			<div class="head-stick header-relative bg-nav-bottom w-100 h-25 py-2"></div>
+		</header>
+		<!-- Header END -->
 
 	<!-- **************** MAIN CONTENT START **************** -->
 	<main class="container my-5">

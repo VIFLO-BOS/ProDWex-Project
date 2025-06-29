@@ -202,7 +202,7 @@
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
-  font-size: 13px;
+  /* font-size: 1px; */
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
@@ -5143,8 +5143,8 @@ textarea.form-control-lg {
 }
 
 .card {
-  --bs-card-spacer-y: 1.25rem;
-  --bs-card-spacer-x: 1.25rem;
+  --bs-card-spacer-y: 1.0rem;
+  --bs-card-spacer-x: 1.0rem;
   --bs-card-title-spacer-y: 0.5rem;
   --bs-card-title-color: var(--bs-gray-900);
   --bs-card-subtitle-color: ;
@@ -5153,11 +5153,11 @@ textarea.form-control-lg {
   --bs-card-border-radius: 0.4rem;
   --bs-card-box-shadow: ;
   --bs-card-inner-border-radius: 0.4rem;
-  --bs-card-cap-padding-y: 1.25rem;
-  --bs-card-cap-padding-x: 1.25rem;
+  --bs-card-cap-padding-y: 1rem;
+  --bs-card-cap-padding-x: 1rem;
   --bs-card-cap-bg: var(--bs-body-bg);
   --bs-card-cap-color: ;
-  --bs-card-height: ;
+  --bs-card-height:100% ;
   --bs-card-color: var(--bs-body-color);
   --bs-card-bg: var(--bs-body-bg);
   --bs-card-img-overlay-padding: 1.25rem;

@@ -227,6 +227,12 @@ Optional: Overlay for better text contrast */
   display: none;
 }
 
+.scale-hover:hover{
+	transition: all 0.3s ease-in-out;
+	transform: scale(1.020);
+	box-shadow: 0px 0px 5px 0px #00000098 !important;
+}
+
 /* Responsive screen code here */
 
 /* Large screens (≥768px): nav-link should be white */

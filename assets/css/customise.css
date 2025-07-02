@@ -81,6 +81,7 @@
 	background-color: #324b77;
 }
 
+
 .courses-tabs {
 	display: flex;
 	overflow-x: auto;
@@ -135,6 +136,15 @@
 
 .main-course-card {
 	height: 250px !important;
+}
+
+.org-scroll{
+	overflow-y: scroll;
+	height: 50vh;
+}
+ 
+.org-scroll::-webkit-scrollbar{
+	display: none;
 }
 
 footer .nav-link {

@@ -96,138 +96,27 @@
 </head>
 
 <body>
+
+
+
 	<!-- Header START -->
 	<header class="header-sticky header-absolut prod-header-style">
 		<!-- Logo Nav START -->
-		<nav class="navbar navbar-expand-xl">
+		<!-- ...existing code... -->
+		<nav class="navbar navbar-expand-lg">
 			<div class="container">
 				<!-- Logo START -->
-				<a class="navbar-brand me-0 py-0" href="index-2.html">
+				<a class="navbar-brand me-0 py-0" href="index.html">
 					<img class="light-mode-item navbar-brand-item" src="assets/images/logo24x100.png" alt="logo"
 						width="20" />
 				</a>
 				<!-- Logo END -->
-
-				<!-- Main navbar START -->
-				<div class="navbar-collapse collapse" id="navbarCollapse">
-					<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
-						<!-- Nav Home -->
-						<li class="nav-item ">
-							<a class="nav-link  nav-item-white active" href="./index.html">Home</a>
-						</li>
-
-						<!-- Nav item Courses-->
-						<li class="nav-item dropdown">
-							<a class="nav-link  nav-item-white dropdown-toggle" href="./courses.html"
-								data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Courses</a>
-							<span data-bs-toggle="dropdown"></span>
-							<ul class="dropdown-menu">
-								<li class="dropdown dropend">
-									<a class="dropdown-item d" href="/courses.html">All Categories</a>
-								</li>
+				<!-- theme button switch START-->
 
 
-								<li class="dropdown dropend">
-									<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-										href="#">Sub-Categories</a>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="shop-grid.html">Professonal Development</a>
-										</li>
-										<li><a class="dropdown-item" href="shop-single.html">Information Technology</a>
-										</li>
-										<li><a class="dropdown-item" href="shop-single.html">Designs and
-												Web-Development</a>
-										</li>
-										<li><a class="dropdown-item" href="shop-cart.html">Human & Project Managment</a>
-										</li>
-										<li><a class="dropdown-item" href="shop-cart.html">Data Science & Analytics</a>
-										</li>
-										<li><a class="dropdown-item" href="shop-cart.html">Artificial Intelligence</a>
-										</li>
-										<li><a class="dropdown-item" href="shop-cart.html">Office Managment</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-
-						<!-- Nav item Partners -->
-						<li class="nav-item dropdown">
-							<a class="nav-link  nav-item-white dropdown-toggle" href="./partner.html"
-								data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Partners</a>
-							<span data-bs-toggle="dropdown"></span>
-							<ul class="dropdown-menu">
-								<li class="dropdown dropend">
-									<a class="dropdown-item dropdown-toggle" href="#"
-										id='grid-org-menu'>Organisations</a>
-									<span data-bs-toggle="dropdown"></span>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">International Organisation</a></li>
-										<li><a class="dropdown-item" href="#">Governmental Organisation</a></li>
-										<li><a class="dropdown-item" href="#">Private Organisation</a></li>
-									</ul>
-								</li>
-								<li class="dropdown dropend">
-									<a class="dropdown-item dropdown-toggle" href="#"
-										id='grid-insti-menu'>Institutions</a>
-									<span data-bs-toggle="dropdown"></span>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Global Institution</a></li>
-										<li><a class="dropdown-item" href="#">Federal Institution</a></li>
-										<li><a class="dropdown-item" href="#">State Institution</a></li>
-										<li><a class="dropdown-item" href="#">Private Institution</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-
-						<!-- Nav item Event & Blog -->
-						<li class="nav-item dropdown">
-							<a class="nav-link  nav-item-white dropdown-toggle" href="./blog.html"
-								data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Blog &amp;
-								Events</a>
-							<span data-bs-toggle="dropdown"></span>
-							<ul class="dropdown-menu">
-								<li class="dropdown dropend">
-									<a href="./blog.html" class="dropdown-item">Blogs</a>
-									<!-- <span data-bs-toggle="dropdown"></span>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Blog One</a></li>
-										<li><a class="dropdown-item" href="#">Blog Two</a></li>
-										<li><a class="dropdown-item" href="#">Blog Three</a></li>
-									</ul> -->
-								</li>
-								<li class="dropdown dropend">
-									<a class="dropdown-item " href="./events.html">Events</a>
-									<!-- <span data-bs-toggle="dropdown"></span>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Events One</a></li>
-										<li><a class="dropdown-item" href="#">Events Two</a></li>
-										<li><a class="dropdown-item" href="#">Events Three</a></li>
-									</ul> -->
-								</li>
-							</ul>
-						</li>
-						<!-- Item Team -->
-						<li class="nav-item">
-							<a class="nav-link  nav-item-white" href="./team.html">Team</a>
-						</li>
-
-						<!-- Register & Login for small screens -->
-						<li class="nav-item d-xl-none d-flex d-xs-flex align-items-center justify-content-between mt-2">
-							<a href="./signUp.html" class="btn btn-sm btn-danger  mb-2"><i
-									class="bi bi-person-circle me-1"></i>Register</a>
-							<button class="btn btn-sm btn-primary ">
-								<a href="./signIn.html">
-									<i class="bi bi-box-arrow-up-right me-1"></i>Member-Login
-								</a>
-							</button>
-						</li>
-					</ul>
-				</div>
-				<!-- Main navbar END -->
-
-				<!-- Buttons for large screens -->
-				<ul class="nav align-items-center dropdown-hover ms-sm-2">
+				<!-- theme button switch END -->
+				<!-- Offcanvas toggler for mobile -->
+				<ul class="nav align-items-center gap-2 dropdown-hover ms-sm-2 d-lg-none">
 					<!-- Dark mode option START -->
 					<li class="nav-item dropdown dropdown-animation">
 						<button class="btn btn-link mb-0 px-2 lh-1" type="button" data-bs-toggle="dropdown"
@@ -248,36 +137,262 @@
 						</ul>
 					</li>
 					<!-- Dark mode option END -->
+					<button class="navbar-toggler ms-auto d-xl-none" type="button" data-bs-toggle="offcanvas"
+						data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</ul>
 
-					<!-- Sign up button for large screen -->
-					<li class="nav-item me-2 d-none d-xl-block">
-						<a href="./signUp.html" class="btn btn-sm btn-outline-danger mb-0"><i
-								class="bi bi-person-circle me-1"></i>Register</a>
-					</li>
-					<!-- Login button for large screen -->
-					<li class="nav-item d-none d-xl-block">
-						<a href="./signIn.html">
-							<button class="btn btn-sm btn-primary mb-0"><i
-									class="bi bi-box-arrow-up-right me-1"></i>Member-Login</button>
-						</a>
-					</li>
 
-					<!-- Navbar toggler -->
-					<li class="nav-item p-2">
-						<button class="navbar-toggler ms-sm-3 p-2 " type="button" data-bs-toggle="collapse"
-							data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-							aria-label="Toggle navigation">
-							<span class="navbar-toggler-animation">
-								<span></span>
-								<span></span>
-								<span></span>
-							</span>
-						</button>
-					</li>
+				<!-- Desktop Navbar -->
+				<div class="navbar-collapse collapse d-none d-lg-block" id="navbarCollapse">
+					<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+						<!-- Nav Home -->
+						<li class="nav-item ">
+							<a class="nav-link  nav-item-white active " href="./index.html">Home</a>
+						</li>
+
+						<!-- Nav item Courses-->
+						<li class="nav-item dropdown">
+							<a class="nav-link  nav-item-white dropdown-toggle" href="./courses.html"
+								data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Courses</a>
+							<span data-bs-toggle="dropdown"></span>
+							<ul class="dropdown-menu">
+								<li class="dropdown dropend">
+									<a class="dropdown-item " href="/courses.html">All Categories</a>
+								</li>
+
+
+								<li class="dropdown dropend">
+									<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+										href="#">Sub-Categories</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Professional Development</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Information Technology</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Designs and
+												Web-Development</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Human & Project
+												Management</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Data Science & Analytics</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Artificial Intelligence</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Office Management</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<!-- Nav item Partners -->
+						<li class="nav-item dropdown">
+							<a class="nav-link  nav-item-white dropdown-toggle" href="./partner.html"
+								data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Partners</a>
+							<span data-bs-toggle="dropdown"></span>
+							<ul class="dropdown-menu">
+								<li class="dropdown dropend">
+									<a class="dropdown-item dropdown-toggle" href="#"
+										id="grid-org-menu">Organizations</a>
+									<span data-bs-toggle="dropdown"></span>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">International Organization</a></li>
+										<li><a class="dropdown-item" href="#">Governmental Organization</a></li>
+										<li><a class="dropdown-item" href="#">Private Organization</a></li>
+									</ul>
+								</li>
+								<li class="dropdown dropend">
+									<a class="dropdown-item dropdown-toggle" href="#"
+										id="grid-insti-menu">Institutions</a>
+									<span data-bs-toggle="dropdown"></span>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Global Institution</a></li>
+										<li><a class="dropdown-item" href="#">Federal Institution</a></li>
+										<li><a class="dropdown-item" href="#">State Institution</a></li>
+										<li><a class="dropdown-item" href="#">Private Institution</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<!-- Nav item Event & Blog -->
+						<li class="nav-item dropdown">
+							<a class="nav-link  nav-item-white dropdown-toggle" href="./blog.html"
+								data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Blog &amp;
+								Events</a>
+							<span data-bs-toggle="dropdown"></span>
+							<ul class="dropdown-menu">
+								<li class="dropdown dropend">
+									<a href="./blog.html" class="dropdown-item">Blogs</a>
+
+								</li>
+								<li class="dropdown dropend">
+									<a class="dropdown-item " href="./events.html">Events</a>
+
+								</li>
+							</ul>
+						</li>
+						<!-- Item Team -->
+						<li class="nav-item">
+							<a class="nav-link  nav-item-white" href="./team.html">Team</a>
+						</li>
+
+
+						</li>
+					</ul>
+					<!-- Right-side buttons -->
+
+					<ul class="nav align-items-center dropdown-hover ms-sm-2">
+						<!-- Dark mode option START -->
+						<li class="nav-item dropdown dropdown-animation">
+							<button class="btn btn-link mb-0 px-2 lh-1" type="button" data-bs-toggle="dropdown"
+								data-bs-display="static">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+									class="bi bi-circle-half theme-icon-active fill-white fa-fw" viewBox="0 0 16 16">
+									<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+								</svg>
+							</button>
+							<ul class="dropdown-menu min-w-auto dropdown-menu-end">
+								<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center"
+										data-bs-theme-value="light">Light</button></li>
+								<li class="mb-1"><button type="button"
+										class="dropdown-item d-flex align-items-center active"
+										data-bs-theme-value="dark">Dark</button></li>
+								<li><button type="button" class="dropdown-item d-flex align-items-center"
+										data-bs-theme-value="auto">Auto</button></li>
+							</ul>
+						</li>
+						<!-- Dark mode option END -->
+
+						<div class="d-flex align-items-center ms-3">
+							<a href="./signUp.html" class="btn  btn-sm btn-outline-danger me-2"><i
+									class="bi bi-person-circle me-1"></i>Register</a>
+							<a href="./signIn.html" class="btn btn-sm  btn-primary"><i
+									class="bi bi-box-arrow-up-right me-1"></i>Member-Login</a>
+						</div>
+					</ul>
+				</div>
+
 				</ul>
 			</div>
-		</nav>
 
+			<!-- Offcanvas Mobile Navbar -->
+			<div class="offcanvas offcanvas-end d-lg-none w-auto" tabindex="-1" id="mobileNav"
+				aria-labelledby="mobileNavLabel">
+				<div class="offcanvas-header p-3">
+					<h5 class="offcanvas-title" id="mobileNavLabel"><a class="navbar-brand me-0 py-0 "
+							href="index.html">
+							<img class="light-mode-item navbar-brand-item" src="assets/iimages/logo-with-Orod -blue.png"
+								alt="logo" width="20" />
+						</a></h5>
+					<button type="button" class="btn btn-close  text-white" data-bs-dismiss="offcanvas"
+						aria-label="Close"></button>
+				</div>
+
+
+				<div class="offcanvas-body">
+					<ul class="navbar-nav">
+						<!-- Nav Home -->
+						<li class="nav-item ">
+							<a class="nav-link px-2 rounded-1 active" href="./index.html">Home</a>
+						</li>
+						<!-- Nav item Courses-->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle px-2 rounded-1" href="./courses.html"
+								id="mobileCoursesDropdown" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Courses
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="mobileCoursesDropdown">
+								<li><a class="dropdown-item" href="/courses.html">All Categories</a></li>
+								<li class="dropdown dropend">
+									<a class="nav-link dropdown-toggle px-3" href="#" id="mobileSubCatDropdown"
+										data-bs-toggle="dropdown" aria-expanded="false">Sub-Categories</a>
+									<ul class="dropdown-menu" aria-labelledby="mobileSubCatDropdown">
+										<li><a class="dropdown-item" href="shop-grid.html">Professional Development</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Information Technology</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Designs and
+												Web-Development</a></li>
+										<li><a class="dropdown-item" href="#">Human & Project Management</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Data Science & Analytics</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Artificial Intelligence</a>
+										</li>
+										<li><a class="dropdown-item" href="#">Office Management</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<!-- Partners -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle px-2 rounded-1" href="./partner.html"
+								id="mobilePartnersDropdown" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Partners
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="mobilePartnersDropdown">
+								<li class="dropdown dropend">
+									<a class="dropdown-item dropdown-toggle" href="#" id="mobileOrgDropdown"
+										data-bs-toggle="dropdown" aria-expanded="false">Organizations</a>
+									<ul class="dropdown-menu" aria-labelledby="mobileOrgDropdown">
+										<li><a class="dropdown-item" href="#">International Organization</a></li>
+										<li><a class="dropdown-item" href="#">Governmental Organization</a></li>
+										<li><a class="dropdown-item" href="#">Private Organization</a></li>
+									</ul>
+								</li>
+								<li class="dropdown dropend">
+									<a class="dropdown-item dropdown-toggle" href="#" id="mobileInstDropdown"
+										data-bs-toggle="dropdown" aria-expanded="false">Institutions</a>
+									<ul class="dropdown-menu" aria-labelledby="mobileInstDropdown">
+										<li><a class="dropdown-item" href="#">Global Institution</a></li>
+										<li><a class="dropdown-item" href="#">Federal Institution</a></li>
+										<li><a class="dropdown-item" href="#">State Institution</a></li>
+										<li><a class="dropdown-item" href="#">Private Institution</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<!-- Blog & Events -->
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle px-2 rounded-1" href="./blog.html"
+								id="mobileBlogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Blog & Events
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="mobileBlogDropdown">
+								<li><a class="dropdown-item" href="./blog.html">Blogs</a></li>
+								<li><a class="dropdown-item" href="./events.html">Events</a></li>
+							</ul>
+						</li>
+						<!-- Team -->
+						<li class="nav-item">
+							<a class="nav-link px-2 rounded-1" href="./team.html">Team</a>
+						</li>
+
+
+
+
+						<!-- Register & Login -->
+						<li class="nav-item mt-3">
+							<a href="./signUp.html" class="btn btn-danger w-100 mb-2"><i
+									class="bi bi-person-circle me-1"></i>Register</a>
+							<a href="./signIn.html" class="btn btn-primary w-100"><i
+									class="bi bi-box-arrow-up-right me-1"></i>Member-Login</a>
+						</li>
+
+					</ul>
+					</ul>
+				</div>
+
+			</div>
+			<!-- End Offcanvas -->
+			</div>
+		</nav>
+		<!-- ...existing code... -->
 
 		<!-- Logo Nav END -->
 
@@ -285,279 +400,672 @@
 	</header>
 	<!-- Header END -->
 
+
+
+
+
 	<!-- **************** MAIN CONTENT START **************** -->
 	<main>
 
 		<!-- HERO SECTION START HERE -->
-		<section class="py-0 ">
-			<!-- Slider START -->
-			<div class="swiper overflow-hidden swiper-fade swiper-initialized swiper-horizontal swiper-watch-progress swiper-backface-hidden"
-				data-swiper-options="{
-					&quot;effect&quot;: &quot;fade&quot;,
-					&quot;speed&quot;:&quot;1000&quot;,
-					&quot;autoplay&quot;:{
-						&quot;delay&quot;: 3000, 
-						&quot;disableOnInteraction&quot;: false
-					},
-					&quot;pagination&quot;:{
-						&quot;el&quot;:&quot;.swiper-pagination&quot;,
-						&quot;clickable&quot;:&quot;true&quot;
-					}}">
-
-				<div class="swiper-wrapper" id="swiper-wrapper-dc9a73326cacb6103" aria-live="off"
-					style="transition-duration: 0ms; transition-delay: 0ms;">
-					<!-- Slider item -->
-
-
-
-					<!-- Slider item -->
-
-					<div class="swiper-slide swiper-slide-next swiper-slide-prev" role="group" aria-label="2 / 2"
-						data-swiper-slide-index="0"
-						style="width: 1351px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-						<div class="card overflow-hidden min-vh-100 rounded-0"
-							style="background: linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,0.100)),url(assets/images/bg/09.jpg) no-repeat; background-size:cover; background-position:center; background-height: auto">
-							<!-- Bg overlay -->
-							<div class="bg-overlay bg-linear-overlay"></div>
-
-							<!-- Content -->
-							<div class="position-relative z-index-2 d-flex flex-column m-auto h-100 py-0">
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-12 col-md-6 col-lg-6 text-center text-md-start ">
-											<!-- Title -->
-											<p>EMPOWERING NIGERIA'S FUTURE LEADER</p>
-											<h1 class="text-white display-6 mb-4 lh-2">Professional Development & Work
-												Experience.</h1>
-											<p class="text-secondary  mb-5"> ProDWex provides comprehensive training,
-												mentorship, and technical assistance to bridge the gap between academic
-												learning and professional excellence.</p>
-											<a class="btn btn-lg btn-danger icon-link icon-link-hover mb-0"
-												href="#">Register Now<i class="bi bi-arrow-right"></i> </a>
-										</div>
-
-
-
-										<div class="col-sm-12 col-md-6 col-lg-6 d-none d-md-block">
-											<img src="./assets/iimages/carousel/Mastering the Art of Interviewing a Potential Business Partner for Success.jpeg"
-												alt="" srcset="">
-										</div>
-
+		<section class="p-0 my-0">
+			<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<!-- Slide 1 START -->
+					<div class="carousel-item active">
+						<div class="hero-slide d-flex align-items-center text-white py-6"
+							style="background: linear-gradient(to right, rgba(0,0,0), rgba(0,0,0,0.89)), url(./assets/images/bg/09.jpg) no-repeat center center/cover;">
+							<div class="container">
+								<div class="row align-items-center">
+									<div class="col-md-6 text-center text-md-start">
+										<p class="text-uppercase small text-secondary">EMPOWERING NIGERIA'S FUTURE
+											LEADER</p>
+										<h3 class="mb-3 fs-2 text-white"">Professional Development & Work Experience.
+										</h1>
+										<p class=" mb-4 text-secondary">Prodwex bridges the gap between academic learning and professional
+											excellence through training, mentorship, and support.</p>
+											<a class="btn btn-danger btn-lg" href="#">Register Now <i
+													class="bi bi-arrow-right"></i></a>
+									</div>
+									<div class="col-md-6 d-none d-md-block">
+										<img src="https://i.pinimg.com/736x/b3/33/48/b33348c363142029f846acbfd54f9158.jpg"
+											alt="Professional Development" class="img-fluid my-5" loading="lazy">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-
-
-					<!-- Slider item -->
-
-					<div class="swiper-slide swiper-slide-next swiper-slide-prev" role="group" aria-label="2 / 2"
-						data-swiper-slide-index="1"
-						style="width: 1351px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-						<div class="card overflow-hidden min-vh-100  rounded-0"
-							style="background: linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,0.100)),url(assets/images/bg/09.jpg) no-repeat; background-size:cover; background-position:center; background-height: auto">
-							<!-- Bg overlay -->
-							<div class="bg-overlay bg-linear-overlay"></div>
-
-							<!-- Content -->
-							<div class="position-relative z-index-2 d-flex flex-column m-auto h-100 py-0">
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-12 col-md-6 col-lg-6 text-center text-md-start  ">
-											<!-- Title -->
-											<p>SECURE YOUR FUTURE WITH PRODWEX</p>
-											<h1 class="text-white display-6 mb-4 lh-2">Transformative Training for
-												Future-Proof Career</h1>
-											<p class="text-secondary  mb-5"> Unlock your potential today with Prodwex’s
-												hands-on courses that fast-track your skills and confidence.</p>
-											<a class="btn btn-lg btn-danger icon-link icon-link-hover mb-0"
-												href="#">Browse Courses<i class="bi bi-arrow-right"></i> </a>
-										</div>
-
-
-
-										<div class="col-sm-12 col-md-6 col-lg-6 d-none d-md-block">
-											<img src="./assets/iimages/carousel/Mastering the Art of Interviewing a Potential Business Partner for Success.jpeg"
-												alt="" srcset="">
-										</div>
-
+					<!-- Slide 2 -->
+					<div class="carousel-item">
+						<div class="hero-slide d-flex align-items-center text-white py-6"
+							style="background: linear-gradient(to right, rgba(0, 0, 0, 0.904), rgba(0,0,0,0.89)), url(./assets/images/bg/02.jpg) no-repeat center center/cover;">
+							<div class="container">
+								<div class="row align-items-center">
+									<div class="col-md-6 text-center text-md-start">
+										<p class="text-uppercase small text-secondary">BUILDING TECH SKILLS</p>
+										<h3 class="mb-3 fs-2 text-white"">Tech Training for Tomorrow's Innovators</h1>
+										<p class=" mb-4 text-secondary">Our expert-led programs equip students with the skills needed to
+											thrive in the digital world.</p>
+											<a class="btn btn-danger btn-lg" href="#">Explore Courses <i
+													class="bi bi-arrow-right"></i></a>
+									</div>
+									<div class="col-md-6 d-none d-md-block">
+										<img src="https://i.pinimg.com/736x/84/09/bb/8409bbf895cdb833ff47ded8f63a007f.jpg"
+											alt="Tech Training" class="img-fluid my-5" loading="lazy">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-
-
-					<!-- Slider item -->
-
-					<div class="swiper-slide swiper-slide-next swiper-slide-prev" role="group" aria-label="2 / 2"
-						data-swiper-slide-index="2"
-						style="width: 1351px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-						<div class="card overflow-hidden min-vh-100 rounded-0"
-							style="background: linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,0.100)),url(assets/images/bg/09.jpg) no-repeat; background-size:cover; background-position:center; background-height: auto">
-							<!-- Bg overlay -->
-							<div class="bg-overlay bg-linear-overlay"></div>
-
-							<!-- Content -->
-							<div class="position-relative z-index-2 d-flex flex-column m-auto h-100 py-0">
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-12 col-md-6 col-lg- text-center text-md-start">
-											<!-- Title -->
-											<p>FROM STUDENT TO PROFESSIONALS</p>
-											<h1 class="text-white display-6 mb-4 lh-2">Professional Certification to
-												Validate Your
-												Expertise</h1>
-											<p class="text-secondary  mb-5"> Stand out in the job market with a
-												Prodwex-issued credential employers recognize and watch opportunities
-												open.</p>
-											<a class="btn btn-lg btn-danger icon-link icon-link-hover mb-0" href="#">Get
-												Certified!<i class="bi bi-arrow-right"></i> </a>
-										</div>
-
-
-
-										<div class="col-sm-12 col-md-6 col-lg-6 d-none d-md-block">
-											<img src="./assets/iimages/carousel/Mastering the Art of Interviewing a Potential Business Partner for Success.jpeg"
-												alt="" srcset="">
-										</div>
-
+					<!-- Slide 3 -->
+					<div class="carousel-item">
+						<div class="hero-slide d-flex align-items-center text-white py-6"
+							style="background: linear-gradient(to right, rgba(0,0,0), rgba(0,0,0,0.89)), url(assets/images/bg/03.jpg) no-repeat center center/cover;">
+							<div class="container">
+								<div class="row align-items-center">
+									<div class="col-md-6 text-center text-md-start">
+										<p class="text-uppercase small text-secondary">MENTORSHIP</p>
+										<h3 class="mb-3 fs-2 text-white"">Guiding You to Career Success</h1>
+										<p class=" mb-4 text-secondary">Connect with industry experts to gain insight and direction for
+											your career journey.</p>
+											<a class="btn btn-danger btn-lg" href="#">Meet Our Mentors <i
+													class="bi bi-arrow-right"></i></a>
+									</div>
+									<div class="col-md-6 d-none d-md-block">
+										<img src="https://i.pinimg.com/736x/03/ff/96/03ff9675b059ca1354c1b0c1e98f2abb.jpg"
+											alt="Mentorship" class="img-fluid my-5" loading="lazy">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-
-
-					<!-- Slider item -->
-
-					<div class="swiper-slide swiper-slide-next swiper-slide-prev" role="group" aria-label="2 / 2"
-						data-swiper-slide-index="3"
-						style="width: 1351px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-						<div class="card overflow-hidden min-vh-100 rounded-0"
-							style="background: linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,0.100)),url(assets/images/bg/09.jpg) no-repeat; background-size:cover; background-position:center; background-height: auto">
-							<!-- Bg overlay -->
-							<div class="bg-overlay bg-linear-overlay"></div>
-
-							<!-- Content -->
-							<div class="position-relative z-index-2 d-flex flex-column m-auto h-100 py-0">
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-12 col-md-6 col-lg-6 text-center text-md-start ">
-											<!-- Title -->
-											<P>FEEL YOUR FUTURE IN YOUR HANDS</P>
-											<h1 class="text-white display-6 mb-4 lh-2">Hands-On
-												Internship for Real-World
-												Experience</h1>
-											<p class="text-secondary  mb-5"> Gain industry insight and build your
-												network through a Prodwex placement that turns learning into doing..</p>
-											<a class="btn btn-lg btn-danger icon-link icon-link-hover mb-0"
-												href="#">Join now<i class="bi bi-arrow-right"></i> </a>
-										</div>
-
-
-
-										<div class="col-sm-12 col-md-6 col-lg-6 d-none d-md-block">
-											<img src="./assets/iimages/carousel/Mastering the Art of Interviewing a Potential Business Partner for Success.jpeg"
-												alt="" srcset="">
-										</div>
-
+					<!-- Slide 4 -->
+					<div class="carousel-item">
+						<div class="hero-slide d-flex align-items-center text-white py-6"
+							style="background: linear-gradient(to right, rgba(0,0,0), rgba(0,0,0,0.89)), url(assets/images/bg/04.jpg) no-repeat center center/cover;">
+							<div class="container">
+								<div class="row align-items-center">
+									<div class="col-md-6 text-center text-md-start">
+										<p class="text-uppercase small text-secondary">WORK EXPERIENCE</p>
+										<h3 class="mb-3 fs-2 text-white"">Real Projects. Real Impact.</h1>
+										<p class=" mb-4 text-secondary">Gain practical experience working with real clients and real
+											challenges.</p>
+											<a class="btn btn-danger btn-lg" href="#">Start Now <i
+													class="bi bi-arrow-right"></i></a>
+									</div>
+									<div class="col-md-6 d-none d-md-block">
+										<img src="https://i.pinimg.com/736x/35/c1/36/35c13613687db448881346ce7579947e.jpg"
+											alt="Work Experience" class="img-fluid my-5" loading="lazy">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-
-					<div class="swiper-slide swiper-slide-next swiper-slide-prev" role="group" aria-label="2 / 2"
-						data-swiper-slide-index="3"
-						style="width: 1351px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-						<div class="card overflow-hidden min-vh-100 rounded-0"
-							style="background: linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,0.100)),url(assets/images/bg/09.jpg) no-repeat; background-size:cover; background-position:center; ">
-							<!-- Bg overlay -->
-							<div class="bg-overlay bg-linear-overlay"></div>
-
-							<!-- Content -->
-							<div class="position-relative z-index-2 d-flex flex-column m-auto h-100 py-0">
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-12 col-md-6 col-lg-6 text-center text-md-start ">
-											<!-- Title -->
-											<p>GET BUSY WITH INSIGHTFUL STORY </p>
-											<h1 class="text-white display-5 mb-4 lh-2">Insightful Blog Sharing Industry
-												Best Practices</h1>
-											<p class="text-secondary  mb-5">Stay ahead of trends and sharpen your
-												know-how with Prodwex’s expert articles, tips, and success stories.
-											</p>
-											<a class="btn btn-lg btn-danger icon-link icon-link-hover mb-0"
-												href="#">Stay updated<i class="bi bi-arrow-right"></i> </a>
-										</div>
-
-
-
-										<div class="col-sm-12 col-md-6 col-lg-6 d-none d-md-block">
-											<img src="./assets/iimages/carousel/Mastering the Art of Interviewing a Potential Business Partner for Success.jpeg"
-												alt="" srcset="">
-										</div>
-
+					<!-- Slide 5 -->
+					<div class="carousel-item">
+						<div class="hero-slide d-flex align-items-center text-white py-6"
+							style="background: linear-gradient(to right, rgba(0,0,0), rgba(0, 0, 0, 0.89)), url(assets/images/bg/05.jpg) no-repeat center center/cover;">
+							<div class="container">
+								<div class="row align-items-center">
+									<div class="col-md-6 text-center text-md-start">
+										<p class="text-uppercase small text-secondary">COMMUNITY IMPACT</p>
+										<h3 class="mb-3 fs-2 text-white"">Making a Difference Together</h1>
+										<p class=" mb-4 text-secondary">Join a network of changemakers improving lives and building
+											futures.</p>
+											<a class="btn btn-danger btn-lg" href="#">Join Us <i
+													class="bi bi-arrow-right"></i></a>
+									</div>
+									<div class="col-md-6 d-none d-md-block">
+										<img src="https://i.pinimg.com/736x/7e/d6/5a/7ed65a934c44e7486ba52a5c813b45b8.jpg"
+											alt="Community Impact" class="img-fluid my-5" loading="lazy">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
-
-
 				</div>
 
+				<!-- Carousel Controls -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 
-				<!-- Slider Pagination -->
-				<div
-					class="swiper-pagination swiper-pagination-line position-absolute bottom-0 mb-3 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-					<span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
-						aria-label="Go to slide 1" aria-current="true"></span>
-					<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
-					<span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-
+				<!-- Carousel Indicators -->
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+						aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"
+						aria-label="Slide 4"></button>
+					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"
+						aria-label="Slide 5"></button>
 				</div>
-				<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 			</div>
-			<!-- Slider END -->
 		</section>
-		<!-- HERO SECTION END HERE -->
 
 
 
-		<section class=" py-5 text-center container">
-			<div class="row py-lg-5 my-5 g-4 py-5">	
-				<div class="col-lg-6 col-md-8 mx-auto px-5 d-flex  flex-column justify-content-between ">
-					<h3 class="fw-bolder text-center text-md-start pt-3 text-primary-pro">The ProDWex Advantage</h3>
-					<p class="text-body-secondary text-center text-md-start fs-6 px-0 ">ProDWex is transforming professional development and work experience for tertiary students across Nigeria and Africa. By joining ProDWex, you tap into a powerful ecosystem of opportunity: immersive, industry-aligned
-						Training and official Certification programs, hands-on Internship placements through our network of 60,000+ partner organizations, and a continually updated Blog brimming with career insights and best practices.
+		<section class="py-0 my-0 text-center container card ">
+			<div class="row justify-content-between align-content-center p-0 my-6 g-4">
+
+				<div class="col-lg-6 col-md-8  ">
+					<img src="./assets/images/bg/add.png" class="shadow-sm card-img" alt="image" height="60px"
+						style=" width: 100%; height: 60vh; object-fit: cover;" />
+				</div>
+
+				<div class="col-lg-6 col-md-8 mx-auto">
+					<h3 class="fw-bolder text-center text-md-start text-primary-pro">The ProDWex Advantage</h3>
+					<p class="text-body-secondary text-center text-md-start m-0 pt-4">Elevate your career with ProDWex,
+						Africa’s leading professional development platform for tertiary students. Access
+						immersive, industry‑aligned training and accredited certifications that sharpen in‑demand
+						skills. Leverage our
+						partnerships with 60,000+ organizations to secure hands‑on internships, and gain a competitive
+						edge through expert
+						insights on our dynamic blog. Join ProDWex today and transform your potential into real-world
+						success.
 					</p>
-					<div class="text-center text-md-start">
+					<div class="text-center text-md-start pt-4">
 						<button class="rounded-2 btn btn-primary icon-link icon-link-hover">Get Started Today <i
 								class="bi bi-arrow-right"></i></button>
 					</div>
 				</div>
 
-				<div class="col-lg-6 col-md-8 mx-auto ">
-					<img src="./assets/images/bg/add.png" class="shadow-sm card" alt="image">
-				</div>
+
 			</div>
 		</section>
 
+		<hr>
+
+		<section class="py-2 mb-5">
+			<div class="container">
+				<div class="row flex-row-reverse g-4 bg-white p-5 align-items-center">
+					<h3 class="mb-4 pe-2 text-center text-lg-start">
+						<span class="text-primary">Launch Your Career with Industry-Ready </span><br />  <span class="text-primary-pro" >Skills &
+						Connections </span>
+					</h3>
+					<!-- Content -->
+					<div class="col-lg-6 ps-md-5 card bg-transparent  ">
+						<p class="m-0 pe-5 text-muted text-center text-lg-start">
+							At <strong>ProDWex</strong>, we bridge the gap between education and employment. Through
+							expert-led training, personalized mentorship, real-world internships, and industry
+							certifications, we equip Africa’s youth with the tools to thrive in today’s fast-paced
+							workforce.
+						</p>
+
+						<!-- Feature List -->
+						<div class="row row-cols-1 row-cols-sm-2 mt-4">
+							<div class="col w-100">
+								<ul class="list-group list-group-borderless mb-0">
+									<li class="list-group-item d-flex shadow-sm w-75 px-2">
+										<i class="bi bi-patch-check-fill text-primary me-2"></i> Hands-on training from
+										industry experts
+									</li>
+									<li class="list-group-item d-flex shadow-sm mt-2 w-75 px-2">
+										<i class="bi bi-patch-check-fill text-primary me-2"></i> Mentorship from top
+										professionals
+									</li>
+									<li class="list-group-item d-flex shadow-sm mt-2 w-75 px-2">
+										<i class="bi bi-patch-check-fill text-primary me-2"></i> Career support & CV
+										development
+									</li>
+									<li class="list-group-item d-flex shadow-sm mt-2 w-75 px-2">
+										<i class="bi bi-patch-check-fill text-primary me-2"></i> Recognized certificates
+										& internships
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Button -->
+						<div class="d-inline-block rounded py-3 mt-4 mb-3 mt-lg-1 text-center text-lg-start ">
+							<a class="btn btn-primary" href="contact-v2.html">Get Started<span
+									class="bi-chevron-right small ms-1"></span></a>
+						</div>
+					</div>
+
+					<!-- Vector Illustration SVG -->
+					<div class="col-lg-6 position-relative d-flex  align-items-center justify-content-center">
+
+
+						<!-- SVG decoration -->
+						<figure class="position-absolute top-0 start-0 mt-n6 ms-n5 z-index-1 opacity-4 text-danger">
+							<svg width="110" height="105" viewBox="0 0 117 98" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path class="fill-red"
+									d="M53.9804 0.725277C52.9701 1.69222 52.9701 5.07654 53.9804 11.1683C54.9906 17.1634 55.7123 18.5654 57.5885 18.5654C58.3582 18.5654 59.128 18.3237 59.3685 18.0336C59.561 17.6952 59.2723 13.9241 58.7912 9.52449C58.1177 3.52942 57.6847 1.45049 57.0112 0.773624C55.9047 -0.241669 54.9425 -0.290017 53.9804 0.725277Z">
+								</path>
+								<path class="fill-red"
+									d="M94.055 9.62103C87.2236 16.3413 84.8182 19.3872 85.0106 21.2244C85.1068 22.3847 85.3955 22.7715 86.3095 22.9165C87.2236 23.0616 88.3782 22.2397 91.6015 19.0004C96.9415 13.7305 101.512 8.46069 101.512 7.54209C101.512 6.62349 100.165 5.31812 99.2026 5.31812C98.7696 5.36646 96.4604 7.25201 94.055 9.62103Z">
+								</path>
+								<path class="fill-red"
+									d="M23.2866 15.2294C22.2763 15.8096 22.1801 17.5984 23.046 18.7104C24.1044 20.0641 34.0148 25.9625 35.2656 25.9625C35.891 25.9625 36.7088 25.6241 37.0937 25.2373C38.537 23.4001 36.4202 21.1278 29.1077 16.5348C25.9806 14.6492 24.7779 14.3108 23.2866 15.2294Z">
+								</path>
+								<path class="fill-red"
+									d="M103.433 40.37L97.8047 41.4337V42.8357C97.8047 43.851 98.1414 44.4312 99.0555 45.0114C100.21 45.6399 101.124 45.6399 107.09 44.8663C116.038 43.7543 116.038 43.7543 116.663 42.3523C117.096 41.337 117.048 40.9985 116.326 40.1283C115.22 38.8713 110.986 38.9196 103.433 40.37Z">
+								</path>
+								<path class="fill-red"
+									d="M3.94616 46.1232C0.193694 46.8485 -1.20145 49.2175 1.20397 50.7646C1.97371 51.2481 2.83967 51.4414 3.80184 51.1997C4.57157 51.0547 8.42026 50.7162 12.4133 50.5228C17.8495 50.2328 19.7739 49.9427 20.3512 49.4109C21.5058 48.2505 20.3993 46.8001 17.8495 46.1232C15.3479 45.4947 7.12133 45.4947 3.94616 46.1232Z">
+								</path>
+								<path class="fill-red"
+									d="M89.1454 69.9584C88.9529 70.1034 88.8086 70.7803 88.8086 71.4088C88.8086 72.7142 90.2518 73.8262 97.6125 77.9357C103.915 81.465 104.877 81.7551 106.416 80.4981C108.244 79.0477 107.234 77.5006 102.664 74.8898C95.3032 70.6352 90.3 68.7981 89.1454 69.9584Z">
+								</path>
+								<path class="fill-red"
+									d="M30.8398 72.8111C28.3382 74.9384 21.2181 86.9769 20.0635 91.038C19.0532 94.519 21.9397 95.9211 24.0565 93.0203C24.6819 92.1984 26.3657 89.2975 27.7609 86.6868C29.1079 84.0277 31.369 80.1115 32.6198 77.8876C34.929 74.0681 35.2177 72.8111 33.9187 71.9408C33.0047 71.3123 32.3312 71.5541 30.8398 72.8111Z">
+								</path>
+								<path class="fill-red"
+									d="M60.9544 80.7401C60.1365 81.707 60.0884 93.6488 60.9063 95.7277C61.243 96.4529 62.0128 97.3232 62.7825 97.6616C63.889 98.1935 64.1776 98.1451 65.0436 97.0815C65.5247 96.4529 65.8133 95.631 65.669 95.1959C65.5247 94.8091 65.2841 91.6666 65.0917 88.2823C64.9474 84.8979 64.6106 81.6103 64.4182 80.9818C63.889 79.6764 61.9165 79.5314 60.9544 80.7401Z">
+								</path>
+							</svg>
+						</figure>
+						<!-- Image -->
+						<div class="d-flex flex-column position-relative">
+							<span
+								class="rounded bg-danger text-white shadow-sm p-1 position-absolute  start-0 end-70 bottom-50 z-index-2 smaller">👋
+								hi
+								welcome to proDWex </span>
+							<span
+								class="rounded bg-danger text-white shadow-sm p-1 position-absolute  start-70 end-0 bottom-0 z-index-1  smaller ">😲🥰Join
+								us now ➡</span>
+							<span
+								class="rounded bg-danger text-white shadow-sm p-1 position-absolute  start-70 end-0 bottom-10 z-index-1  smaller ">📖🤔Looking
+								for Professional Courses⁉</span>
+							<img src="https://i.pinimg.com/736x/54/96/ef/5496ef19c9616783bffb2cb4b0edd4cc.jpg"
+								class="rounded position-relative" alt="about-img" loading="lazy" />
+						</div>
+					</div>
+
+				</div>
+				<!-- Row END -->
+
+				<!-- Value START -->
+				<div class="row p-0 mt-5">
+					<!-- Item -->
+					<div class="col-sm-6 col-lg-3 mt-2">
+						<div class="card card-body small shadow-sm scale-hover">
+							<!-- Icon -->
+							<figure class="text-primary mb-3 flex-shrink-0 rounded-5 border-5">
+								<!-- Training Icon: Person Teaching at a Board -->
+								<svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<!-- Whiteboard -->
+									<rect x="3" y="3" width="18" height="4" rx="1" stroke="currentColor"
+										stroke-width="1.5" />
+									<!-- Instructor -->
+									<circle cx="6.5" cy="12" r="1.5" fill="currentColor" />
+									<path d="M6.5 13.5V17" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" />
+									<path d="M5 17H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+									<!-- Presentation pointer -->
+									<path d="M10 7H17" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" />
+									<path d="M10 10H15" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" />
+								</svg>
+							</figure>
+
+							<h6>Training</h6>
+							<p class="mb-0">
+								Training equips students with practical skills for real-world success.
+							</p>
+
+						</div>
+					</div>
+
+					<!-- Item -->
+					<div class="col-sm-6 col-lg-3 mt-2">
+						<div class="card card-body small shadow-sm scale-hover">
+							<!-- Icon -->
+							<figure class="text-primary mb-3 flex-shrink-0">
+								<!-- Certificate Document Icon -->
+								<svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor"
+										stroke-width="1.5" />
+									<path d="M7 8H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M7 12H11" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" />
+									<circle cx="17" cy="14" r="2" stroke="currentColor" stroke-width="1.5" />
+									<path d="M17 16V20L15.5 19L14 20V16" stroke="currentColor" stroke-width="1.5"
+										stroke-linejoin="round" />
+								</svg>
+							</figure>
+							<h6>Certification</h6>
+							<p class="mb-0">
+								Certification proves expertise, builds credibility, and opens career opportunities.
+							</p>
+
+						</div>
+					</div>
+
+					<!-- Item -->
+					<div class="col-sm-6 col-lg-3 mt-2">
+						<div class="card card-body small shadow-sm scale-hover">
+							<figure class="text-primary mb-3 flex-shrink-0">
+								<!-- Internship Icon (Briefcase style) -->
+								<svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M10 2H14C15.1 2 16 2.9 16 4V6H8V4C8 2.9 8.9 2 10 2Z" fill="currentColor" />
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M4 6H20C21.1 6 22 6.9 22 8V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V8C2 6.9 2.9 6 4 6ZM20 9H4V18H20V9Z"
+										fill="currentColor" />
+								</svg>
+							</figure>
+							<h6>Internship</h6>
+							<p class="mb-0">
+								Internships offer experience, skills, and real-world career exposure
+							</p>
+
+						</div>
+					</div>
+
+					<!-- Item -->
+					<div class="col-sm-6 col-lg-3 mt-2">
+						<div class="card card-body small shadow-sm scale-hover">
+							<!-- Icon -->
+							<figure class="text-primary mb-3 flex-shrink-0">
+								<svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<!-- Mentor -->
+									<circle cx="8" cy="7" r="3" fill="currentColor" />
+									<!-- Mentee -->
+									<circle cx="16" cy="7" r="2.5" fill="currentColor" fill-opacity="0.6" />
+
+									<!-- Mentor Body -->
+									<path d="M4 20v-1c0-2 1.5-4 4-4s4 2 4 4v1" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" />
+
+									<!-- Mentee Body -->
+									<path d="M13 20v-1c0-1.5 1.2-3 3-3s3 1.5 3 3v1" stroke="currentColor"
+										stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.6" />
+								</svg>
+
+							</figure>
+							<h6>Mentorship</h6>
+							<p class="mb-0">
+								Mentorship fosters growth, builds confidence, and creates lasting professional
+								connections..
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Value END -->
+			</div>
+		</section>
+
+		<section class="bg-body-secondar py-6">
+			<div class="container">
+				<div class=" text-start mb-4 mb-sm-6">
+					<h2 class=" p-0 fs-3 text-center text-primary-pro w-75 mx-auto"><span class="text-primary-pro fw-bolder">Pro<span class="text-danger" >DWEx</span>&nbsp;</span>Partnerships & Member Institutions</h2>
+					<p class="mb-0 p-0 text-center pb-7 small px-9">At ProDWex, we join forces with top universities, tech innovators, and non profits to deliver hands on training, expert
+					mentorship, and real world internships. Our collaborative approach ensures every participant gains in‑demand skills,
+					professional certifications, and a network of industry connections ready to excel from day one.</p>
+				</div>
+			
+				<!-- Institution item START 1 -->
+				<div class="row g-2 g-lg-3 mx-auto">
+					<!-- Item -->
+					<div class="col-lg-3 col-sm-6 ">
+						<div class="card card-body border py-1  ">
+							<div class="d-flex gap-3">
+								<div class="icon-lg icon-md  py-2text-primary mb-3">
+									<img src="./assets/iimages/institutions/aace.jpg" alt="" srcset="" width="35px" height="40px">
+								</div>
+								<div  class="pt-2" >
+									<h6>AAUA</h6>
+									<p class="inst-fullname">Adekunle Ajasin University</p>
+								</div>
+							</div>
+			
+						</div>
+					</div>
+			
+			
+					<!-- Item -->
+
+					<div class="col-md-3 col-sm-6 ">
+						<div class="card card-body border py-1  ">
+							<div class="d-flex gap-3">
+								<div class="icon-lg icon-md  py-2text-primary mb-3">
+									<img src="./assets/iimages/institutions/oau.jpg" alt="" srcset="" width="35px" height="40px">
+								</div>
+								<div class="pt-2" >
+									<h6>OAU</h6>
+									<p class="inst-fullname">Obafemi Awolowo University</p>
+								</div>
+							</div>
+			
+						</div>
+					</div>
+			
+			
+					<!-- Item -->
+					<div class="col-md-3 col-sm-6">
+						<div class="card card-body border py-1  ">
+							<div class="d-flex gap-3">
+								<div class="icon-lg icon-md  py-2text-primary mb-3">
+									<img src="./assets/iimages/institutions/absp.jpg" alt="" srcset="" width="35px" height="40px">
+								</div>
+								<div class="pt-2" >
+									<h6>ABSPOLY</h6>
+									<p class="inst-fullname">Abia State Polytechnic</p>
+								</div>
+							</div>
+			
+						</div>
+					</div>
+			
+			
+					<!-- Item -->
+					<div class="col-md-3 col-sm-6">
+						<div class="card card-body border py-1  ">
+							<div class="d-flex gap-3">
+								<div class="icon-lg icon-md  py-2text-primary mb-3">
+									<img src="./assets/iimages/institutions/aope.jpg" alt="" srcset="" width="35px" height="40px">
+								</div>
+								<div class="pt-2" >
+									<h6>AOPE</h6>
+									<p class="inst-fullname">Adeseun Ogundoyin Polytechnic</p>
+								</div>
+							</div>
+			
+						</div>
+					</div>
+			
+			
+				</div>
+			
+			
+				<!-- Institution item START 2 -->
+				<div class="row g-2 g-lg-3 py-2">
+					<!-- Item -->
+					<div class="col-md-3 col-sm-6 ">
+						<div class="card card-body border py-1  ">
+							<div class="d-flex gap-3">
+								<div class="icon-lg icon-md  py-2text-primary mb-3">
+									<img src="./assets/iimages/institutions/abuad.jpg" alt="" srcset="" width="30px" height="10px">
+								</div>
+								<div>
+									<h6>ABUAD</h6>
+									<p class="inst-fullname">Afe Babalola University</p>
+								</div>
+							</div>
+			
+						</div>
+					</div>
+			
+			
+					<!-- Item -->
+					<div class="col-md-3 col-sm-6 ">
+						<div class="card card-body border py-1  ">
+							<div class="d-flex gap-3">
+								<div class="icon-lg icon-md  py-2text-primary mb-3">
+									<img src="./assets/iimages/institutions/bowen.jpg" alt="" srcset="" width="35px" height="40px">
+								</div>
+								<div>
+									<h6>BOWEN</h6>
+									<p class="inst-fullname">Bowen University</p>
+								</div>
+							</div>
+			
+						</div>
+					</div>
+			
+			
+					<!-- Item -->
+					<div class="col-md-3 col-sm-6 ">
+						<div class="card card-body border py-1  ">
+							<div class="d-flex gap-3">
+								<div class="icon-lg icon-md  py-2text-primary mb-3">
+									<img src="./assets/iimages/institutions/cu.jpg" alt="" srcset="" width="35px" height="40px">
+								</div>
+								<div>
+									<h6>CU</h6>
+									<p class="inst-fullname">Covenant University</p>
+								</div>
+							</div>
+			
+						</div>
+					</div>
+			
+			
+					<!-- Item -->
+					<div class="col-md-3 col-sm-6 ">
+						<div class="card card-body border py-1  ">
+							<div class="d-flex gap-3">
+								<div class="icon-lg icon-md  py-2text-primary mb-3">
+									<img src="./assets/iimages/institutions/eksu.jpg" alt="" srcset="" width="30px" height="40px">
+								</div>
+								<div>
+									<h6>EKSU</h6>
+									<p class="inst-fullname">Ekiti State University</p>
+								</div>
+							</div>
+			
+						</div>
+					</div>
+			
+			
+				</div>
+			
+			
+			
+				<div class="card-footer mt-auto pt-7 text-end">
+					<button class="btn btn-outline-primary">
+						<a class="icon-link" href="./partner.html">click here more institutions....<i class="bi bi-arrow-right"></i> </a>
+					</button>
+				</div>
+			
+				<!-- Feature item END -->
+			</div>
+		</section>
+
+
+<section class="container">
+
+		<div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+			<div class="col d-flex flex-column align-items-start gap-2">
+				<h2 class="fw-bold text-primary-pro">Empowering Africa’s <span class="text-danger">Talent</span> Through Strategic <span class="text-danger">Partnerships</span></h2>
+				<p class="text-body-secondary">We proudly collaborate with forward-thinking organizations to deliver impactful training, mentorship, and hands-on
+				experience to young professionals across Africa.</p> <a href="#"
+					class="btn btn-small btn-primary">Primary button</a>
+			</div>
+			<div class="col">
+				<div class="row row-cols-1 row-cols-sm-2 g-4 org-scroll">
+					<div class="col d-flex flex-column gap-2">
+						<div
+							class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+							<svg class="bi" width="1em" height="1em" aria-hidden="true">
+								<use xlink:href="#collection"></use>
+							</svg> </div>
+						<h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+						<p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+					</div>
+					<div class="col d-flex flex-column gap-2">
+						<div
+							class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+							<svg class="bi" width="1em" height="1em" aria-hidden="true">
+								<use xlink:href="#gear-fill"></use>
+							</svg> </div>
+						<h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+						<p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+					</div>
+					<div class="col d-flex flex-column gap-2">
+						<div
+							class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+							<svg class="bi" width="1em" height="1em" aria-hidden="true">
+								<use xlink:href="#speedometer"></use>
+							</svg> </div>
+						<h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+						<p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+					</div>
+					<div class="col d-flex flex-column gap-2">
+						<div
+							class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+							<svg class="bi" width="1em" height="1em" aria-hidden="true">
+								<use xlink:href="#table"></use>
+							</svg> </div>
+						<h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+						<p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+					</div>
+					<div class="col d-flex flex-column gap-2">
+						<div
+							class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+							<svg class="bi" width="1em" height="1em" aria-hidden="true">
+								<use xlink:href="#speedometer"></use>
+							</svg> </div>
+						<h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+						<p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+					</div>
+					<div class="col d-flex flex-column gap-2">
+						<div
+							class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+							<svg class="bi" width="1em" height="1em" aria-hidden="true">
+								<use xlink:href="#table"></use>
+							</svg> </div>
+						<h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+						<p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+					</div>
+					<div class="col d-flex flex-column gap-2">
+						<div
+							class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+							<svg class="bi" width="1em" height="1em" aria-hidden="true">
+								<use xlink:href="#speedometer"></use>
+							</svg> </div>
+						<h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+						<p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+					</div>
+					<div class="col d-flex flex-column gap-2">
+						<div
+							class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+							<svg class="bi" width="1em" height="1em" aria-hidden="true">
+								<use xlink:href="#table"></use>
+							</svg> </div>
+						<h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+						<p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section >
 
 		<section class="py-5 Services">
 			<div class="album">
 				<div class="">
 					<div class="d-flex flex-column  container">
 						<h1 class="fs-3 text-center text-white ">Unlock Your Potential with ProDWex</h1>
-						<p class="text-center  lead py-4 px-5 container inner-container text-white-50">Step into your future
+						<p class="text-center py-4 px-5 container inner-container text-white-50">Step into your future
 							with ProDWex. Our hands-on, industry-relevant courses are designed to equip you with real
 							world
 							skills, boost your career potential, and support your entrepreneurial goals.
@@ -565,92 +1073,102 @@
 					</div>
 
 
-					<div class="contianer-fluid bg-body-tertiary pt-3 "  >
-					<div class="container mx-auto row py-4">
-						<!-- Card 1 -->
-						<div class="col-12 col-md-6 col-lg-4 mb-4">
-							<div class="card h-100 shadow-sm card-hover-shadow rounded-4 border-0">
-								<img src="./assets/iimages/courses/crm.jpg" class="card-img-top rounded-top-4" alt="CRM"
-									style="height: 200px; object-fit: cover;" />
-								<div class="card-body d-flex flex-column justify-content-between">
-									<div>
-										<h6 class="card-title fw-semibold">For Partnerships & Internship Programs</h6>
-										<p class="card-text text-muted fd-6">ProDWEx:</p>
-									</div>
-									<div class="d-flex justify-content-between align-items-center mt-3">
-										<div class="btn-group">
-											<button class="btn btn-sm btn-outline-primary">View <i class="bi bi-eye"></i></button>
-											<button class="btn btn-sm btn-danger">Register <i class="bi bi-door-open"></i></button>
+					<div class="contianer-fluid bg-body-tertiary pt-3 ">
+						<div class="container mx-auto row py-4">
+							<!-- Card 1 -->
+							<div class="col-12 col-md-6 col-lg-4 mb-4  ">
+								<div class="card h-100 shadow-sm  scale-hover rounded-4 border-0">
+									<img src="./assets/iimages/courses/crm.jpg" class="card-img-top rounded-top-4"
+										alt="CRM" style="height: 200px; object-fit: cover;" />
+									<div class="card-body d-flex flex-column justify-content-between">
+										<div>
+											<h6 class="card-title fw-semibold">Customer Relatioship Management</h6>
+											<p class="card-text text-muted fd-6">Learn the practices, strategies and
+												technologies to improve customer acquisition, retention, profitability
+												and loyalty</p>
 										</div>
-										<small class="text-muted">9 mins</small>
+										<div class="d-flex justify-content-between align-items-center mt-3">
+											<div class="btn-group">
+												<button class="btn btn-sm btn-outline-primary">View <i
+														class="bi bi-eye"></i></button>
+												<button class="btn btn-sm btn-danger">Register <i
+														class="bi bi-door-open"></i></button>
+											</div>
+											<small class="text-muted">9 mins</small>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					
-						<!-- Card 2 -->
-						<div class="col-12 col-md-6 col-lg-4 mb-4">
-							<div class="card h-100 shadow-sm rounded-4 border-0">
-								<img src="./assets/iimages/courses/hrm.jpg" class="card-img-top rounded-top-4" alt="HRM"
-									style="height: 200px; object-fit: cover;" />
-								<div class="card-body d-flex flex-column justify-content-between">
-									<div>
-										<h6 class="card-title fw-semibold">Professional Courses & Certification</h6>
-										<p class="card-text text-muted small">Learn the process of hiring and developing employees so that
-											they become more valuable to the organization.</p>
-									</div>
-									<div class="d-flex justify-content-between align-items-center mt-3">
-										<div class="btn-group">
-											<button class="btn btn-sm btn-outline-primary">View <i class="bi bi-eye"></i></button>
-											<button class="btn btn-sm btn-danger">Register <i class="bi bi-door-open"></i></button>
-										</div>
-										<small class="text-muted">9 mins</small>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						<!-- Card 3 -->
-						<div class="col-12 col-md-6 col-lg-4 mb-4">
-							<div class="card h-100 shadow-sm rounded-4 border-0">
-								<img src="./assets/iimages/courses/pmp.jpg" class="card-img-top rounded-top-4" alt="PMP"
-									style="height: 200px; object-fit: cover;" />
-								<div class="card-body d-flex flex-column justify-content-between">
-									<div>
-										<h6 class="card-title fw-semibold">Project Management</h6>
-										<p class="card-text text-muted small">Learn to manage projects effectively from initiation to
-											closure, using key tools and techniques to meet goals on time and within budget.</p>
-									</div>
-									<div class="d-flex justify-content-between align-items-center mt-3">
-										<div class="btn-group">
-											<button class="btn btn-sm btn-outline-primary">View <i class="bi bi-eye"></i></button>
-											<button class="btn btn-sm btn-danger">Register <i class="bi bi-door-open"></i></button>
-										</div>
-										<small class="text-muted">9 mins</small>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 
-				</div>
-				<div class="text-center pt-5">
-					<h5 class="text-white mb-5 p-0">Explore Full Range of Our Courses</h5>
-					<a href="./courses.html" class="btn btn-lg btn-outline-primary rounded-4 text-white">Explore All Courses <i
-							class="bi bi-arrow-right"></i></a>
-				</div>
+							<!-- Card 2 -->
+							<div class="col-12 col-md-6 col-lg-4 mb-4  ">
+								<div class="card h-100 shadow-sm scale-hover rounded-4 border-0">
+									<img src="./assets/iimages/courses/hrm.jpg" class="card-img-top rounded-top-4"
+										alt="HRM" style="height: 200px; object-fit: cover;" />
+									<div class="card-body d-flex flex-column justify-content-between">
+										<div>
+											<h6 class="card-title fw-semibold">Professional Courses & Certification</h6>
+											<p class="card-text text-muted small">Learn the process of hiring and
+												developing
+												employees so that
+												they become more valuable to the organization.</p>
+										</div>
+										<div class="d-flex justify-content-between align-items-center mt-3">
+											<div class="btn-group">
+												<button class="btn btn-sm btn-outline-primary">View <i
+														class="bi bi-eye"></i></button>
+												<button class="btn btn-sm btn-danger">Register <i
+														class="bi bi-door-open"></i></button>
+											</div>
+											<small class="text-muted">9 mins</small>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Card 3 -->
+							<div class="col-12 col-md-6 col-lg-4 mb-4  ">
+								<div class="card h-100 shadow-sm scale-hover rounded-4 border-0">
+									<img src="./assets/iimages/courses/pmp.jpg" class="card-img-top rounded-top-4"
+										alt="PMP" style="height: 200px; object-fit: cover;" />
+									<div class="card-body d-flex flex-column justify-content-between">
+										<div>
+											<h6 class="card-title fw-semibold">Project Management</h6>
+											<p class="card-text text-muted small">Learn to manage projects effectively
+												from
+												initiation to
+												closure, using key tools and techniques to meet goals on time and within
+												budget.
+											</p>
+										</div>
+										<div class="d-flex justify-content-between align-items-center mt-3">
+											<div class="btn-group">
+												<button class="btn btn-sm btn-outline-primary">View <i
+														class="bi bi-eye"></i></button>
+												<button class="btn btn-sm btn-danger">Register <i
+														class="bi bi-door-open"></i></button>
+											</div>
+											<small class="text-muted">9 mins</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="text-center pt-5">
+						<h5 class="text-white mb-5 p-0">Explore Full Range of Our Courses</h5>
+						<a href="./courses.html" class="btn btn-lg btn-outline-primary rounded-4 text-white">Explore All
+							Courses
+							<i class="bi bi-arrow-right"></i></a>
+					</div>
 				</div>
 			</div>
 		</section>
 
 
+		<!-- ======================= Client START -->
 
-
-
-		<!-- <hr class="border-primary opacity-1 " /> -->
-
-		<!-- =======================
-		Client START -->
 		<section class="pb-0">
 			<div class="container">
 				<div class="row align-items-center">
@@ -739,6 +1257,8 @@
 				<!-- Row END -->
 			</div>
 		</section>
+
+
 		<!-- =======================
 		Client END -->
 
@@ -825,7 +1345,7 @@ About START -->
 						<h2 class="my-4">
 							Defining the future of professionals with ProDWEx
 						</h2>
-						<p class="mb-4">
+						<p class="mb-4 text-secondary">
 							Embrace a new era of professional experience with
 							ProDWEx. Our team combines cutting-edge platform
 							with robust professional courses to tailor and building and developing your professionalism.
@@ -856,11 +1376,14 @@ About START -->
 		<!-- =======================
 About END -->
 
-		<!-- =======================
-<!-- ====================== Team START-->
+
+
+
+
+		<!-- ====================== Team START-->
 		<section class="pb-0">
 			<div class="container">
-				<div class="bg-lightblue">
+				<div class="">
 					<!-- Title -->
 					<h2 class="text-center mb-4 mb-sm-5">Our Team & Leadership</h2>
 
@@ -1067,8 +1590,13 @@ About END -->
 			</div>
 		</section>
 		<!-- ===================== Team END-->
-		<!-- =======================
-Testimonials START -->
+
+
+
+
+
+
+		<!-- ======================= Testimonials START -->
 		<section>
 			<div class="container">
 				<div class="row">
@@ -1331,11 +1859,14 @@ Testimonials START -->
 				</div>
 			</div>
 		</section>
-		<!-- =======================
-Testimonials END -->
+		<!-- ======================= Testimonials END -->
 
-		<!-- =======================
-CTA START -->
+
+
+
+
+
+		<!-- ======================= CTA START -->
 		<section class="position-relative z-index-2 py-0 mb-n7">
 			<div class="container position-relative">
 				<div class="bg-primary rounded position-relative overflow-hidden p-4 p-sm-5">
@@ -1426,13 +1957,13 @@ CTA START -->
 				</div>
 			</div>
 		</section>
-		<!-- =======================
-CTA END -->
+		<!-- ======================= CTA END -->
+
+
 	</main>
 	<!-- **************** MAIN CONTENT END **************** -->
 
-	<!-- =======================
-Footer START -->
+	<!-- ======================= Footer START -->
 	<footer class="prod-footer-style position-relative overflow-hidden pb-0 pt-6 pt-lg-8" data-bs-theme="dark">
 		<!-- SVG decoration -->
 		<figure class="position-absolute top-0 start-0 mt-n8 ms-n9">
@@ -1631,8 +2162,7 @@ Footer START -->
 			</div>
 		</div>
 	</footer>
-	<!-- =======================
-Footer END -->
+	<!-- =======================Footer END -->
 
 	<!-- Back to top -->
 	<div class="back-top"></div>

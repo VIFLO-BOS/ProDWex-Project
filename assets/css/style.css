@@ -104,9 +104,10 @@
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: #fff3cd;
-  --bs-border-width: 1px;
+  --bs-border-width: 1.5px;
   --bs-border-style: solid;
   --bs-border-color: var(--bs-gray-200);
+  --bs-border-toggler-icon : #fff;
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
   --bs-border-radius: 0.313rem;
   --bs-border-radius-sm: 0.2rem;
@@ -201,7 +202,7 @@
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
-  font-size: 13px;
+  /* font-size: 1px; */
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
@@ -720,8 +721,11 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
 }
 
 .img-thumbnail {
@@ -4597,8 +4601,8 @@ textarea.form-control-lg {
   --bs-navbar-toggler-padding-y: 0.20rem;
   --bs-navbar-toggler-padding-x: 0;
   --bs-navbar-toggler-font-size: .8rem;
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  --bs-navbar-toggler-border-color: var(--bs-border-color);
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255%2C%20255%2C%20255%2C%200.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  /* --bs-navbar-toggler-border-color: var(--bs-border-color); */
   --bs-navbar-toggler-border-radius: var(--bs-border-radius);
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
@@ -4696,6 +4700,7 @@ textarea.form-control-lg {
 }
 
 .navbar-toggler {
+  margin:5px 0px;
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
@@ -5129,7 +5134,7 @@ textarea.form-control-lg {
   --bs-navbar-active-color: #09B850 !important;
   --bs-navbar-brand-color: #fff;
   --bs-navbar-brand-hover-color: #fff;
-  --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+  --bs-navbar-toggler-border-color: rgb(255, 255, 255);
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
@@ -5138,8 +5143,8 @@ textarea.form-control-lg {
 }
 
 .card {
-  --bs-card-spacer-y: 1.25rem;
-  --bs-card-spacer-x: 1.25rem;
+  --bs-card-spacer-y: 1.0rem;
+  --bs-card-spacer-x: 1.0rem;
   --bs-card-title-spacer-y: 0.5rem;
   --bs-card-title-color: var(--bs-gray-900);
   --bs-card-subtitle-color: ;
@@ -5148,11 +5153,11 @@ textarea.form-control-lg {
   --bs-card-border-radius: 0.4rem;
   --bs-card-box-shadow: ;
   --bs-card-inner-border-radius: 0.4rem;
-  --bs-card-cap-padding-y: 1.25rem;
-  --bs-card-cap-padding-x: 1.25rem;
+  --bs-card-cap-padding-y: 1rem;
+  --bs-card-cap-padding-x: 1rem;
   --bs-card-cap-bg: var(--bs-body-bg);
   --bs-card-cap-color: ;
-  --bs-card-height: ;
+  --bs-card-height:100% ;
   --bs-card-color: var(--bs-body-color);
   --bs-card-bg: var(--bs-body-bg);
   --bs-card-img-overlay-padding: 1.25rem;
@@ -6210,9 +6215,9 @@ textarea.form-control-lg {
 }
 
 .btn-close {
-  --bs-btn-close-color: #202124;
+  --bs-btn-close-color: #ffff;
   --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23202124'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
-  --bs-btn-close-opacity: 0.5;
+  --bs-btn-close-opacity: 1;
   --bs-btn-close-hover-opacity: 0.75;
   --bs-btn-close-focus-shadow: none;
   --bs-btn-close-focus-opacity: 1;
@@ -6221,13 +6226,14 @@ textarea.form-control-lg {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   width: 0.8em;
-  height: 0.8em;
+  height: 1em;
   padding: 0.25em 0.25em;
   color: var(--bs-btn-close-color);
   background: transparent var(--bs-btn-close-bg) center/0.8em auto no-repeat;
-  border: 0;
+  border: 1px solid #fff !important;
   border-radius: 0.313rem;
   opacity: var(--bs-btn-close-opacity);
+  font-size: 20px;
 }
 .btn-close:hover {
   color: var(--bs-btn-close-color);

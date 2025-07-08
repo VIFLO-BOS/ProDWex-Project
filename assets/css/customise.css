@@ -1,8 +1,12 @@
-
+html,
+body {
+	overflow-x: hidden;
+text-shadow: .5px .5px 2px rgba(0, 0, 0, 0.1);
+}
 
 .prod-header-style,
 .prod-footer-style {
-	background-color: #23334e !important ;
+	background-color: #23334e !important;
 }
 
 .navbar-brand img {
@@ -11,6 +15,7 @@
 	object-fit: cover !important;
 	object-position: center !important;
 }
+
 /* Set dropdown menu items to #337ab7 for all screens */
 /* General dropdown item color (both screens) */
 .dropdown-menu .dropdown-item {
@@ -52,7 +57,7 @@
 	color: #fff !important;
 }
 
-.lead{
+.lead {
 	font-size: 18px !important;
 }
 
@@ -60,14 +65,15 @@
 	background: #23334e;
 }
 
-.text-primary-pro{
+.text-primary-pro {
 	color: #23334e;
 }
 
-.custom-p{
+.custom-p {
 	font-size: 16px;
 	/* text-align: center !important; */
 }
+
 .Service-card {
 	box-shadow: 0px 0px 3px 0px #00000027;
 }
@@ -81,15 +87,18 @@
 	background-color: #324b77;
 }
 
+
 .courses-tabs {
 	display: flex;
 	overflow-x: auto;
 	white-space: nowrap;
-	gap: 1rem; /* Adds spacing between items */
+	gap: 1rem;
+	/* Adds spacing between items */
 	padding-bottom: 8px;
 	scrollbar-width: thin;
 	scrollbar-color: #23334e #f1f1f1;
 }
+
 .courses-tabs::-webkit-scrollbar {
 	height: 6px;
 }
@@ -102,6 +111,7 @@
 .courses-tabs::-webkit-scrollbar-track {
 	background-color: #f1f1f1;
 }
+
 .courses-tabs div {
 	flex: 0 0 auto;
 	min-width: 160px;
@@ -123,18 +133,49 @@
 	background-color: #b8cbd6;
 }
 
+.primary-faded-pro{
+	background-color: rgba(134, 209, 193, 0.041) !important;
+}
+.primary-faded{
+	background-color:  #def2fd !important;
+}
+
 .courses-tabs .nav-link {
 	display: block;
 	padding: 0.5rem 1rem;
 	font-size: 14px;
 	white-space: nowrap;
-	background: #f8f9fa; /* Optional background for clarity */
+	background: #f8f9fa;
+	/* Optional background for clarity */
 	border-radius: 5px;
 	text-align: center;
 }
 
 .main-course-card {
 	height: 250px !important;
+}
+
+.org-scroll {
+	overflow-y: scroll;
+	height: 50vh;
+}
+
+.org-scroll::-webkit-scrollbar {
+	display: none;
+}
+
+.org{
+	padding: 2px !important;
+	background-color: #f8f9fa;
+	border-radius: 10px;
+	box-shadow: 0px 0px 3px 0px #1518425e;
+	font-size: 12px !important;
+}
+
+.org .xs-heading {
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	color: #23334e !important;
 }
 
 footer .nav-link {
@@ -208,7 +249,7 @@ Optional: Overlay for better text contrast */
 	display: block !important;
 }
 
-.hidden{
+.hidden {
 	display: none !important;
 }
 
@@ -222,24 +263,51 @@ Optional: Overlay for better text contrast */
 	height: 60vh !important;
 }
 
-#grid-organization::-webkit-scrollbar, 
+#grid-organization::-webkit-scrollbar,
 #grid-institution::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
+
+.scale-hover:hover {
+	transition: all 0.3s ease-in-out;
+	transform: scale(1.020);
+	box-shadow: 0px 0px 2px 0px #0000004b !important;
+}
+
+
 
 /* Responsive screen code here */
 
 /* Large screens (≥768px): nav-link should be white */
-@media (min-width: 768px) {
+
+
+
+@media (min-width: 1023px) {
 	.navbar-nav .nav-link {
-		color: #fff !important;
+		color: #ffffff !important;
+	}
+
+	/* .navbar-nav .nav-link:hover,
+	.navbar-nav .nav-link:focus {
+		color: #23334e !important;
+	} */
+}
+
+@media (max-width: 1024px) {
+	/* .navbar-nav .nav-link {
+		color: #337ab7  !important;
 	}
 
 	.navbar-nav .nav-link:hover,
 	.navbar-nav .nav-link:focus {
-		color: #57a7ec !important;
+		color: #23334e !important;
+	} */
+
+	.main-nav {
+		display: block !important;
 	}
 }
+
 
 @media (max-width: 767.99px) {
 	.navbar-nav .nav-link {

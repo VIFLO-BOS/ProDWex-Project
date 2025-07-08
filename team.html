@@ -12,63 +12,63 @@
 
     <!-- Dark mode -->
     <!-- <script>
-		const storedTheme = localStorage.getItem('theme')
+        const storedTheme = localStorage.getItem('theme')
 
-		const getPreferredTheme = () => {
-			if (storedTheme) {
-				return storedTheme
-			}
-			return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
-		}
+        const getPreferredTheme = () => {
+            if (storedTheme) {
+                return storedTheme
+            }
+            return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
+        }
 
-		const setTheme = function (theme) {
-			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				document.documentElement.setAttribute('data-bs-theme', 'dark')
-			} else {
-				document.documentElement.setAttribute('data-bs-theme', theme)
-			}
-		}
+        const setTheme = function (theme) {
+            if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-bs-theme', 'dark')
+            } else {
+                document.documentElement.setAttribute('data-bs-theme', theme)
+            }
+        }
 
-		setTheme(getPreferredTheme())
+        setTheme(getPreferredTheme())
 
-		window.addEventListener('DOMContentLoaded', () => {
-			var el = document.querySelector('.theme-icon-active');
-			if (el != 'undefined' && el != null) {
-				const showActiveTheme = theme => {
-					const activeThemeIcon = document.querySelector('.theme-icon-active use')
-					const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-					const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+        window.addEventListener('DOMContentLoaded', () => {
+            var el = document.querySelector('.theme-icon-active');
+            if (el != 'undefined' && el != null) {
+                const showActiveTheme = theme => {
+                    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+                    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+                    const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
 
-					document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-						element.classList.remove('active')
-					})
+                    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                        element.classList.remove('active')
+                    })
 
-					btnToActive.classList.add('active')
-					activeThemeIcon.setAttribute('href', svgOfActiveBtn)
-				}
+                    btnToActive.classList.add('active')
+                    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+                }
 
-				window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-					if (storedTheme !== 'light' || storedTheme !== 'dark') {
-						setTheme(getPreferredTheme())
-					}
-				})
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                    if (storedTheme !== 'light' || storedTheme !== 'dark') {
+                        setTheme(getPreferredTheme())
+                    }
+                })
 
-				showActiveTheme(getPreferredTheme())
+                showActiveTheme(getPreferredTheme())
 
-				document.querySelectorAll('[data-bs-theme-value]')
-					.forEach(toggle => {
-						toggle.addEventListener('click', () => {
-							const theme = toggle.getAttribute('data-bs-theme-value')
-							localStorage.setItem('theme', theme)
-							setTheme(theme)
-							showActiveTheme(theme)
-						})
-					})
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', () => {
+                            const theme = toggle.getAttribute('data-bs-theme-value')
+                            localStorage.setItem('theme', theme)
+                            setTheme(theme)
+                            showActiveTheme(theme)
+                        })
+                    })
 
-			}
-		})
+            }
+        })
 
-	</script> -->
+    </script> -->
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/iimages/favicon.ico" />
@@ -93,7 +93,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
     <!-- Google tag (gtag.js) -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEXFC3C67M"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEXFC3C67M"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() {
@@ -102,193 +102,191 @@
         gtag("js", new Date());
 
         gtag("config", "G-DEXFC3C67M");
-    </script> -->
+    </script> 
 </head>
 
 <body>
     <!-- Header START -->
-    <header class="header-sticky header-absolute prod-header-style">
-        <!-- Logo Nav START -->
-        <nav class="navbar navbar-expand-xl">
-            <div class="container">
-                <!-- Logo START -->
-                <a class="navbar-brand me-0 py-0" href="index-2.html">
-                    <img class="light-mode-item navbar-brand-item" src="assets/images/logo24x100.png" alt="logo"
-                        width="20" />
-                </a>
-                <!-- Logo END -->
+  <header class="header-sticky header-absolut prod-header-style">
+		<!-- Logo Nav START -->
+		<!-- ...existing code... -->
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<!-- Logo START -->
+				<a class="navbar-brand me-0 py-0" href="index.html">
+					<img class="light-mode-item navbar-brand-item" src="assets/images/logo24x100.png" alt="logo" width="20" />
+				</a>
+				<!-- Logo END -->
 
-                <!-- Main navbar START -->
-                <div class="navbar-collapse collapse" id="navbarCollapse">
-                    <ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
-                        <!-- Nav Home -->
-                        <li class="nav-item ">
-                            <a class="nav-link  nav-item-white " href="./index.html">Home</a>
-                        </li>
+				<!-- Offcanvas toggler for mobile -->
+				<ul class="nav align-items-center gap-2 dropdown-hover ms-sm-2 d-lg-none">
+					<!-- Dark mode option START -->
+					<li class="nav-item dropdown dropdown-animation">
+						<button class="btn btn-link mb-0 px-2 lh-1" type="button" data-bs-toggle="dropdown"
+							data-bs-display="static">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+								class="bi bi-circle-half theme-icon-active fill-white fa-fw" viewBox="0 0 16 16">
+								<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+							</svg>
+						</button>
+						<ul class="dropdown-menu min-w-auto dropdown-menu-end">
+							<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center"
+									data-bs-theme-value="light">Light</button></li>
+							<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center active"
+									data-bs-theme-value="dark">Dark</button></li>
+							<li><button type="button" class="dropdown-item d-flex align-items-center"
+									data-bs-theme-value="auto">Auto</button></li>
+						</ul>
+					</li>
+					<!-- Dark mode option END -->
 
-                        <!-- Nav item Courses-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  nav-item-white dropdown-toggle " href="./courses.html"
-                                data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Courses</a>
-                            <span data-bs-toggle="dropdown"></span>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown dropend">
-                                    <a class="dropdown-item d" href="/courses.html">All Categories</a>
-                                </li>
+					<button class="navbar-toggler ms-auto d-xl-none" type="button" data-bs-toggle="offcanvas"
+						data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</ul>
 
 
-                                <li class="dropdown dropend">
-                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
-                                        href="#">Sub-Categories</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="shop-grid.html">Professonal Development</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="shop-single.html">Information Technology</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="shop-single.html">Designs and
-                                                Web-Development</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="shop-cart.html">Human & Project Managment</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="shop-cart.html">Data Science & Analytics</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="shop-cart.html">Artificial Intelligence</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="shop-cart.html">Office Managment</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+				<!-- Desktop Navbar -->
+				<div class="navbar-collapse collapse d-none d-lg-block" id="navbarCollapse">
+					<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+						<!-- Nav Home -->
+						<li class="nav-item ">
+							<a class="nav-link  nav-item-white " href="./index.html">Home</a>
+						</li>
 
-                        <!-- Nav item Partners -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  nav-item-white dropdown-toggle" href="./partner.html"
-                                data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Partners</a>
-                            <span data-bs-toggle="dropdown"></span>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown dropend">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Organisations</a>
-                                    <span data-bs-toggle="dropdown"></span>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">International Organisation</a></li>
-                                        <li><a class="dropdown-item" href="#">Governmental Organisation</a></li>
-                                        <li><a class="dropdown-item" href="#">Private Organisation</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown dropend">
-                                    <a class="dropdown-item dropdown-toggle" href="#">Institutions</a>
-                                    <span data-bs-toggle="dropdown"></span>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Global Institution</a></li>
-                                        <li><a class="dropdown-item" href="#">Federal Institution</a></li>
-                                        <li><a class="dropdown-item" href="#">State Institution</a></li>
-                                        <li><a class="dropdown-item" href="#">Private Institution</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+						<!-- Nav item Courses-->
+						<li class="nav-item">
+							<a class="nav-link nav-item-white " href="./courses.html" role="button" aria-expanded="false">Courses</a>
 
-                        <!-- Nav item Event & Blog -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link  nav-item-white dropdown-toggle" href="./blog.html"
-                                data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Blog &amp;
-                                Events</a>
-                            <span data-bs-toggle="dropdown"></span>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown dropend">
-                                    <a href="./blog.html" class="dropdown-item dropdown-toggle">Blogs</a>
-                                    <!-- <span data-bs-toggle="dropdown"></span>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Blog One</a></li>
-                                        <li><a class="dropdown-item" href="#">Blog Two</a></li>
-                                        <li><a class="dropdown-item" href="#">Blog Three</a></li>
-                                    </ul> -->
-                                </li>
-                                <li class="dropdown dropend">
-                                    <a class="dropdown-item dropdown-toggle" href="./events.html">Events</a>
-                                    <!-- <span data-bs-toggle="dropdown"></span>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Events One</a></li>
-                                        <li><a class="dropdown-item" href="#">Events Two</a></li>
-                                        <li><a class="dropdown-item" href="#">Events Three</a></li>
-                                    </ul> -->
-                                </li>
-                            </ul>
-                        </li>
+						</li>
 
-                        <!-- Item Team -->
-                        <li class="nav-item">
-                            <a class="nav-link  nav-item-white active" href="./Team.html">Team</a>
-                        </li>
+						<!-- Nav item Partners -->
+						<li class="nav-item">
+							<a class="nav-link nav-item-white" href="./partner.html">Partners</a>
 
-                        <!-- Register & Login for small screens -->
-                        <li class="nav-item d-xl-none d-flex d-xs-flex align-items-center justify-content-between mt-2">
-                            <a href="./signUp.html" class="btn btn-sm btn-danger  mb-2"><i
-                                    class="bi bi-person-circle me-1"></i>Register</a>
-                            <button class="btn btn-sm btn-primary ">
-                                <a href="./signIn.html">
-                                    <i class="bi bi-box-arrow-up-right me-1"></i>Member-Login
-                                </a>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Main navbar END -->
+						</li>
 
-                <!-- Buttons for large screens -->
-                <ul class="nav align-items-center dropdown-hover ms-sm-2">
-                    <!-- Dark mode option START -->
-                    <li class="nav-item dropdown dropdown-animation">
-                        <button class="btn btn-link mb-0 px-2 lh-1" type="button" data-bs-toggle="dropdown"
-                            data-bs-display="static">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                class="bi bi-circle-half theme-icon-active fill-white fa-fw" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
-                            </svg>
-                        </button>
-                        <ul class="dropdown-menu min-w-auto dropdown-menu-end">
-                            <li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center"
-                                    data-bs-theme-value="light">Light</button></li>
-                            <li class="mb-1"><button type="button"
-                                    class="dropdown-item d-flex align-items-center active"
-                                    data-bs-theme-value="dark">Dark</button></li>
-                            <li><button type="button" class="dropdown-item d-flex align-items-center"
-                                    data-bs-theme-value="auto">Auto</button></li>
-                        </ul>
-                    </li>
-                    <!-- Dark mode option END -->
+						<!-- Nav item Event & Blog -->
+						<li class="nav-item ">
+							<a class="nav-link  nav-item-white" href="./blog.html">
+								Events</a>
+						</li>
+						<!-- Item Team -->
+						<li class="nav-item">
+							<a class="nav-link  nav-item-white active" href="./team.html">Team</a>
+						</li>
 
-                    <!-- Sign up button for large screen -->
-                    <li class="nav-item me-2 d-none d-xl-block">
-                        <a href="./signUp.html" class="btn btn-sm btn-outline-danger mb-0"><i
-                                class="bi bi-person-circle me-1"></i>Register</a>
-                    </li>
-                    <!-- Login button for large screen -->
-                    <li class="nav-item d-none d-xl-block">
-                        <a href="./signIn.html">
-                            <button class="btn btn-sm btn-primary mb-0"><i
-                                    class="bi bi-box-arrow-up-right me-1"></i>Member-Login</button>
-                        </a>
-                    </li>
 
-                    <!-- Navbar toggler -->
-                    <li class="nav-item p-2">
-                        <button class="navbar-toggler ms-sm-3 p-2 " type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-animation">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+						</li>
+					</ul>
+					<!-- Right-side buttons -->
 
-        <!-- Logo Nav END -->
-    </header>
+					<ul class="nav align-items-center dropdown-hover ms-sm-2" >
+						<!-- Dark mode option START -->
+						<li class="nav-item dropdown dropdown-animation">
+							<button class="btn btn-link mb-0 px-2 lh-1" type="button" data-bs-toggle="dropdown"
+								data-bs-display="static">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+									class="bi bi-circle-half theme-icon-active fill-white fa-fw" viewBox="0 0 16 16">
+									<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+								</svg>
+							</button>
+							<ul class="dropdown-menu min-w-auto dropdown-menu-end">
+								<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center"
+										data-bs-theme-value="light">Light</button></li>
+								<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center active"
+										data-bs-theme-value="dark">Dark</button></li>
+								<li><button type="button" class="dropdown-item d-flex align-items-center"
+										data-bs-theme-value="auto">Auto</button></li>
+							</ul>
+						</li>
+						<!-- Dark mode option END -->
+
+						<li class="mt-2">
+							<div class="d-flex align-items-center ms-3">
+								<a href="./signUp.html" class="btn  btn-sm btn-outline-danger me-2"><i
+										class="bi bi-person-circle me-1"></i>Register</a>
+								<a href="./signIn.html" class="btn btn-sm  btn-primary"><i
+										class="bi bi-box-arrow-up-right me-1"></i>Member-Login</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Offcanvas Mobile Navbar -->
+			<div class="offcanvas offcanvas-end d-lg-none w-auto" tabindex="-1" id="mobileNav"
+				aria-labelledby="mobileNavLabel">
+				<div class="offcanvas-header p-3">
+					<h5 class="offcanvas-title" id="mobileNavLabel"><a class="navbar-brand me-0 py-0 " href="index.html">
+							<img class="light-mode-item navbar-brand-item" src="assets/iimages/logo-with-Orod -blue.png" alt="logo"
+								width="20" />
+						</a></h5>
+					<button type="button" class="btn btn-close  text-white" data-bs-dismiss="offcanvas"
+						aria-label="Close"></button>
+				</div>
+
+
+				<div class="offcanvas-body">
+					<ul class="navbar-nav">
+						<!-- Nav Home -->
+						<li class="nav-item ">
+							<a class="nav-link px-2 rounded-1 " href="./index.html">Home</a>
+						</li>
+						<!-- Nav item Courses-->
+						<li class="nav-item dropdown">
+							<a class="nav-link  px-2 rounded-1" href="./courses.html" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Courses
+							</a>
+
+						</li>
+						<!-- Partners -->
+						<li class="nav-item dropdown">
+							<a class="nav-link  px-2 rounded-1" href="./partner.html" id="mobilePartnersDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Partners
+							</a>
+
+						</li>
+						<!-- Blog & Events -->
+						<li class="nav-item dropdown">
+							<a class="nav-link  px-2 rounded-1" href="./blog.html" id="mobileBlogDropdown" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">Events
+							</a>
+
+						</li>
+						<!-- Team -->
+						<li class="nav-item">
+							<a class="nav-link px-2 rounded-1 active" href="./team.html">Team</a>
+						</li>
+
+
+
+
+						<!-- Register & Login -->
+						<li class="nav-item mt-3">
+							<a href="./signUp.html" class="btn btn-danger w-100 mb-2"><i
+									class="bi bi-person-circle me-1"></i>Register</a>
+							<a href="./signIn.html" class="btn btn-primary w-100"><i
+									class="bi bi-box-arrow-up-right me-1"></i>Member-Login</a>
+						</li>
+
+					</ul>
+					</ul>
+				</div>
+
+			</div>
+			<!-- End Offcanvas -->
+			</div>
+		</nav>
+		<!-- ...existing code... -->
+
+		<!-- Logo Nav END -->
+
+		<div class="head-stick header-relative bg-nav-bottom w-100 h-25 py-2"></div>
+	</header>
     <!-- Header END -->
 
 
@@ -638,122 +636,122 @@ Footer START -->
 
         <div class="container position-relative mt-5">
             <div class="row g-4 justify-content-between">
-				<!-- Widget 1 START -->
-				<div class="col-lg-3">
-					<!-- logo -->
-					<a class="me-0" href="index-2.html">
-						<img class="light-mode-item h-40px" src="assets/images/logo.svg" alt="logo" />
-						<img class="dark-mode-item h-30px" src="assets/images/logo24x100.png" alt="logo" />
-					</a>
+                <!-- Widget 1 START -->
+                <div class="col-lg-3">
+                    <!-- logo -->
+                    <a class="me-0" href="index-2.html">
+                        <img class="light-mode-item h-40px" src="assets/images/logo.svg" alt="logo" />
+                        <img class="dark-mode-item h-30px" src="assets/images/logo24x100.png" alt="logo" />
+                    </a>
 
-				<p class="mt-4 mb-2 text-white">
+                <p class="mt-4 mb-2 text-white">
   ProDWex empowers students and professionals with practical skills and industry-ready training, shaping the future of workforce excellence across Africa.
 </p>
-				</div>
-				<!-- Widget 1 END -->
+                </div>
+                <!-- Widget 1 END -->
 
-				<!-- Widget 2 START -->
-				<div class="col-lg-8 col-xxl-7">
-					<div class="row g-4">
-						<!-- Link block -->
-						<div class="col-6 col-md-4">
-							<h6 class="mb-2 mb-md-4">Quick links</h6>
-							<ul class="nav flex-column">
-								<li class="nav-item">
-									<a class="nav-link pt-0 " href="./about.html">About us</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link " href="./contact.html">Contact us</a>
-								</li>
+                <!-- Widget 2 START -->
+                <div class="col-lg-8 col-xxl-7">
+                    <div class="row g-4">
+                        <!-- Link block -->
+                        <div class="col-6 col-md-4">
+                            <h6 class="mb-2 mb-md-4">Quick links</h6>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link pt-0 " href="./about.html">About us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="./contact.html">Contact us</a>
+                                </li>
 
-								<li class="nav-item">
-								</li>
-								<li class="nav-item">
-									<a class="nav-link " href="./partner.html">Become a partner</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link " href="signin.html">Sign in</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link " href="signup.html">Sign up</a>
-								</li>
-							</ul>
-						</div>
+                                <li class="nav-item">
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="./partner.html">Become a partner</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="signin.html">Sign in</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="signup.html">Sign up</a>
+                                </li>
+                            </ul>
+                        </div>
 
-						<!-- Link block -->
-						<div class="col-6 col-md-4">
-							<h6 class="mb-2 mb-md-4">Community</h6>
-							<ul class="nav flex-column">
-								<!-- <li class="nav-item">
-									<a class="nav-link pt-0" href="#">Documents</a>
-								</li> -->
-								<li class="nav-item">
-									<a class="nav-link" href="./support.html">Supports
-										<i class="bi bi-box-arrow-up-right small ms-1"></i></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="faq.html">Faqs</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="./privacy">Privacy Policy</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="./blog.html">News and blogs</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="./terms.html">Terms & condition</a>
-								</li>
-							</ul>
-						</div>
+                        <!-- Link block -->
+                        <div class="col-6 col-md-4">
+                            <h6 class="mb-2 mb-md-4">Community</h6>
+                            <ul class="nav flex-column">
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link pt-0" href="#">Documents</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./support.html">Supports
+                                        <i class="bi bi-box-arrow-up-right small ms-1"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">Faqs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./privacy">Privacy Policy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./blog.html">News and blogs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./terms.html">Terms & condition</a>
+                                </li>
+                            </ul>
+                        </div>
 
-						<!-- Link block -->
-						<div class="col-md-4">
-							<h6 class="mb-2 mb-md-4">App available on</h6>
-							<div class="row g-2 mt-2 mb-4 mb-sm-5">
-								<!-- Google play store button -->
-								<div class="col-5 col-sm-4 col-md-6">
-									<a href="#">
-										<img src="assets/images/elements/google-play.svg" alt="" />
-									</a>
-								</div>
-								<!-- App store button -->
-								<div class="col-5 col-sm-4 col-md-6">
-									<a href="#">
-										<img src="assets/images/elements/app-store.svg" alt="app-store" />
-									</a>
-								</div>
-							</div>
+                        <!-- Link block -->
+                        <div class="col-md-4">
+                            <h6 class="mb-2 mb-md-4">App available on</h6>
+                            <div class="row g-2 mt-2 mb-4 mb-sm-5">
+                                <!-- Google play store button -->
+                                <div class="col-5 col-sm-4 col-md-6">
+                                    <a href="#">
+                                        <img src="assets/images/elements/google-play.svg" alt="" />
+                                    </a>
+                                </div>
+                                <!-- App store button -->
+                                <div class="col-5 col-sm-4 col-md-6">
+                                    <a href="#">
+                                        <img src="assets/images/elements/app-store.svg" alt="app-store" />
+                                    </a>
+                                </div>
+                            </div>
 
-							<!-- Social buttons -->
-							<h6 class="mb-2 mb-md-4">Follow on</h6>
+                            <!-- Social buttons -->
+                            <h6 class="mb-2 mb-md-4">Follow on</h6>
 
-							<ul class="list-inline mb-0 mt-3">
-								<li class="list-inline-item">
-									<a class="btn btn-xs btn-icon btn-primary" href="#"><i
-											class="fab fa-fw fa-facebook-f lh-base"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a class="btn btn-xs btn-icon btn-primary" href="#"><i
-											class="fab fa-fw fa-instagram lh-base"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a class="btn btn-xs btn-icon btn-primary" href="#"><i
-											class="fab fa-fw fa-twitter lh-base"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a class="btn btn-xs btn-icon btn-primary" href="#"><i
-											class="fab fa-fw fa-linkedin-in lh-base"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a class="btn btn-xs btn-icon btn-primary" href="#"><i
-											class="fab fa-fw fa-youtube lh-base"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- Widget 2 END -->
-			</div>
+                            <ul class="list-inline mb-0 mt-3">
+                                <li class="list-inline-item">
+                                    <a class="btn btn-xs btn-icon btn-primary" href="#"><i
+                                            class="fab fa-fw fa-facebook-f lh-base"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn btn-xs btn-icon btn-primary" href="#"><i
+                                            class="fab fa-fw fa-instagram lh-base"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn btn-xs btn-icon btn-primary" href="#"><i
+                                            class="fab fa-fw fa-twitter lh-base"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn btn-xs btn-icon btn-primary" href="#"><i
+                                            class="fab fa-fw fa-linkedin-in lh-base"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn btn-xs btn-icon btn-primary" href="#"><i
+                                            class="fab fa-fw fa-youtube lh-base"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Widget 2 END -->
+            </div>
             <!-- Divider -->
             <hr class="mt-4 mb-0" />
 

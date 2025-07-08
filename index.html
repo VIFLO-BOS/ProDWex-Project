@@ -48,32 +48,13 @@
 			<div class="container">
 				<!-- Logo START -->
 				<a class="navbar-brand me-0 py-0" href="index.html">
-					<img class="light-mode-item navbar-brand-item" src="assets/images/logo24x100.png" alt="logo" width="20" />
+					<img class="light-mode-item navbar-brand-item" src="assets/images/logo24x100.png" alt="logo"
+						width="20" />
 				</a>
 				<!-- Logo END -->
 
 				<!-- Offcanvas toggler for mobile -->
 				<ul class="nav align-items-center gap-2 dropdown-hover ms-sm-2 d-lg-none">
-					<!-- Dark mode option START -->
-					<li class="nav-item dropdown dropdown-animation">
-						<button class="btn btn-link mb-0 px-2 lh-1" type="button" data-bs-toggle="dropdown"
-							data-bs-display="static">
-							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-								class="bi bi-circle-half theme-icon-active fill-white fa-fw" viewBox="0 0 16 16">
-								<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
-							</svg>
-						</button>
-						<ul class="dropdown-menu min-w-auto dropdown-menu-end">
-							<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center"
-									data-bs-theme-value="light">Light</button></li>
-							<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center active"
-									data-bs-theme-value="dark">Dark</button></li>
-							<li><button type="button" class="dropdown-item d-flex align-items-center"
-									data-bs-theme-value="auto">Auto</button></li>
-						</ul>
-					</li>
-					<!-- Dark mode option END -->
-
 					<button class="navbar-toggler ms-auto d-xl-none" type="button" data-bs-toggle="offcanvas"
 						data-bs-target="#mobileNav" aria-controls="mobileNav" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -91,34 +72,24 @@
 
 						<!-- Nav item Courses-->
 						<li class="nav-item">
-							<a class="nav-link nav-item-white " href="./courses.html" role="button" aria-expanded="false">Courses</a>
+							<a class="nav-link nav-item-white " href="./courses.html" role="button"
+								aria-expanded="false">Courses</a>
 
 						</li>
 
 						<!-- Nav item Partners -->
 						<li class="nav-item dropdown">
-							<a class="nav-link  nav-item-white dropdown-toggle" href="./partner.html" data-bs-auto-close="outside"
-								aria-haspopup="true" aria-expanded="false">Partners</a>
+							<a class="nav-link  nav-item-white dropdown-toggle" href="./partner.html"
+								data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Partners</a>
 							<span data-bs-toggle="dropdown"></span>
 							<ul class="dropdown-menu">
 								<li class="dropdown dropend">
-									<a class="dropdown-item dropdown-toggle" href="#" id='grid-org-menu'>Organisations</a>
-									<span data-bs-toggle="dropdown"></span>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">International Organisation</a></li>
-										<li><a class="dropdown-item" href="#">Governmental Organisation</a></li>
-										<li><a class="dropdown-item" href="#">Private Organisation</a></li>
-									</ul>
+									<a class="dropdown-item" href="./partner-organisation.html"
+										id='grid-org-menu'>Organisations</a>
 								</li>
 								<li class="dropdown dropend">
-									<a class="dropdown-item dropdown-toggle" href="#" id='grid-insti-menu'>Institutions</a>
-									<span data-bs-toggle="dropdown"></span>
-									<ul class="dropdown-menu">
-										<li><a class="dropdown-item" href="#">Global Institution</a></li>
-										<li><a class="dropdown-item" href="#">Federal Institution</a></li>
-										<li><a class="dropdown-item" href="#">State Institution</a></li>
-										<li><a class="dropdown-item" href="#">Private Institution</a></li>
-									</ul>
+									<a class="dropdown-item" href="./partner-institutions.html"
+										id='grid-insti-menu'>Institutions</a>
 								</li>
 							</ul>
 						</li>
@@ -140,25 +111,6 @@
 					<!-- Right-side buttons -->
 
 					<ul class="nav align-items-center dropdown-hover ms-sm-2">
-						<!-- Dark mode option START -->
-						<li class="nav-item dropdown dropdown-animation">
-							<button class="btn btn-link mb-0 px-2 lh-1" type="button" data-bs-toggle="dropdown"
-								data-bs-display="static">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-									class="bi bi-circle-half theme-icon-active fill-white fa-fw" viewBox="0 0 16 16">
-									<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
-								</svg>
-							</button>
-							<ul class="dropdown-menu min-w-auto dropdown-menu-end">
-								<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center"
-										data-bs-theme-value="light">Light</button></li>
-								<li class="mb-1"><button type="button" class="dropdown-item d-flex align-items-center active"
-										data-bs-theme-value="dark">Dark</button></li>
-								<li><button type="button" class="dropdown-item d-flex align-items-center"
-										data-bs-theme-value="auto">Auto</button></li>
-							</ul>
-						</li>
-						<!-- Dark mode option END -->
 
 						<li class="mt-2">
 							<div class="d-flex align-items-center ms-3">
@@ -176,9 +128,10 @@
 			<div class="offcanvas offcanvas-end d-lg-none w-auto" tabindex="-1" id="mobileNav"
 				aria-labelledby="mobileNavLabel">
 				<div class="offcanvas-header p-3">
-					<h5 class="offcanvas-title" id="mobileNavLabel"><a class="navbar-brand me-0 py-0 " href="index.html">
-							<img class="light-mode-item navbar-brand-item" src="assets/iimages/logo-with-Orod -blue.png" alt="logo"
-								width="20" />
+					<h5 class="offcanvas-title" id="mobileNavLabel"><a class="navbar-brand me-0 py-0 "
+							href="index.html">
+							<img class="light-mode-item navbar-brand-item" src="assets/iimages/logo-with-Orod -blue.png"
+								alt="logo" width="20" />
 						</a></h5>
 					<button type="button" class="btn btn-close  text-white" data-bs-dismiss="offcanvas"
 						aria-label="Close"></button>
@@ -200,16 +153,18 @@
 						</li>
 						<!-- Partners -->
 						<li class="nav-item dropdown">
-							<a class="nav-link  nav-item-white dropdown-toggle" href="./partner.html" data-bs-auto-close="outside"
-								aria-haspopup="true" aria-expanded="false">Partners</a>
+							<a class="nav-link  nav-item-white px-2 dropdown-toggle" href="./partner.html"
+								data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Partners</a>
 							<span data-bs-toggle="dropdown"></span>
 							<ul class="dropdown-menu">
 								<li class="dropdown dropend">
-									<a class="dropdown-item" href="./partner-organisation.html" id='grid-org-menu'>Organizations</a>
+									<a class="dropdown-item" href="./partner-organisation.html"
+										id='grid-org-menu'>Organizations</a>
 
 								</li>
 								<li class="dropdown dropend">
-									<a class="dropdown-item" href="./partner-institution.html" id='grid-insti-menu'>Institutions</a>
+									<a class="dropdown-item" href="./partner-institution.html"
+										id='grid-insti-menu'>Institutions</a>
 								</li>
 							</ul>
 						</li>
@@ -257,7 +212,6 @@
 
 	<!-- **************** MAIN CONTENT START **************** -->
 	<main>
-
 		<!-- HERO SECTION START HERE -->
 		<section class="p-0 my-0">
 			<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -269,11 +223,14 @@
 							<div class="container">
 								<div class="row align-items-center">
 									<div class="col-md-6 text-center text-md-start">
-										<h3 class="mb-3 fs-2 text-white w-100">Professional Development & Work Experience.
+										<h3 class="mb-3 fs-2 text-white w-100">Professional Development & Work
+											Experience.
 											</h1>
-											<p class=" mb-4 text-white-50">Prodwex bridges the gap between academic learning and professional
+											<p class=" mb-4 text-white-50">Prodwex bridges the gap between academic
+												learning and professional
 												excellence through training, mentorship, and support.</p>
-											<a class="btn btn-danger btn-lg" href="#">Register Now <i class="bi bi-arrow-right"></i></a>
+											<a class="btn btn-danger btn-lg" href="#">Register Now <i
+													class="bi bi-arrow-right"></i></a>
 									</div>
 									<div class="col-md-6 d-none d-md-block">
 										<img src="https://i.pinimg.com/736x/b3/33/48/b33348c363142029f846acbfd54f9158.jpg"
@@ -292,9 +249,11 @@
 								<div class="row align-items-center">
 									<div class="col-md-6 text-center text-md-start">
 										<h3 class="mb-3 fs-2 text-white">Tech Training for Tomorrow's Innovators</h1>
-											<p class=" mb-4 text-white-50">Through expert-led programs, we equip students with cutting-edge
+											<p class=" mb-4 text-white-50">Through expert-led programs, we equip
+												students with cutting-edge
 												tech skills to thrive in the digital age</p>
-											<a class="btn btn-danger btn-lg" href="#">Explore Courses <i class="bi bi-arrow-right"></i></a>
+											<a class="btn btn-danger btn-lg" href="#">Explore Courses <i
+													class="bi bi-arrow-right"></i></a>
 									</div>
 									<div class="col-md-6 d-none d-md-block">
 										<img src="https://i.pinimg.com/736x/84/09/bb/8409bbf895cdb833ff47ded8f63a007f.jpg"
@@ -313,14 +272,16 @@
 								<div class="row align-items-center">
 									<div class="col-md-6 text-center text-md-start">
 										<h3 class="mb-3 fs-2 text-white">Guiding You to Career Success</h1>
-											<p class=" mb-4 text-white-50">Connect with industry experts for mentorship and to gain insight
+											<p class=" mb-4 text-white-50">Connect with industry experts for mentorship
+												and to gain insight
 												and direction for
 												your career journey.</p>
-											<a class="btn btn-danger btn-lg" href="#">Meet Our Mentors <i class="bi bi-arrow-right"></i></a>
+											<a class="btn btn-danger btn-lg" href="#">Meet Our Mentors <i
+													class="bi bi-arrow-right"></i></a>
 									</div>
 									<div class="col-md-6 d-none d-md-block">
-										<img src="https://i.pinimg.com/736x/03/ff/96/03ff9675b059ca1354c1b0c1e98f2abb.jpg" alt="Mentorship"
-											class="img-fluid my-5" loading="lazy">
+										<img src="https://i.pinimg.com/736x/03/ff/96/03ff9675b059ca1354c1b0c1e98f2abb.jpg"
+											alt="Mentorship" class="img-fluid my-5" loading="lazy">
 									</div>
 								</div>
 							</div>
@@ -335,9 +296,11 @@
 								<div class="row align-items-center">
 									<div class="col-md-6 text-center text-md-start">
 										<h3 class="mb-3 fs-2 text-white">Real Projects. Real Impact.</h1>
-											<p class=" mb-4 text-white-50">Gain practical experience working with real clients and real
+											<p class=" mb-4 text-white-50">Gain practical experience working with real
+												clients and real
 												challenges.</p>
-											<a class="btn btn-danger btn-lg" href="#">Start Now <i class="bi bi-arrow-right"></i></a>
+											<a class="btn btn-danger btn-lg" href="#">Start Now <i
+													class="bi bi-arrow-right"></i></a>
 									</div>
 									<div class="col-md-6 d-none d-md-block">
 										<img src="https://i.pinimg.com/736x/35/c1/36/35c13613687db448881346ce7579947e.jpg"
@@ -356,9 +319,11 @@
 								<div class="row align-items-center">
 									<div class="col-md-6 text-center text-md-start">
 										<h3 class="mb-3 fs-2 text-white">Making a Difference Together</h1>
-											<p class=" mb-4 text-secondary">Join a network of changemakers improving lives and building
+											<p class=" mb-4 text-secondary">Join a network of changemakers improving
+												lives and building
 												futures.</p>
-											<a class="btn btn-danger btn-lg" href="#">Join Us <i class="bi bi-arrow-right"></i></a>
+											<a class="btn btn-danger btn-lg" href="#">Join Us <i
+													class="bi bi-arrow-right"></i></a>
 									</div>
 									<div class="col-md-6 d-none d-md-block">
 										<img src="https://i.pinimg.com/736x/7e/d6/5a/7ed65a934c44e7486ba52a5c813b45b8.jpg"
@@ -382,12 +347,16 @@
 
 				<!-- Carousel Indicators -->
 				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-						aria-label="Slide 1"></button>
-					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+						aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"
+						aria-label="Slide 4"></button>
+					<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"
+						aria-label="Slide 5"></button>
 				</div>
 			</div>
 		</section>
@@ -440,7 +409,8 @@
 
 						<!-- SVG decoration -->
 						<figure class="position-absolute top-0 start-0 mt-n6 ms-n5 z-index-1 opacity-4 text-danger">
-							<svg width="110" height="105" viewBox="0 0 117 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<svg width="110" height="105" viewBox="0 0 117 98" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
 								<path class="fill-red"
 									d="M53.9804 0.725277C52.9701 1.69222 52.9701 5.07654 53.9804 11.1683C54.9906 17.1634 55.7123 18.5654 57.5885 18.5654C58.3582 18.5654 59.128 18.3237 59.3685 18.0336C59.561 17.6952 59.2723 13.9241 58.7912 9.52449C58.1177 3.52942 57.6847 1.45049 57.0112 0.773624C55.9047 -0.241669 54.9425 -0.290017 53.9804 0.725277Z">
 								</path>
@@ -537,16 +507,21 @@
 							<!-- Icon -->
 							<figure class="text-primary mb-3 flex-shrink-0 rounded-5 border-5">
 								<!-- Training Icon: Person Teaching at a Board -->
-								<svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
 									<!-- Whiteboard -->
-									<rect x="3" y="3" width="18" height="4" rx="1" stroke="currentColor" stroke-width="1.5" />
+									<rect x="3" y="3" width="18" height="4" rx="1" stroke="currentColor"
+										stroke-width="1.5" />
 									<!-- Instructor -->
 									<circle cx="6.5" cy="12" r="1.5" fill="currentColor" />
-									<path d="M6.5 13.5V17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M6.5 13.5V17" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" />
 									<path d="M5 17H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
 									<!-- Presentation pointer -->
-									<path d="M10 7H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-									<path d="M10 10H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M10 7H17" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" />
+									<path d="M10 10H15" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" />
 								</svg>
 							</figure>
 
@@ -564,10 +539,13 @@
 							<!-- Icon -->
 							<figure class="text-primary mb-3 flex-shrink-0">
 								<!-- Certificate Document Icon -->
-								<svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5" />
+								<svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor"
+										stroke-width="1.5" />
 									<path d="M7 8H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-									<path d="M7 12H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M7 12H11" stroke="currentColor" stroke-width="1.5"
+										stroke-linecap="round" />
 									<circle cx="17" cy="14" r="2" stroke="currentColor" stroke-width="1.5" />
 									<path d="M17 16V20L15.5 19L14 20V16" stroke="currentColor" stroke-width="1.5"
 										stroke-linejoin="round" />
@@ -586,7 +564,8 @@
 						<div class="card card-body small shadow-sm scale-hover">
 							<figure class="text-primary mb-3 flex-shrink-0">
 								<!-- Internship Icon (Briefcase style) -->
-								<svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
 									<path d="M10 2H14C15.1 2 16 2.9 16 4V6H8V4C8 2.9 8.9 2 10 2Z" fill="currentColor" />
 									<path fill-rule="evenodd" clip-rule="evenodd"
 										d="M4 6H20C21.1 6 22 6.9 22 8V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V8C2 6.9 2.9 6 4 6ZM20 9H4V18H20V9Z"
@@ -606,7 +585,8 @@
 						<div class="card card-body small shadow-sm scale-hover">
 							<!-- Icon -->
 							<figure class="text-primary mb-3 flex-shrink-0">
-								<svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
 									<!-- Mentor -->
 									<circle cx="8" cy="7" r="3" fill="currentColor" />
 									<!-- Mentee -->
@@ -617,8 +597,8 @@
 										stroke-linecap="round" />
 
 									<!-- Mentee Body -->
-									<path d="M13 20v-1c0-1.5 1.2-3 3-3s3 1.5 3 3v1" stroke="currentColor" stroke-width="1.5"
-										stroke-linecap="round" stroke-opacity="0.6" />
+									<path d="M13 20v-1c0-1.5 1.2-3 3-3s3 1.5 3 3v1" stroke="currentColor"
+										stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.6" />
 								</svg>
 
 							</figure>
@@ -638,13 +618,17 @@
 			<div class="container">
 				<div class=" text-start mb-3 mb-sm-3">
 					<h2 class=" p-0 fs-3 text-center text-primary-pro w-75 mx-auto"><span
-							class="text-primary-pro fw-bolder">Pro<span class="text-danger">DWEx</span>&nbsp;</span>Partnerships &
+							class="text-primary-pro fw-bolder">Pro<span
+								class="text-danger">DWEx</span>&nbsp;</span>Partnerships &
 						Member Institutions</h2>
-					<p class="mb-0 p-0 text-center pb-3 small px-3 px-lg-9">At ProDWex, we join forces with top universities, tech
+					<p class="mb-0 p-0 text-center pb-3 small px-3 px-lg-9">At ProDWex, we join forces with top
+						universities, tech
 						innovators, and non profits to deliver hands on training, expert
-						mentorship, and real world internships. Our collaborative approach ensures every participant gains in‑demand
+						mentorship, and real world internships. Our collaborative approach ensures every participant
+						gains in‑demand
 						skills,
-						professional certifications, and a network of industry connections ready to excel from day one.</p>
+						professional certifications, and a network of industry connections ready to excel from day one.
+					</p>
 				</div>
 
 				<!-- Institution item START 1 -->
@@ -654,7 +638,8 @@
 						<div class="card shadow-sm py-3  ">
 							<div class="d-flex gap-3">
 								<div class="icon-lg icon-md  py-2text-primary mb-3">
-									<img src="./assets/iimages/institutions/aace.jpg" alt="" srcset="" width="35px" height="40px">
+									<img src="./assets/iimages/institutions/aace.jpg" alt="" srcset="" width="35px"
+										height="40px">
 								</div>
 								<div class="pt-2">
 									<h6>AAUA</h6>
@@ -672,7 +657,8 @@
 						<div class="card shadow-sm py-3  ">
 							<div class="d-flex gap-3">
 								<div class="icon-lg icon-md  py-2text-primary mb-3">
-									<img src="./assets/iimages/institutions/oau.jpg" alt="" srcset="" width="35px" height="40px">
+									<img src="./assets/iimages/institutions/oau.jpg" alt="" srcset="" width="35px"
+										height="40px">
 								</div>
 								<div class="pt-2">
 									<h6>OAU</h6>
@@ -689,7 +675,8 @@
 						<div class="card shadow-sm py-3  ">
 							<div class="d-flex gap-3">
 								<div class="icon-lg icon-md  py-2text-primary mb-3">
-									<img src="./assets/iimages/institutions/absp.jpg" alt="" srcset="" width="35px" height="40px">
+									<img src="./assets/iimages/institutions/absp.jpg" alt="" srcset="" width="35px"
+										height="40px">
 								</div>
 								<div class="pt-2">
 									<h6>ABSPOLY</h6>
@@ -706,7 +693,8 @@
 						<div class="card shadow-sm py-3  ">
 							<div class="d-flex gap-3">
 								<div class="icon-lg icon-md  py-2text-primary mb-3">
-									<img src="./assets/iimages/institutions/aope.jpg" alt="" srcset="" width="35px" height="40px">
+									<img src="./assets/iimages/institutions/aope.jpg" alt="" srcset="" width="35px"
+										height="40px">
 								</div>
 								<div class="pt-2">
 									<h6>AOPE</h6>
@@ -728,7 +716,8 @@
 						<div class="card shadow-sm py-3  ">
 							<div class="d-flex gap-3">
 								<div class="icon-lg icon-md  py-2text-primary mb-3">
-									<img src="./assets/iimages/institutions/abuad.jpg" alt="" srcset="" width="30px" height="10px">
+									<img src="./assets/iimages/institutions/abuad.jpg" alt="" srcset="" width="30px"
+										height="10px">
 								</div>
 								<div>
 									<h6>ABUAD</h6>
@@ -745,7 +734,8 @@
 						<div class="card shadow-sm py-3  ">
 							<div class="d-flex gap-3">
 								<div class="icon-lg icon-md  py-2text-primary mb-3">
-									<img src="./assets/iimages/institutions/bowen.jpg" alt="" srcset="" width="35px" height="40px">
+									<img src="./assets/iimages/institutions/bowen.jpg" alt="" srcset="" width="35px"
+										height="40px">
 								</div>
 								<div>
 									<h6>BOWEN</h6>
@@ -762,7 +752,8 @@
 						<div class="card shadow-sm py-3  ">
 							<div class="d-flex gap-3">
 								<div class="icon-lg icon-md  py-2text-primary mb-3">
-									<img src="./assets/iimages/institutions/cu.jpg" alt="" srcset="" width="35px" height="40px">
+									<img src="./assets/iimages/institutions/cu.jpg" alt="" srcset="" width="35px"
+										height="40px">
 								</div>
 								<div>
 									<h6>CU</h6>
@@ -779,7 +770,8 @@
 						<div class="card shadow-sm py-3  ">
 							<div class="d-flex gap-3">
 								<div class="icon-lg icon-md  py-2text-primary mb-3">
-									<img src="./assets/iimages/institutions/eksu.jpg" alt="" srcset="" width="30px" height="40px">
+									<img src="./assets/iimages/institutions/eksu.jpg" alt="" srcset="" width="30px"
+										height="40px">
 								</div>
 								<div>
 									<h6>EKSU</h6>
@@ -797,7 +789,8 @@
 
 				<div class="card-footer mt-auto pt-4 text-start">
 					<button class="btn btn-outline-primary">
-						<a class="icon-link" href="./partner.html">click here more institutions....<i class="bi bi-arrow-right"></i>
+						<a class="icon-link" href="./partner.html">click here more institutions....<i
+								class="bi bi-arrow-right"></i>
 						</a>
 					</button>
 				</div>
@@ -807,13 +800,16 @@
 		</section>
 
 
-		<section class="container py- mb-5">
+		<section class="container py-2 mb-5">
 
 
 			<div class="d-flex flex-column align-items-start gap-2">
-				<h2 class="fw-bold text-primary-pro">Empowering <span class="text-danger">Africans</span> with Trained <span
-						class="text-danger">Talent</span></h2>
-				<p class="text-body-secondary">We proudly collaborate with forward-thinking organizations to deliver impactful
+				<h2 class="fw-bold text-primary-pro">Empowering <span class="text-danger">Organisations</span> with
+					Trained
+					<span class="text-danger">Talent</span>
+				</h2>
+				<p class="text-body-secondary">We proudly collaborate with forward-thinking organizations to deliver
+					impactful
 					training, mentorship, and hands-on
 					experience to young professionals across Africa.</p>
 			</div>
@@ -822,72 +818,135 @@
 			<div class="row g-4 py-4">
 
 
-				<div class="col-lg-3 gap-2">
+				<div class="col-lg-3 gap-2 px-5">
 
-					<div class="d-flex  gap-1">
-						<i class="bi bi-door-open fs-2 text-primary-pro"></i>
+					<div class="gap-1 text-center org rounded-1 p-2 ">
+						<i class="bi bi-door-open fs-4 text-primary-pro "></i>
 						<div>
-							<h6 class=" mb-0 text-primary-pro mt-1 fs-7">Aluminium Openings
+							<h6 class=" mb-0 text-primary-pro xs-heading mt-1">Aluminium Openings
 							</h6>
-							<hr/>
-							<p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
+							<p class="text-muted">230-Companies</p>
 						</div>
 
 					</div>
 				</div>
 
 
-				<div class="col-lg-3 gap-2">
-					<div class="d-flex gap-1">
+				<div class="col-lg-3 gap-2 px-5">
+					<div class="gap-1 text-center org rounded-1 p-2 ">
 
-						<div
-							class="feature-icon-small fs-2">
+						<div class="feature-icon-small fs-4">
 							<i class="bi bi-building text-primary-pro"></i>
 						</div>
 
-						<div >
-							<h6 class=" mb-0 text-primary-pro mt-1">Featured title</h6>
-							<hr/>
-							<p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
+						<div>
+							<h6 class=" mb-0 text-primary-pro xs-heading  mt-1">Construction</h6>
+							<p class="text-muted">1,526 Companies</p>
 						</div>
 					</div>
 				</div>
 
 
-				<div class="col-lg-3 gap-2">
-					<div class=" d-flex gap-2">
+				<div class="col-lg-3 gap-2 px-5">
+					<div class="gap-2 text-center org rounded-1 p-2 ">
 
-						<div class="feature-icon-small fs-2">
+						<div class="feature-icon-small fs-4">
 							<i class="bi bi-briefcase text-primary-pro"></i>
 						</div>
 
 						<div>
-							<h6 class=" mb-0 text-primary-pro mt-1">Featured title</h6>
-							<hr/>
-							<p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
+							<h6 class=" mb-0 text-primary-pro xs-heading  mt-1">General Business</h6>
+							<p class="text-muted">8,039 Companies</p>
 						</div>
 
 					</div>
 				</div>
 
 
-				<div class="col-lg-3 gap-2">
-					<div class="d-flex gap-1">
+				<div class="col-lg-3 gap-2 px-5">
+					<div class="gap-1 text-center org rounded-1 p-2 ">
 
-						<div class="feature-icon-small fs-2">
+						<div class="feature-icon-small fs-4">
 							<i class="bi bi-lightning-charge text-primary-pro "></i>
 						</div>
 
 						<div>
-							<h6 class="mb-0 text-primary-pro mt-1">Featured title</h6>
-							<hr/>
-							<p class="text-muted">Paragraph of text beneath the heading to explain the heading.</p>
+							<h6 class="mb-0 text-primary-pro  xs-heading mt-1">Engineering</h6>
+							<p class="text-muted">2,517 Companies</p>
 						</div>
 					</div>
 				</div>
 
+
+				<div class="col-lg-3 gap-2 px-5">
+
+					<div class="gap-1 text-center org rounded-1 p-2 ">
+						<i class="bi bi-shield-check fs-4 text-primary-pro "></i>
+						<div>
+							<h6 class=" mb-0 text-primary-pro xs-heading mt-1">Law Firms
+							</h6>
+							<p class="text-muted">1,064-Companies</p>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="col-lg-3 gap-2 px-5">
+					<div class="gap-1 text-center org rounded-1 p-2 ">
+
+						<div class="feature-icon-small fs-4">
+							<i class="bi bi-house-door text-primary-pro"></i>
+						</div>
+
+						<div>
+							<h6 class=" mb-0 text-primary-pro xs-heading  mt-1">
+								Real Estate
+							</h6>
+							<p class="text-muted">1,206 Companies</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-lg-3 gap-2 px-5">
+					<div class="gap-2 text-center org rounded-1 p-2 ">
+
+						<div class="feature-icon-small fs-4">
+							<i class="bi bi-grid-3x3-gap-fill text-primary-pro"></i>
+						</div>
+
+						<div>
+							<h6 class=" mb-0 text-primary-pro xs-heading  mt-1">Interior Designs</h6>
+							<p class="text-muted">1,862 Companies</p>
+						</div>
+
+					</div>
+				</div>
+
+
+				<div class="col-lg-3 gap-2 px-5">
+					<div class="gap-1 text-center org rounded-1 p-2 ">
+
+						<div class="feature-icon-small fs-4">
+							<i class="bi bi-calendar-date text-primary-pro "></i>
+						</div>
+
+
+						<div>
+							<h6 class="mb-0 text-primary-pro  xs-heading mt-1">Event Services</h6>
+							<p class="text-muted">3,981 Companies</p>
+						</div>
+					</div>
+				</div>
+
+
+
 				<div class="text-start pt-3">
 					<button type="button" class="btn btn-small btn-primary">
+						<a href="#">View more</a>
+					</button>
+					<button type="button" class="btn btn-small btn-danger">
 						<a href="#">Join Us</a>
 					</button>
 				</div>
@@ -897,12 +956,12 @@
 
 		<!-- Services Section -->
 
-		<section class="py-5 Services">
+		<section class="py-3 primary-faded">
 			<div class="album">
 				<div class="">
 					<div class="d-flex flex-column  container">
-						<h1 class="fs-3 text-center text-white ">Unlock Your Potential with ProDWex</h1>
-						<p class="text-center py-4 px-5 container inner-container text-white-50">Step into your future
+						<h1 class="fs-3 text-center text-primary-pro ">ProDWex Professional Certification Courses</h1>
+						<p class="text-center py-2 px-5 container inner-container  text-muted">Step into your future
 							with ProDWex. Our hands-on, industry-relevant courses are designed to equip you with real
 							world
 							skills, boost your career potential, and support your entrepreneurial goals.
@@ -910,13 +969,13 @@
 					</div>
 
 
-					<div class="contianer-fluid bg-body-tertiary pt-3 ">
+					<div class="contianer-fluid pt-3 ">
 						<div class="container mx-auto row py-4">
 							<!-- Card 1 -->
 							<div class="col-12 col-md-6 col-lg-4 mb-4  ">
 								<div class="card h-100 shadow-sm  scale-hover rounded-4 border-0">
-									<img src="./assets/iimages/courses/crm.jpg" class="card-img-top rounded-top-4" alt="CRM"
-										style="height: 200px; object-fit: cover;" />
+									<img src="./assets/iimages/courses/crm.jpg" class="card-img-top rounded-top-4"
+										alt="CRM" style="height: 200px; object-fit: cover;" />
 									<div class="card-body d-flex flex-column justify-content-between">
 										<div>
 											<h6 class="card-title fw-semibold">Customer Relatioship Management</h6>
@@ -926,8 +985,10 @@
 										</div>
 										<div class="d-flex justify-content-between align-items-center mt-3">
 											<div class="btn-group">
-												<button class="btn btn-sm btn-outline-primary">View <i class="bi bi-eye"></i></button>
-												<button class="btn btn-sm btn-danger">Register <i class="bi bi-door-open"></i></button>
+												<button class="btn btn-sm btn-outline-primary">View <i
+														class="bi bi-eye"></i></button>
+												<button class="btn btn-sm btn-danger">Register <i
+														class="bi bi-door-open"></i></button>
 											</div>
 											<small class="text-muted">9 mins</small>
 										</div>
@@ -938,8 +999,8 @@
 							<!-- Card 2 -->
 							<div class="col-12 col-md-6 col-lg-4 mb-4  ">
 								<div class="card h-100 shadow-sm scale-hover rounded-4 border-0">
-									<img src="./assets/iimages/courses/hrm.jpg" class="card-img-top rounded-top-4" alt="HRM"
-										style="height: 200px; object-fit: cover;" />
+									<img src="./assets/iimages/courses/hrm.jpg" class="card-img-top rounded-top-4"
+										alt="HRM" style="height: 200px; object-fit: cover;" />
 									<div class="card-body d-flex flex-column justify-content-between">
 										<div>
 											<h6 class="card-title fw-semibold">Professional Courses & Certification</h6>
@@ -950,8 +1011,10 @@
 										</div>
 										<div class="d-flex justify-content-between align-items-center mt-3">
 											<div class="btn-group">
-												<button class="btn btn-sm btn-outline-primary">View <i class="bi bi-eye"></i></button>
-												<button class="btn btn-sm btn-danger">Register <i class="bi bi-door-open"></i></button>
+												<button class="btn btn-sm btn-outline-primary">View <i
+														class="bi bi-eye"></i></button>
+												<button class="btn btn-sm btn-danger">Register <i
+														class="bi bi-door-open"></i></button>
 											</div>
 											<small class="text-muted">9 mins</small>
 										</div>
@@ -962,8 +1025,8 @@
 							<!-- Card 3 -->
 							<div class="col-12 col-md-6 col-lg-4 mb-4  ">
 								<div class="card h-100 shadow-sm scale-hover rounded-4 border-0">
-									<img src="./assets/iimages/courses/pmp.jpg" class="card-img-top rounded-top-4" alt="PMP"
-										style="height: 200px; object-fit: cover;" />
+									<img src="./assets/iimages/courses/pmp.jpg" class="card-img-top rounded-top-4"
+										alt="PMP" style="height: 200px; object-fit: cover;" />
 									<div class="card-body d-flex flex-column justify-content-between">
 										<div>
 											<h6 class="card-title fw-semibold">Project Management</h6>
@@ -976,8 +1039,10 @@
 										</div>
 										<div class="d-flex justify-content-between align-items-center mt-3">
 											<div class="btn-group">
-												<button class="btn btn-sm btn-outline-primary">View <i class="bi bi-eye"></i></button>
-												<button class="btn btn-sm btn-danger">Register <i class="bi bi-door-open"></i></button>
+												<button class="btn btn-sm btn-outline-primary">View <i
+														class="bi bi-eye"></i></button>
+												<button class="btn btn-sm btn-danger">Register <i
+														class="bi bi-door-open"></i></button>
 											</div>
 											<small class="text-muted">9 mins</small>
 										</div>
@@ -988,9 +1053,8 @@
 
 					</div>
 					<div class="text-center pt-5">
-						<h5 class="text-white mb-5 p-0">Explore Full Range of Our Courses</h5>
-						<a href="./courses.html" class="btn btn-lg btn-outline-primary rounded-4 text-white">Explore All
-							Courses
+						<h5 class="text-primary-pro mb-5 p-0">Explore Full Range of Our Courses</h5>
+						<a href="./courses.html" class="btn btn-lg btn-primary rounded-4 text-white">View more
 							<i class="bi bi-arrow-right"></i></a>
 					</div>
 				</div>
@@ -1000,17 +1064,123 @@
 
 		<!-- ======================= Client START -->
 
-		<section class="pb-0">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-md-3 mb-2 mb-md-0">
-						<p class="pe-6 text-primary"><strong class="fs-5 text-danger">5k+</strong> Companies trust us
-						</p>
-					</div>
+		<section class="container pb-0">
+			<div class="row pb-6">
+				<!-- Client -->
+				<div class="col-md-6 col-xl-7 mb-5 mb-md-0 mt-5">
+					<p class="mb-0 text-primary">
+						<i class="bi bi-shield-check"></i> | We believe
+						in going above and beyond to exceed. We reached
+						<b class="text-danger fs-3">19k</b>
+					</p>
 
-					<div class="col-md-9">
-						<!-- Slider START -->
-						<div class="swiper" data-swiper-options='{
+					<!-- Slider START -->
+					<div class="swiper mt-2 mt-md-4 swiper-initialized swiper-horizontal swiper-backface-hidden"
+						data-swiper-options='{
+											"loop": true, 
+											"slidesPerView": 2, 
+											"spaceBetween": 30, 
+											"autoplay":{
+												"delay": 2000, 
+												"disableOnInteraction": false
+											},
+											"breakpoints": { 
+												"576": {"slidesPerView": 3}, 
+												"768": {"slidesPerView": 2}, 
+												"992": {"slidesPerView": 3}, 
+												"1200": {"slidesPerView": 4}
+											}}'>
+						<!-- Slider items -->
+						<div class="swiper-wrapper align-items-center" id="swiper-wrapper-3b1d27adfa46ef91"
+							aria-live="off">
+
+							<!-- Image -->
+
+							<div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" style="
+																width: 136.25px;
+																margin-right: 30px;
+															" data-swiper-slide-index="0">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb93d6d0e6eb8a5b04770_image-40.webp"
+									class="px-3 ps-0" alt="image" />
+							</div>
+							<div class="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb93ebbaebd76ee134937_image-41.webp"
+								role="group" aria-label="2 / 4" style="
+																width: 136.25px;
+																margin-right: 30px;
+															" data-swiper-slide-index="1">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb93f47fc55edc1c12c15_image-34.webp"
+									class="px-3" alt="image" />
+							</div>
+							<div class="swiper-slide" role="group" aria-label="3 / 4" style="
+																width: 136.25px;
+																margin-right: 30px;
+															" data-swiper-slide-index="2">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb93f71d30523356f359f_image-35.webp"
+									class="px-3" alt="image" />
+							</div>
+							<div class="swiper-slide" role="group" aria-label="4 / 4" style="
+																width: 136.25px;
+																margin-right: 30px;
+															" data-swiper-slide-index="3">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb9410cc81f062b3b7221_image-39.webp"
+									class="px-3" alt="image" />
+							</div>
+						</div>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+					</div>
+				</div>
+
+				<!-- Skill sets -->
+				<div class="col-md-6 col-lg-5 col-xl-3 ms-auto text-md-end">
+					<!-- Title -->
+					<p class="mb-0 me-2">
+						Trusted by Customers
+						<span class="badge bg-primary">Active</span>
+					</p>
+
+					<!-- Counter -->
+					<div class="d-flex justify-content-md-end mt-2 mt-md-4">
+						<!-- Counter item -->
+						<div>
+							<div class="d-flex justify-content-md-end">
+								<h4 class="purecounter mb-0 text-primary" data-purecounter-start="0"
+									data-purecounter-end="15" data-purecounter-delay="300"
+									data-purecounter-duration="0">
+									15
+								</h4>
+								<span class="h4 mb-0 text-primary">k+</span>
+							</div>
+							<p class="mb-0">Active users</p>
+						</div>
+
+						<div class="vr mx-3 mx-sm-4"></div>
+						<!-- Divider -->
+
+						<!-- Counter item -->
+						<div>
+							<div class="d-flex justify-content-md-end">
+								<h4 class="purecounter mb-0 text-danger" data-purecounter-start="0"
+									data-purecounter-end="56" data-purecounter-delay="300"
+									data-purecounter-duration="0">
+									56
+								</h4>
+								<span class="h4 mb-0 text-danger">+</span>
+							</div>
+							<p class="mb-0">Completed projects</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row align-items-center">
+				<div class="col-md-3 mb-2 mb-md-0">
+					<p class="pe-6 text-primary"><strong class="fs-5 text-danger">5k+</strong> Companies trust us
+					</p>
+				</div>
+
+				<div class="col-md-9">
+					<!-- Slider START -->
+					<div class="swiper" data-swiper-options='{
 						"slidesPerView": 2, 
 						"spaceBetween": 50,
 						"breakpoints": { 
@@ -1018,87 +1188,76 @@
 							"992": {"slidesPerView": 4}, 
 							"1200": {"slidesPerView": 5}
 						}}'>
-							<!-- Slider items -->
-							<div class="swiper-wrapper align-items-center">
-								<!-- Image -->
-								<div class="swiper-slide">
-									<img
-										src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb93d6d0e6eb8a5b04770_image-40.webp"
-										alt="image" />
-								</div>
-								<!-- Image -->
-								<div class="swiper-slide">
-									<img
-										src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb93ebbaebd76ee134937_image-41.webp"
-										alt="image" />
-								</div>
-								<!-- Image -->
-								<div class="swiper-slide">
-									<img
-										src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb93f47fc55edc1c12c15_image-34.webp"
-										alt="image" />
-								</div>
-								<!-- Image -->
-								<div class="swiper-slide">
-									<img
-										src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb93f71d30523356f359f_image-35.webp"
-										alt="image" />
-								</div>
-								<!-- Image -->
-								<div class="swiper-slide">
-									<img
-										src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb9410cc81f062b3b7221_image-39.webp"
-										alt="image" />
-								</div>
-								<!-- Image -->
-								<div class="swiper-slide">
-									<img
-										src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb941541d8cf1d54ee19f_image-38.webp"
-										alt="image" />
-								</div>
-								<!-- Image -->
-								<div class="swiper-slide">
-									<img
-										src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb9420edc052859982f95_image-47.webp"
-										alt="image" />
-								</div>
-								<!-- Image -->
-								<div class="swiper-slide">
-									<img
-										src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb94397aa95c19f6bd4d0_image-42.webp"
-										alt="image" />
-								</div>
-								<!-- Image -->
-								<div class="swiper-slide">
-									<img
-										src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb943541d8cf1d54ee27d_image-43.webp"
-										alt="image" />
-								</div>
-								<!-- Image -->
-								<div class="swiper-slide">
-									<img
-										src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb944739ed0982e7f37d0_image-44.webp"
-										alt="image" />
-								</div>
-								<!-- Image -->
-								<div class="swiper-slide">
-									<img
-										src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb9449a9c185d3938812c_image-48.webp"
-										alt="image" />
-								</div>
-								<!-- Image -->
-								<div class="swiper-slide">
-									<img
-										src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb945739ed0982e7f38a9_image-45.webp"
-										alt="image" />
-								</div>
+						<!-- Slider items -->
+						<div class="swiper-wrapper align-items-center">
+							<!-- Image -->
+							<div class="swiper-slide">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb93d6d0e6eb8a5b04770_image-40.webp"
+									alt="image" />
+							</div>
+							<!-- Image -->
+							<div class="swiper-slide">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb93ebbaebd76ee134937_image-41.webp"
+									alt="image" />
+							</div>
+							<!-- Image -->
+							<div class="swiper-slide">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb93f47fc55edc1c12c15_image-34.webp"
+									alt="image" />
+							</div>
+							<!-- Image -->
+							<div class="swiper-slide">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb93f71d30523356f359f_image-35.webp"
+									alt="image" />
+							</div>
+							<!-- Image -->
+							<div class="swiper-slide">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb9410cc81f062b3b7221_image-39.webp"
+									alt="image" />
+							</div>
+							<!-- Image -->
+							<div class="swiper-slide">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb941541d8cf1d54ee19f_image-38.webp"
+									alt="image" />
+							</div>
+							<!-- Image -->
+							<div class="swiper-slide">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb9420edc052859982f95_image-47.webp"
+									alt="image" />
+							</div>
+							<!-- Image -->
+							<div class="swiper-slide">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb94397aa95c19f6bd4d0_image-42.webp"
+									alt="image" />
+							</div>
+							<!-- Image -->
+							<div class="swiper-slide">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb943541d8cf1d54ee27d_image-43.webp"
+									alt="image" />
+							</div>
+							<!-- Image -->
+							<div class="swiper-slide">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb944739ed0982e7f37d0_image-44.webp"
+									alt="image" />
+							</div>
+							<!-- Image -->
+							<div class="swiper-slide">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb9449a9c185d3938812c_image-48.webp"
+									alt="image" />
+							</div>
+							<!-- Image -->
+							<div class="swiper-slide">
+								<img src="https://cdn.prod.website-files.com/5fe3b288d04785204ec97dd9/647fb945739ed0982e7f38a9_image-45.webp"
+									alt="image" />
 							</div>
 						</div>
-						<!-- Slider END -->
 					</div>
+					<!-- Slider END -->
 				</div>
+
 				<!-- Row END -->
 			</div>
+
 		</section>
 
 
@@ -1106,137 +1265,20 @@
 		Client END -->
 
 
-
-
-		<!-- =======================
-About START -->
-		<section>
-			<div class="container">
-				<div class="row g-4 align-items-xl-center">
-					<!-- About image START -->
-					<div class="col-lg-7">
-						<div class="row pe-xl-5">
-							<div class="col-sm-6">
-								<!-- About image -->
-								<img src="assets/images/about/02.jpg" class="rounded" alt="about-img" />
-
-								<!-- SVG decoration -->
-								<figure class="text-end me-3 mt-n3">
-									<svg class="fill-primary" width="106px" height="96px" viewBox="0 0 106 96" style="
-												enable-background: new 0 0 106
-													96;
-											" xml:space="preserve">
-										<path
-											d="M104.7,50.4c0,0.1-0.1,0.4-0.3,0.7c0.1,0.1,0.2,0.1,0.4,0.2c0.1,0.3,0.5,0.6,0.3,1c-0.2,0.4,0.4,0.7-0.1,1 c0.1,0.7-0.4,1.3-0.8,1.8c-0.3,0.5-0.4,1.1-0.9,1.5c-0.4,0.4-0.6,0.9-1,1.4c-0.3,0-0.5,0-0.9,0c0.1,0.2,0.1,0.4,0.2,0.6 c-0.1,0.1-0.2,0.3-0.4,0.5c0.1,0.3,0.2,0.6,0.3,1c-0.2,0.2-0.3,0.4-0.5,0.6c0.1,0,0.3,0.1,0.5,0.2c-0.3,0.2-0.5,0.3-0.7,0.5 c0,0.1,0.1,0.1,0.2,0.2c-0.7,0.3-1.4-0.4-2.2-0.1c-0.5,0.4-0.9,1.1-1.6,1.4c-0.3,0.1,0,0.6-0.5,0.6c-0.2,0,0,0.6-0.5,0.4 c-0.2,0.5-0.6,0.7-1,1.1c-0.3,0.3-0.6,0.6-0.8,1c-0.2,0.3-0.4,0.6-0.6,0.9c-0.2,0.3-0.4,0.5-0.6,0.8c-0.1,0.2-0.1,0.6-0.3,0.8 c-0.2,0.1-0.4,0.3-0.5,0.6c-0.2-0.1-0.4-0.2-0.5-0.3c-0.5,0.2-0.9,0.4-1.4-0.1v-1.2c-0.9-0.5-1.8-0.9-2.2-2.1c0-0.4-0.1-0.9,0.2-1.3 c-0.5-1-0.1-1.9,0.4-2.8c0.6-1.1,1.4-1.9,2.3-2.8c-0.5-0.8-1.1-1.6-1.6-2.4c-0.3-0.6-0.7-1.2-0.7-1.8c0-0.7-0.2-1.4,0.2-2.1 c0.2-0.3,0-0.8,0.2-1.2c0.1-0.2,0.2-0.5,0.4-0.7c0.1-0.1,0.1-0.3,0.2-0.7c0.2-0.2,0.7-0.4,0.7-0.7c0.1-0.5,0.8-0.3,0.8-0.9 c0.2,0.1,0.2,0.2,0.3,0.3c0.3-0.1,0.6-0.2,0.9-0.3c0.1,0.2,0.2,0.4,0.3,0.6c-0.2,0.4-0.5,0.9-0.8,1.4c0.6-0.1,1-0.1,1.4-0.1 c0.2,0.2,0.2,0.2,0.3,0.3c-0.2,0.3-0.3,0.6-0.5,1c0.4,0,0.6,0.1,1,0.1c-0.1,0.4-0.2,0.8-0.3,1.2c-0.1,0.1-0.3,0.3-0.5,0.4 c0.1,0.1,0.1,0.2,0.2,0.2c0.1-0.1,0.3-0.2,0.5-0.3c0.1,0.2,0.1,0.3,0.1,0.4c-0.3,0.2-0.6,0.3-1,0.5c0.2,0.1,0.3,0.1,0.5,0.2 c-0.3,0.3-0.5,0.5-0.8,0.8c0.4,0.3,0.7,0.6,1.1,0.9c0.6,0.1,1-0.1,1.4-0.5c1-0.9,2.1-1.6,3.1-2.5c1-0.9,2.1-1.8,2.8-3 c0.2-0.3,0.5-0.5,0.7-0.7h1.2c0.1,0.1,0.2,0.2,0.3,0.4c-0.1,0.4-0.3,0.8-0.4,1.2c0.4-0.1,0.7-0.2,1-0.3 C104.4,50,104.5,50.1,104.7,50.4" />
-										<path
-											d="M33,74.2c-0.4,0.1-0.7,0.2-1.1,0.3c0.1-0.2,0.2-0.3,0.2-0.5c-0.3-0.4-0.6-0.7-1.1-0.7c0-0.2-0.1-0.3-0.1-0.4H30 c-0.1-0.1-0.2-0.1-0.2-0.2c-0.1-0.4-0.2-0.9-0.4-1.3c-0.3-0.4-0.2-0.9-0.2-1.3c0-0.3,0.1-0.7,0.2-1c0.3-1.2,0.8-2.4,1.4-3.5 c0.4-0.7,0.8-1.3,1.2-2c0.4-0.6,1-1.2,1.4-1.8c-0.1-0.1-0.3-0.2-0.4-0.3c-1.5-0.9-2.8-2-4-3.2c-0.6-0.6-0.6-1.4-0.7-2.1 c-0.1-0.3,0-0.6,0-0.9c0.3-0.6,0.9-0.6,1.5-0.9c0.2,0.4,0.4,0.7,0.6,1.1c0,0,0.1-0.1,0.2-0.2c0.1,0.1,0.2,0.2,0.3,0.3 c0.2,0.7,0.8,1,1.4,1.3c1.2,0.6,2.4,1.2,3.7,1.8c0.3-0.3,0.6-0.8,1-1c0.4-0.2,0.4-0.9,1-0.8c-0.1-0.1-0.2-0.2-0.2-0.3 c0.2-0.1,0.4-0.3,0.7-0.5c0.1-0.2,0.2-0.5,0.3-0.8c0.2,0,0.4,0,0.6,0c-0.1-0.1-0.2-0.2-0.3-0.3c0.5-0.1,0.5-0.6,0.8-0.8 c0.3-0.3,0.5-0.7,0.8-1.1c0.1,0,0.1,0.1,0.3,0.2c0.1-0.1,0.1-0.3,0.2-0.4c0.1,0.1,0.2,0.1,0.3,0.2c0.1-0.8,0.6-1.4,1.1-2 c0.5-0.6,0.9-1.3,1.7-1.7c0.1,0.1,0.2,0.2,0.4,0.3c-0.3,0.6-0.6,1.2-1.3,1.5v0.9c0.2,0,0.3,0,0.3-0.1c0.1-0.2,0.2-0.5,0.3-0.6 c0.5-0.4,1-0.8,1.5-1.3c0,0.4,0.1,0.7,0.1,1c-0.2,0.1-0.3,0.1-0.4,0.2c0,0,0.1,0.1,0.1,0.1c0.3-0.1,0.5-0.1,0.9-0.2 c0.1,0.2,0.2,0.4,0.3,0.6c-0.1,0.1-0.1,0.2-0.2,0.2c0,0.3,0.4,0.6,0.1,1c-0.1-0.1-0.2-0.2-0.2-0.2c0,0.1-0.1,0.1-0.1,0.2 c0,0.1,0.1,0.3,0.2,0.4c-0.1,0.6-0.5,1-0.9,1.3c-0.4,0.4-0.8,0.7-1.4,1.1c0.2,0.1,0.4,0.2,0.6,0.3c-0.1,0.2-0.2,0.4-0.3,0.6 c0,0.1,0.1,0.1,0.2,0.3c-0.2,0-0.5,0.1-0.7,0.1c0.1,0.2,0.1,0.4,0.2,0.6h-0.8c-0.1,0.3-0.3,0.5-0.4,0.8c0.1,0.1,0.2,0.2,0.3,0.3 c-0.2,0-0.4,0.1-0.7,0.1c0.1,0.2,0.1,0.4,0.2,0.6c-0.2,0-0.4,0.1-0.7,0.1c0.1,0.2,0.1,0.4,0.3,0.7c-0.3-0.1-0.5-0.2-0.8-0.3 c-0.1,0.2-0.2,0.5-0.4,0.7c0,0.1,0.1,0.2,0.1,0.2c0.1,0,0.2,0,0.3,0.1c0.3,0.2,0.4,0.6,0.8,0.8c0.4,0.2,0.5,0.6,0.8,0.9 c0.2,0.3,0.4,0.5,0.3,0.9c0,0.1,0.1,0.3,0.2,0.4c-0.1,0.1-0.1,0.2-0.3,0.4c-0.3,0-0.5,0.4-1.1,0.2c-1-0.4-2-0.7-3-0.8 c-0.1,0-0.1-0.1-0.2-0.2c-0.3,0.3-0.6,0.7-1,1.1c0,0,0,0.2,0,0.4c-0.2,0-0.4,0.1-0.7,0.1c0.2,0.3,0.4,0.5,0.6,0.9 c-0.3-0.1-0.4-0.1-0.7-0.2c0,0.1-0.1,0.2-0.2,0.3c0.1,0.4,0,0.6-0.4,0.8c-0.1,0.5-0.2,0.9-0.4,1.3c-0.2,0.1-0.3,0.1-0.4,0.2L36,69 c-0.3,0.3-0.7,0.5-1,0.8c-0.2,0.3-0.3,0.7-0.5,1.1c0,0,0.1,0.1,0.2,0.3c-0.2,0.3-0.5,0.5-0.7,0.8c0.1,0.1,0.2,0.2,0.3,0.3 c-0.2,0.2-0.3,0.4-0.5,0.6v0.7C33.4,73.7,33.2,74,33,74.2" />
-										<path
-											d="M60.7,78.7c0.5,0.6,0.5,0.6,1.2,0.3c0,0.2,0,0.4,0.1,0.5c0,0.1,0.1,0.2,0.2,0.3C62.1,79.9,62,80,62,80 c0.2,0.1,0.3,0.1,0.6,0.3c-0.3,0.4-0.5,0.7-0.7,1.1c0.3,0.6-0.3,0.7-0.4,1c-0.1,0.5-0.7,0.6-0.7,1.1c0,0.6-0.6,0.6-0.9,1 c-0.2,0.3-0.6,0.5-0.7,0.9c0.1,0.2,0.2,0.3,0.3,0.5c-0.3,0.2-0.6,0.4-0.9,0.5l-0.7,0.3c-0.2,0.3-0.4,0.5-0.7,0.8v0.2 c-0.7,0.5-1.4,1-2.2,1.6c0.2,0.1,0.4,0.2,0.6,0.3c-0.3,0.4-0.6,0.9-1,1.3c0.9,0.3,1.7,0.6,2.5,0.9c-0.1,0.2-0.2,0.3-0.2,0.5 c0.4,0.1,0.7,0.3,1.1,0.4v0.5c0.3,0.2,0.5,0.4,0.7,0.6c0,0.3,0,0.5,0,0.8l0.4,0.4l-1,0.9c-0.2,0.3-0.5,0.2-0.8,0 c-0.1-0.1-0.2-0.1-0.3-0.1c-1.2,0-2.2-0.4-3.3-0.8c-0.8-0.3-1.5-0.7-2.3-1c-0.2,0.2-0.6,0.4-0.6,0.8c-0.5,0.1-0.9,0.2-1.4,0.3 c-0.2-0.2-0.4-0.4-0.6-0.6c0.1-0.1,0.1-0.2,0.3-0.3c-0.1-0.2-0.2-0.5-0.3-0.6c-0.3,0.1-0.7,0.1-1,0.1c-0.2-0.3-0.3-0.6-0.5-0.9 c-0.1,0.1-0.1,0.1-0.1,0.1c-0.2-0.3-0.5-0.5-0.8-0.9c0.1-0.8-0.4-1.7-0.3-2.7c0-0.2-0.1-0.5-0.3-0.7c-0.7-0.6-0.7-1.5-1-2.3 c-0.1-0.3-0.2-0.7-0.3-1c0-0.6-0.1-1.1,0-1.7c0.2-0.9,0.3-1.8,1.3-2.1c0.3-0.1,0.7-0.1,1.1-0.2v1.8c0.4-0.2,0.6-0.4,1-0.7 c0.1,0.2,0.1,0.3,0.2,0.5c0.1,0,0.1-0.1,0.2-0.1v1c0.2-0.1,0.3-0.2,0.5-0.2c0.5,0.4,0.5,1,0.4,1.5c0.2,0.1,0.3,0.1,0.5,0.2 c-0.1,0.2-0.2,0.5-0.3,0.8c0.1,0,0.2,0,0.2,0c0.1-0.1,0.1-0.2,0.2-0.2c1-0.4,1.5-1.4,2.4-1.7c0.2-0.7,0.9-0.9,1.4-1.3 c0.4-0.5,1.1-0.8,1.6-1.2c0.5-0.4,0.8-1.1,1.5-1.3c0.4-0.8,1.1-1.4,1.9-1.9c0-0.6,0.7-0.6,0.7-1.2h1c0.1,0.1,0.2,0.2,0.3,0.3 c-0.5,0.2-0.7,0.7-1,1.2c0.7,0.1,1.1-0.7,1.7-0.3C61.1,78.5,61,78.6,60.7,78.7" />
-										<path
-											d="M58.1,66.7c-0.1-0.5,0.7-0.6,0.3-1.1c-0.1,0.1-0.2,0.2-0.2,0.2c0,0-0.1-0.1-0.1-0.1c-0.1-0.6-0.1-1.1,0.3-1.5 c0.4-0.5,0.9-1,1.3-1.5c0.1-0.2,0.2-0.4,0.3-0.6c-0.2-0.5-0.5-1.1-0.7-1.6c-0.3-0.6-0.3-1.2-0.5-1.8c-0.2-0.3,0.2-0.9,0.2-1.2 c-0.1-0.4-0.4-0.8,0-1.2c0-1.1,0.8-1.8,1.4-2.6h1.9c0.1,0.1,0.2,0.2,0.4,0.4c-0.3,0.4-0.6,0.7-0.9,1.1c0,0.1,0.1,0.3,0.2,0.5 c0.1,0,0.3,0.1,0.4,0c0.3-0.3,0.7-0.2,1-0.2c0.1,0.3,0.2,0.5,0.3,0.7c-0.2,0.2-0.3,0.4-0.6,0.8c0.4,0.1,0.7,0.1,1,0.1v1.1 c0.8,0,0.8-0.9,1.5-0.9c0.3-0.4,0.7-0.8,1.1-1.1c0.4-0.4,0.9-0.8,1.3-1.3c0.4-0.4,0.8-0.8,1.1-1.2c0.4-0.4,0.7-0.9,0.9-1.2 c0.5-0.2,0.7-0.3,1.1-0.4c0.1,0.2,0.3,0.3,0.3,0.5c0,0.1-0.1,0.3-0.2,0.5c-0.1,0.2-0.2,0.3-0.2,0.6c0.3-0.1,0.7-0.3,1-0.4 c0.2,0.4,0.4,0.8,0.7,1.4c0,0,0,0.2,0,0.4c0,0.2,0.1,0.3,0.2,0.5c0,0.1-0.1,0.2-0.2,0.4c0.1,0.1,0.2,0.2,0.3,0.3 c-0.7,1-1.2,2.1-2,3.1c-0.6,0.9-0.5,0.9-1,1.2c0.1,0.1,0.1,0.2,0.2,0.2c-0.9,1-1.8,2-2.7,3v0.4c0.7,0.5,1.4,0.9,2.1,1.3 c-0.1,0.2-0.2,0.3-0.3,0.5c0.3,0.2,0.5,0.7,1,0.5c0.1,0.2,0.2,0.4,0.3,0.6c-0.1,0.1-0.1,0.2-0.3,0.4c0.3,0.3,0.5,0.5,0.8,0.8 c-0.1,0.3-0.2,0.5-0.3,0.8c0.1,0.1,0.2,0.3,0.2,0.4c0,0.1-0.1,0.2-0.1,0.2c-0.1,0.1-0.3,0.1-0.4,0.2c-0.5,0.5-0.6,0.6-1.2,0.4 c-0.8-0.3-1.6-0.4-2.4-0.8c-1-0.5-1.8-1.2-2.8-1.9c-0.4,0.3-0.9,0.7-1.3,1.2c-0.4,0.5-1,0.8-1.8,1.1c0.1-0.2,0.2-0.3,0.3-0.5 c-0.5,0.1-0.9,0.2-1.3,0.3l-0.1-0.1c0.3-0.2,0.5-0.4,0.8-0.6l-0.4-0.4h-0.8c-0.1-0.3-0.2-0.5-0.4-0.9h-0.9 C58.3,67.2,58.2,66.9,58.1,66.7" />
-										<path
-											d="M63,44.6c-0.4,0.1-0.7,0.2-1.2,0.3c-0.5-0.4-1.1-0.8-1.7-1.2c-0.7-0.5-1.4-1.2-2.2-1.5 c-0.2-0.1-0.4-0.1-0.7-0.2c-0.3-0.5-0.4-1.4-1.3-1.3c-0.4-0.4-0.5-1.1-1.1-1.1c-0.2-0.4-0.3-0.8-0.6-1c-1.2-1.1-2.1-2.5-2.9-4.2 c-0.1-0.5-0.1-1.2-0.2-1.9c-0.2-1.1,0.4-2,1.3-2.6c0.3-0.2,0.4-0.5,0.8-0.5c0.3,0,0.6-0.1,1-0.2c0.1,0.1,0.3,0.2,0.5,0.4 c-0.3,0.5-0.9,0.9-1,1.6c0.7,0.2,1-0.6,1.7-0.6c0.1,0.1,0.2,0.2,0.4,0.3c-0.3,0.4-0.4,0.6-0.7,1.1c0.5-0.2,0.8-0.2,1-0.3 c0.3-0.4,0.8-0.6,1.2-1.1c0.3-0.4,0.7-0.8,1.2-1.1c0.7-0.4,1.2-1.1,1.8-1.6c0.9-0.7,1.8-1.6,2.8-2.2c0.4-0.2,0.7-0.7,1-1 c0.3-0.3,0.8-0.5,0.9-0.9h1.5v1c0,0-0.2,0.2-0.4,0.4c0.2,0,0.4-0.1,0.6-0.1c0.2,0,0.4-0.1,0.7-0.2c0,0.7,0,1.4,0.5,1.8 c-0.1,0.1-0.2,0.2-0.3,0.4c0.2,0.1,0.3,0.2,0.7,0.4c-0.4,0.1-0.5,0.1-0.6,0.2c0.1,0.1,0.1,0.3,0.2,0.4c0,0.1,0,0.3,0,0.4 c-0.4,0.6-0.8,1.1-1.3,1.8c-0.1,0-0.3,0-0.5,0.1c0.1,0.1,0.1,0.2,0.2,0.3c-0.1,0.2-0.1,0.3-0.2,0.5c-1,0-1,1-1.6,1.4 c0.1,0.2,0.2,0.3,0.2,0.3c-0.4,0.4-0.8,0.8-1.2,1.2c0,0,0,0,0,0c-0.2,0.2-0.4,0.4-0.6,0.6c-0.1,0-0.1-0.1-0.2-0.1V35 c-0.1-0.1-0.2-0.2-0.4-0.3c0,0.3,0.1,0.4,0.1,0.7c-0.3,0.4-0.6,0.8-1,1.3c-0.2-0.1-0.3-0.2-0.4-0.3c-0.4,0.5-0.8,1-1.2,1.5 c0.2,0.1,0.3,0.2,0.5,0.3c-0.2,0.3-0.4,0.5-0.5,0.7c0,0.1,0,0.2,0.1,0.2c0.7,0.8,1.5,1.5,2,2.3C62.6,42.3,63.4,43.3,63,44.6" />
-										<path
-											d="M78.7,28.3c0.1-0.1,0.1-0.1,0.2-0.2c0-0.1-0.1-0.1-0.1-0.2c-0.3-0.3-0.7-0.5-0.9-0.8c-0.2-0.3-0.5-0.5-0.7-0.7 c-0.3-0.3-0.7-0.8-0.7-1.2c0-0.7-0.1-1.4,0.1-2.2c0.3-1.3,1-2.3,1.9-3.2c1.1-1.1,2.3-2.3,3.5-3.5c-0.5-0.4-0.5-1.1-1.2-1.3 c-0.3-0.6-0.6-1.2-0.9-1.8c-0.3-0.5-0.2-1.1-0.2-1.7c0-0.4,0-0.8,0-1.2c0.4-0.5,0.8-1,1.1-1.4h1.9c-0.3,0.5-0.6,1-0.8,1.4 c0.7,0.5,1-0.6,1.6-0.3c0.4,0.5-0.3,0.8-0.6,1.3c0.4-0.1,0.7-0.2,1-0.2c0.2,0.5,0.1,1-0.2,1.5c0.2,0.1,0.3,0.1,0.5,0.2 c0.1,0.1-0.1,0.2-0.2,0.4c0.2,0.3,0.4,0.6,0.7,1c1.9-2,4.2-3.3,5.7-5.5h1.1c-0.1,0.4-0.2,0.7-0.3,1.1c0.3-0.1,0.6-0.2,0.9-0.3v0.9 c0.2,0,0.3,0.1,0.4,0.1c0,0.1,0.1,0.1,0.1,0.2c0,0.1,0,0.2,0,0.3c0.2,1.2-0.4,2.1-1,3c-0.7,1-1.4,1.8-2.2,2.8c0.6,0.7,1.4,1,2.2,1.6 c0,0.1,0,0.3,0.1,0.5c0.2,0.3,0.5,0.5,0.6,0.8c0.2,0.7,0.7,1.4,0.4,2.3c-0.1,0-0.3,0.1-0.5,0.2c-0.2,0.1-0.4,0.2-0.6,0.2 c-0.3-0.3-1-0.2-0.9-0.8c-0.7-0.2-1.3-0.4-1.9-0.5c-0.1-0.2-0.3-0.4-0.4-0.7h-1.2c0-0.1-0.1-0.2-0.1-0.4c-0.5-0.4-0.8,0.1-1.1,0.1 c-0.4,0.4-0.7,0.8-1,1.1c-0.1-0.1-0.2-0.1-0.3-0.2c-0.1,0.2-0.3,0.4-0.5,0.6c0,0,0,0,0.1,0.2c-0.5,0.1-0.6,0.7-0.8,1.1 c-0.2-0.1-0.3-0.2-0.5-0.3c0,0.2-0.1,0.4-0.1,0.6c-0.1,0-0.2,0-0.4,0.1c0,0.5-0.1,1-0.8,0.9c-0.2,0.3-0.6,0.6-0.6,0.8 c0.1,0.7-0.5,1-0.7,1.6c-0.1,0.7-0.1,0.7,0.1,1.1c-0.5,0.4-1,0.7-1.7,0.8C78.9,28.5,78.8,28.4,78.7,28.3" />
-										<path
-											d="M12.6,15.5c-0.3,0-0.5,0.1-0.7,0.1c0.1,0.1,0.2,0.2,0.3,0.4c-0.3,0.5-0.8,0.8-1.2,1.3l0.2,0.2 c-0.3,0.2-0.6,0.5-0.8,0.6c-0.1,0.4,0.2,0.8-0.3,1c0.4,0.3,0.8,0.5,1.2,0.8c1.2,0.8,2.5,1.5,3.4,2.6c0.6,0.6,1.1,1.2,1.1,2.1 c0,0.2,0.2,0.3,0.3,0.5c-0.3,0.2-0.7,0.4-1.1,0.7c-2.3-1.3-4.6-2.5-6.7-4.2c-0.2,0.1-0.5,0.2-0.5,0.3c-0.2,0.7-0.7,1.2-1.2,1.6 c-0.1,0.1,0,0.2-0.1,0.3c-0.2,0-0.4,0-0.7,0.1C6,24.1,6,24.2,6.1,24.5c-0.4,0.4-0.8,0.9-0.9,1.6c-0.1,0.4-0.5,0.7-0.8,1.2v2.5 c-0.2,0-0.4,0-0.6,0c0,0.1-0.1,0.3-0.1,0.4H2.8c-0.1-0.4-0.2-0.7-0.4-1.1c-0.2,0.1-0.4,0.2-0.7,0.3c-0.1-0.2-0.1-0.3-0.1-0.4 c-0.1,0-0.1-0.1-0.2-0.1c-0.5,0.1-0.8-0.3-0.9-0.6c-0.2-1-0.9-2.1-0.3-3.2c0-1.1,0.7-2,1.1-2.9c0.1-0.3,0.7-0.3,0.5-0.8 c-0.1-0.2,0.3-0.6,0.5-0.9c0.2-0.3,0.4-0.5,0.6-0.8c0.2-0.3,0.5-0.5,0.8-0.8c0.2-0.2,0.4-0.5,0.6-0.8c-1.4-1-2.2-2.5-3.2-3.9 c-0.3-1.3-0.8-2.6-0.6-4.2c0.3-0.4,0.7-0.8,1.2-1.3c0.5,0.1,1-0.2,1.5,0.3c-0.3,0.4-0.6,0.8-0.9,1.2c0.1,0.1,0.2,0.2,0.2,0.2 C3.1,10.6,3.4,9.7,4,9.9c0.1,0.2,0.2,0.4,0.3,0.6c-0.2,0.1-0.4,0.3-0.7,0.4C3.8,11,3.9,11.1,4,11.2c0.3-0.3,0.6-0.3,1,0.1 c0,0.3,0.2,0.6-0.2,0.9c0.2,0.1,0.3,0.1,0.5,0.3C5.1,12.7,5,13,4.8,13.2c0.2,0.1,0.3,0.1,0.6,0.2c-0.3,0.1-0.4,0.1-0.6,0.2 c0,0.2,0,0.4,0.1,0.6c0.4,0.6,0.9,1.1,1.4,1.8c0.3-0.3,0.5-0.4,0.7-0.6c1.2-1.2,2.3-2.5,3.8-3.4c0-0.4,0.4-0.4,0.6-0.6 c0.2-0.3,0.5-0.5,0.6-0.7h0.8c-0.3,0.5-0.9,0.8-0.7,1.5c0.5-0.3,1-0.6,1.6-0.9c-0.1,0.3-0.1,0.6-0.1,0.9c0.2,0.1,0.5,0.3,0.8,0.4 c-0.1,0.2-0.2,0.3-0.2,0.5c0.1,0,0.2,0,0.3,0.1c0,0,0.1,0.1,0,0.1c-0.3,0.4-0.6,0.7-0.8,1.1C13.4,14.8,12.9,15.1,12.6,15.5" />
-										<path
-											d="M33.3,27c0.9-1.1,1.7-2,2.4-3c0.7-0.9,1.3-1.8,1.9-2.8c-0.1-0.1-0.1-0.2-0.3-0.3c0.2-0.2,0.4-0.4,0.6-0.7h0.7 c0.3,0.3,0.5,0.7,0.8,0.8c0.4,0.1,0.4,0.4,0.6,0.7c0.5,0.8,0.9,1.6,0.5,2.7c-0.3,0.6-0.5,1.3-0.8,1.9c-0.1,0.2-0.1,0.4-0.2,0.7 l-0.6,0.6v0.7c-0.4,0.8-0.8,1.5-1.2,2.2c0.6,0.4,1.1,0.8,1.6,1.1c1.1,0.7,1.9,1.5,2.5,2.7c0.1,0.3,0.2,0.5,0.3,0.9 c0,0.1-0.1,0.3-0.2,0.5c-0.2,0.1-0.5,0.2-0.7,0.3c-0.5-0.2-1-0.3-1.4-0.5c-0.4-0.2-0.9-0.4-1.3-0.6c-0.1-0.7-0.8-0.4-1.1-0.8 c-0.3-0.4-0.8-0.5-1.3-0.8c-1.5,1.5-2.8,3.1-4,4.9c-0.1,0.1-0.1,0.3-0.1,0.5c-0.5,0.4-1,0.3-1.5,0v-0.4c-0.7-0.4-1.3-0.8-2-1.2 c-0.3-0.4-0.2-1-0.4-1.5c-0.2-0.5,0-1-0.1-1.4c0.7-1.7,1.6-3.1,2.9-4.4v-0.8c-0.7-0.5-1.2-1.3-1.6-2.1c-0.2-0.3-0.2-0.6-0.2-0.9 c-0.1-0.6-0.4-1.2-0.3-1.9c0-1.3,0.8-2.2,2-2.6c0.8-0.3,1.5-0.1,2.3-0.2c-0.4,0.9-1.5,0.8-2.1,1.6c1.1,0,1.7-1.1,2.8-0.9 c0,0.3-0.1,0.5-0.1,0.8c0.2,0.1,0.5,0.2,0.8,0.3v1.4c-0.3,0.5-0.6,1-0.9,1.5C33.2,26.3,33.3,26.6,33.3,27" />
-										<path
-											d="M52.3,13c-0.4,0.5-0.8,1-1.2,1.6V16c-0.4,0.2-0.8,0.3-1.2,0.5c-0.5-0.5-0.7-1.2-0.9-1.8 c-0.2,0.1-0.4,0.2-0.7,0.3c-0.2-0.3-0.5-0.6-0.7-1c-0.4-1-0.4-2.1-0.4-3.2c0.2-0.4,0.4-0.8,0.6-1.3c-0.3,0-0.6,0-0.7-0.1 c-0.7-0.7-1.5-1.5-2.1-2.3c-0.4-0.4-0.7-0.9-0.9-1.4c-0.2-0.8-0.2-1.6-0.3-2.4c0.3-0.5,0.6-1,1.1-1.4c0.4-0.4,1-0.5,1.6-0.8 c0.1,0.2,0.3,0.3,0.4,0.5c-0.1,0.1-1.2,1.1-1.2,1.1c0.1,0.1,0.2,0.2,0.3,0.3c0.5-0.4,1-0.8,1.8-0.5c-0.2,0.3-0.4,0.5-0.6,0.9 c0.4-0.1,0.6-0.2,0.9-0.3c0.1,0.2,0.3,0.4,0.5,0.7c-0.3,0.3-0.6,0.6-0.9,0.9c0.2,0,0.3,0.1,0.5,0.1c-0.3,0.4-0.1,1-0.8,1.2 C48,6.5,48.7,7,49.5,7.5c2.5-2.1,4.9-4.1,7.4-6.1H58c-0.2,0.4-0.3,0.7-0.5,1c0.3,0.2,0.6,0,0.9-0.2c0.8,0.8,1,1.8,0.9,2.8 c-0.3,0.4-0.7,0.9-1.1,1.4c0,0,0.1,0.1,0.2,0.2c-0.2,0-0.4,0.1-0.6,0.1c0.1,0.1,0.2,0.2,0.2,0.2h-0.4c-0.8,1.5-2.1,2.4-3,3.8 c1.3,0.7,2.8,1.3,4.2,2.1c0,0.2,0.1,0.4,0.1,0.7c0.2-0.2,0.3-0.3,0.4-0.4c0.6,0.1,0.5,0.7,1,1c0.4,0.2,0.7,0.8,1,1.2v1.3 c-0.1,0.1-0.2,0.2-0.4,0.4c-1.2-0.1-2.1-0.8-3.2-1.3c0,0-0.1,0.1-0.1,0.1c-0.7-0.2-1.2-1-2-0.9c-0.4-0.5-1.1-0.6-1.6-0.9 C53.5,13.7,53,13.3,52.3,13" />
-										<path
-											d="M85.2,31c0.2,0.1,0.4,0.2,0.7,0.4c-0.1,0.4-0.1,0.7-0.2,1.2c0.2,0.3,0.3,0.8,0.9,1c0.3-0.4,0.4-0.8,0.9-1 c0.3-0.1,0.6-0.6,0.8-1c0.3-0.4,0.7-0.6,0.9-1.1c0.2-0.4,0.6-0.6,0.9-1c0.3-0.4,0.5-0.8,0.7-1.2h1.3c0.1,0.4,0.2,0.7-0.2,1.1 c0.4,0,0.6,0,0.9,0c0.1,0.5,0.2,1,0.3,1.5c-0.2,0.1-0.3,0.1-0.5,0.2c0,0.1,0,0.2,0.1,0.3c0.3,0.8,0.3,1-0.3,1.6 c-0.3,0.3-0.4,0.6-0.3,0.9c0.2,0.4-0.3,0.2-0.1,0.6c-0.2-0.2-0.3-0.3-0.5-0.4v0.6c-0.2,0-0.4,0.1-0.7,0.1v0.6 c-0.3,0.3-0.5,0.5-0.7,0.7c0.4,0.4,0.8,0.7,1.1,1v0.9c0.2,0.2,0.5,0.5,0.8,0.8c-0.1,0.1-0.1,0.2-0.2,0.4c0.1,0.2,0.3,0.5,0.5,0.9 c-0.2,0.5-0.5,1-0.7,1.4h-0.9c-1.1-0.6-2.2-1.2-3.2-1.8c-0.2,0.3-0.3,0.5-0.5,0.7c-0.2-0.1-0.3-0.2-0.6-0.3v1.1 c-0.3-0.1-0.6-0.2-1-0.4c0.2,0.3,0.2,0.3,0.3,0.5c-0.2,0.2-0.4,0.4-0.8,0.7c-0.1-0.4-0.1-0.7-0.2-1c0.2-0.1,0.3-0.1,0.5-0.2 c0-0.1,0-0.2,0.1-0.3c-0.1,0-0.3-0.1-0.4-0.1c0-0.2,0.1-0.4,0.2-0.7c-0.2,0.2-0.3,0.3-0.3,0.3c-0.5-0.1-0.9-0.2-1.4-0.3 c-0.1-0.1-0.2-0.3-0.3-0.5c0.1-0.3,0.2-0.7,0.3-1.1c0.2,0,0.5,0.1,0.8,0.1c0,0,0-0.1,0-0.1c-0.3-0.1-0.6-0.3-0.8-0.4 c0.2-0.3,0.3-0.6,0.5-0.9c-0.7-1.3-1.6-2.5-2-3.8c-0.3-0.9,0.1-1.9,0.2-2.8c0.1-0.7,0.7-1.2,1.4-1.6c0.1-0.1,0.2-0.1,0.3-0.2h1.1 c0.2,0.2,0.3,0.3,0.4,0.4c-0.2,0.2-0.4,0.4-0.6,0.6v0.7c0.2-0.1,0.5-0.1,0.8-0.2c0.1,0.1,0.3,0.3,0.5,0.4 C85.6,30.6,85.4,30.8,85.2,31" />
-										<path
-											d="M17.3,42.6c0.1,0.1,0.2,0.2,0.4,0.4c-0.7,0.6-1.4,1.2-2.1,1.8c0,0,0,0.1,0,0.1c0.1,0,0.3,0,0.4-0.1 c0.2-0.2,0.4-0.4,0.6-0.4c0.5-0.3,1-0.5,1.4-0.8c0.4,0.3,0.1,0.6-0.1,1c0.3-0.1,0.4-0.2,0.6-0.2c0.1,0.1,0.2,0.2,0.3,0.3 c0,0.5,0,0.9,0,1.4c-0.1,0.1-0.3,0.3-0.4,0.4c0,0.1,0,0.1,0.1,0.2c0.3,0.2,0.5,0.4,0.8,0.6c0.3,0.2,0.7,0.2,0.7,0.7 c0,0.1,0.1,0.1,0.2,0.2c0.2,0.2,0.5,0.3,0.7,0.5c0.2,0.2,0.3,0.5,0.5,0.8c0,0.2,0,0.5,0,0.8c-0.2,0.2-0.4,0.4-0.5,0.5 c-1.4-0.5-2.8-1-4.2-1.5c-0.3,0.2-0.6,0.3-1,0.5c0,0,0,0,0-0.1c-0.3,0.3-0.6,0.6-1,1c0,0.1,0,0.3,0,0.5c-0.6,0.6-1.2,1.2-1.7,1.7 c-0.3,0.8-0.1,1.6-1.2,1.7c-0.2-0.3-1-0.4-0.8-1.2c-0.2-0.1-0.5-0.1-0.8-0.2c-0.1,0-0.2,0.1-0.3,0.2c-0.3-0.3-0.5-0.6-0.9-1 c-0.1-0.7-0.2-1.6-0.3-2.6c0.9-1,1.9-2,2.8-3.1c-0.4-0.2-0.8-0.4-1.1-0.7c-0.4-0.3-0.6-0.6-1-1c0.1-0.3,0.2-0.6,0.3-0.9 c-0.2-0.1-0.3-0.1-0.5-0.2v-0.8c0.1-0.1,0.1-0.1,0.2-0.2c0.3-0.1,0.7-0.1,1.1-0.2c1.1,0.6,2.3,1.3,3.5,2C15.4,44,16.1,43,17.3,42.6" />
-									</svg>
-								</figure>
-							</div>
-
-							<div class="col-sm-6">
-								<!-- Skill set -->
-								<div class="row mb-4">
-									<div class="col-sm-6 mb-4 mb-sm-0">
-										<div class="bg-danger text-white rounded text-center p-3">
-											<span class="h2 text-white">10+</span>
-											<p class="mb-0">
-												Years of experience
-											</p>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="bg-primary rounded text-center p-3">
-											<span class="h2 text-white">1.2K</span>
-											<p class="mb-0 text-white">
-												Happy customers
-											</p>
-										</div>
-									</div>
-								</div>
-
-								<!-- About image -->
-								<img src="assets/images/about/01.jpg" class="rounded" alt="about-img-2" />
-							</div>
-						</div>
-						<!-- Row END -->
-					</div>
-					<!-- About image END -->
-
-					<!-- About content START -->
-					<div class="col-lg-5">
-						<span class="heading-color bg-light small rounded-3 px-3 py-2">🌟 There's no success without
-							story</span>
-						<h2 class="my-4">
-							Defining the future of professionals with ProDWEx
-						</h2>
-						<p class="mb-4 text-secondary">
-							Embrace a new era of professional experience with
-							ProDWEx. Our team combines cutting-edge platform
-							with robust professional courses to tailor and building and developing your professionalism.
-						</p>
-						<!-- List -->
-						<ul class="list-group list-group-borderless mb-4">
-							<li class="list-group-item heading-color d-flex mb-0">
-								<i class="bi bi-patch-check-fill text-primary me-2"></i>Practical, project-based
-								training modules
-							</li>
-							<li class="list-group-item heading-color d-flex mb-0">
-								<i class="bi bi-patch-check-fill text-primary me-2"></i>Focus on both hard and soft
-								skills
-							</li>
-							<li class="list-group-item heading-color d-flex mb-0">
-								<i class="bi bi-patch-check-fill text-primary me-2"></i>Custom programs designed for
-								employability
-							</li>
-						</ul>
-						<!-- Button -->
-						<a href="./about.html" class="btn btn-danger  mb-0"><i class="bi bi-file-text"></i>&nbsp;Discover More About
-							Us</a>
-					</div>
-					<!-- About content END -->
-				</div>
-			</div>
-		</section>
-		<!-- =======================
-About END -->
-
-
-
-
-
 		<!-- ====================== Team START-->
-		<section class="pb-0">
+		<section class="pb-5">
 			<div class="container">
 				<div class="">
 					<!-- Title -->
-					<h2 class="text-center mb-4 mb-sm-5">Our Team & Leadership</h2>
+					<h2 class="text-center mb-4 mb-sm-5 text-primary-pro">Our Team & Leadership</h2>
 
-					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-0 justify-content-center">
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center">
 						<!-- Team item -->
 						<div class="col-md-3">
-							<div class="card-body bg-transparent text-center p-4">
+							<div class="shadow-sm scale-hover card-body primary-faded-pro text-center p-0 m-0">
 								<!-- Image -->
-								<div class="avatar avatar-xxl mx-auto flex-shrink-0 mb-3">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg" alt="avatar">
+								<div class="card-img mx-auto flex-shrink-0 mb-3">
+									<img class="card-img rounded-1 " src="assets/images/avatar/04.jpg" alt="avatar">
 								</div>
 
 								<!-- Content -->
@@ -1245,11 +1287,11 @@ About END -->
 
 								<!-- Social button -->
 								<ul class="list-inline mb-0 mt-3">
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
+									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-primary" href="#"><i
 												class="fab fa-fw fa-facebook-f lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
+									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-primary" href="#"><i
 												class="fab fa-fw fa-instagram lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
+									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-primary" href="#"><i
 												class="fab fa-fw fa-twitter lh-base"></i></a> </li>
 								</ul>
 							</div>
@@ -1257,10 +1299,10 @@ About END -->
 
 						<!-- Team item -->
 						<div class="col-md-3">
-							<div class="card-body bg-transparent text-center p-4">
+							<div class="shadow-sm scale-hover card-body primary-faded-pro text-center p-0 m-0">
 								<!-- Image -->
-								<div class="avatar avatar-xxl mx-auto flex-shrink-0 mb-3">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/11.jpg" alt="avatar">
+								<div class="card-img  mx-auto flex-shrink-0 mb-3">
+									<img class="card-img rounded-1" src="assets/images/avatar/11.jpg" alt="avatar">
 								</div>
 
 								<!-- Content -->
@@ -1269,11 +1311,11 @@ About END -->
 
 								<!-- Social button -->
 								<ul class="list-inline mb-0 mt-3">
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
+									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-primary" href="#"><i
 												class="fab fa-fw fa-facebook-f lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
+									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-primary" href="#"><i
 												class="fab fa-fw fa-instagram lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
+									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-primary" href="#"><i
 												class="fab fa-fw fa-twitter lh-base"></i></a> </li>
 								</ul>
 							</div>
@@ -1281,10 +1323,10 @@ About END -->
 
 						<!-- Team item -->
 						<div class="col-md-3">
-							<div class="card-body bg-transparent text-center p-4">
+							<div class="shadow-sm scale-hover card-body primary-faded-pro text-center p-0 m-0">
 								<!-- Image -->
-								<div class="avatar avatar-xxl mx-auto flex-shrink-0 mb-3">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/06.jpg" alt="avatar">
+								<div class="card-img  mx-auto flex-shrink-0 mb-3">
+									<img class="card-img rounded-1" src="assets/images/avatar/06.jpg" alt="avatar">
 								</div>
 
 								<!-- Content -->
@@ -1293,11 +1335,11 @@ About END -->
 
 								<!-- Social button -->
 								<ul class="list-inline mb-0 mt-3">
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
+									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-primary" href="#"><i
 												class="fab fa-fw fa-facebook-f lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
+									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-primary" href="#"><i
 												class="fab fa-fw fa-instagram lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
+									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-primary" href="#"><i
 												class="fab fa-fw fa-twitter lh-base"></i></a> </li>
 								</ul>
 							</div>
@@ -1305,10 +1347,10 @@ About END -->
 
 						<!-- Team item -->
 						<div class="col-md-3">
-							<div class="card-body bg-transparent text-center p-4">
+							<div class="shadow-sm scale-hover card-body primary-faded-pro text-center p-0 m-0">
 								<!-- Image -->
-								<div class="avatar avatar-xxl mx-auto flex-shrink-0 mb-3">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/09.jpg" alt="avatar">
+								<div class="card-img mx-auto flex-shrink-0 mb-3">
+									<img class="card-img rounded-1" src="assets/images/avatar/09.jpg" alt="avatar">
 								</div>
 
 								<!-- Content -->
@@ -1317,105 +1359,11 @@ About END -->
 
 								<!-- Social button -->
 								<ul class="list-inline mb-0 mt-3">
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
+									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-primary" href="#"><i
 												class="fab fa-fw fa-facebook-f lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
+									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-primary" href="#"><i
 												class="fab fa-fw fa-instagram lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
-												class="fab fa-fw fa-twitter lh-base"></i></a> </li>
-								</ul>
-							</div>
-						</div>
-
-						<!-- Team item -->
-						<div class="col-md-3">
-							<div class="card-body bg-transparent text-center p-4">
-								<!-- Image -->
-								<div class="avatar avatar-xxl mx-auto flex-shrink-0 mb-3">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/05.jpg" alt="avatar">
-								</div>
-
-								<!-- Content -->
-								<h6 class="mb-1"><a href="#">Dennis Barrett</a></h6>
-								<small>CEO &amp; Founder</small>
-
-								<!-- Social button -->
-								<ul class="list-inline mb-0 mt-3">
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
-												class="fab fa-fw fa-facebook-f lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
-												class="fab fa-fw fa-instagram lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
-												class="fab fa-fw fa-twitter lh-base"></i></a> </li>
-								</ul>
-							</div>
-						</div>
-
-						<!-- Team item -->
-						<div class="col-md-3">
-							<div class="card-body bg-transparent text-center p-4">
-								<!-- Image -->
-								<div class="avatar avatar-xxl mx-auto flex-shrink-0 mb-3">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/10.jpg" alt="avatar">
-								</div>
-
-								<!-- Content -->
-								<h6 class="mb-1"><a href="#">Bryan Knight</a></h6>
-								<small>Product Designer</small>
-
-								<!-- Social button -->
-								<ul class="list-inline mb-0 mt-3">
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
-												class="fab fa-fw fa-facebook-f lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
-												class="fab fa-fw fa-instagram lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
-												class="fab fa-fw fa-twitter lh-base"></i></a> </li>
-								</ul>
-							</div>
-						</div>
-						<!-- Team item -->
-						<div class="col-md-3">
-							<div class="card-body bg-transparent text-center p-4">
-								<!-- Image -->
-								<div class="avatar avatar-xxl mx-auto flex-shrink-0 mb-3">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/10.jpg" alt="avatar">
-								</div>
-
-								<!-- Content -->
-								<h6 class="mb-1"><a href="#">Bryan Knight</a></h6>
-								<small>Product Designer</small>
-
-								<!-- Social button -->
-								<ul class="list-inline mb-0 mt-3">
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
-												class="fab fa-fw fa-facebook-f lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
-												class="fab fa-fw fa-instagram lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
-												class="fab fa-fw fa-twitter lh-base"></i></a> </li>
-								</ul>
-							</div>
-						</div>
-						<!-- Team item -->
-						<div class="col-md-3">
-							<div class="card-body bg-transparent text-center p-4">
-								<!-- Image -->
-								<div class="avatar avatar-xxl mx-auto flex-shrink-0 mb-3">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/10.jpg" alt="avatar">
-								</div>
-
-								<!-- Content -->
-								<h6 class="mb-1"><a href="#">Bryan Knight</a></h6>
-								<small>Product Designer</small>
-
-								<!-- Social button -->
-								<ul class="list-inline mb-0 mt-3">
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
-												class="fab fa-fw fa-facebook-f lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
-												class="fab fa-fw fa-instagram lh-base"></i></a> </li>
-									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-light" href="#"><i
+									<li class="list-inline-item"> <a class="btn btn-xs btn-icon btn-primary" href="#"><i
 												class="fab fa-fw fa-twitter lh-base"></i></a> </li>
 								</ul>
 							</div>
@@ -1425,273 +1373,6 @@ About END -->
 			</div>
 		</section>
 		<!-- ===================== Team END-->
-
-
-
-
-
-
-		<!-- ======================= Testimonials START -->
-		<section>
-			<div class="container">
-				<div class="row">
-					<!-- Testimonials content -->
-					<div class="col-lg-6 mb-5 mb-lg-0">
-						<span class="heading-color bg-light small rounded-3 px-3 py-2">💖 Our expertise is gauranteed
-							with love💕</span>
-						<!-- Title -->
-						<h2 class="my-4">
-							See how we've helped our clients succeed
-						</h2>
-
-						<h6 class="mb-0">
-							More than 1500+ people using ProDWEx
-						</h6>
-
-						<!-- Slider START -->
-						<div class="swiper mt-2 mt-md-4" data-swiper-options='{
-						"spaceBetween": 30,
-						"pagination":{
-							"el":".swiper-pagination",
-							"clickable":"true"
-						},
-						"breakpoints": { 
-							"576": {"slidesPerView": 2}
-						}}'>
-							<div class="swiper-wrapper pb-5">
-								<!-- Review item -->
-								<div class="swiper-slide">
-									<div class="card bg-transparent h-100">
-										<div class="card-body p-0">
-											<!-- Rating star -->
-											<ul class="list-inline mb-2">
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star-half-alt text-warning"></i>
-												</li>
-											</ul>
-											<!-- Content -->
-											<p class="heading-color fw-normal">
-												ProDWEx is the perfect theme
-												for businesses that want to
-												create a stylish and
-												functional website.
-											</p>
-										</div>
-
-										<div class="card-footer bg-transparent p-0">
-											<!-- Avatar -->
-											<div class="d-flex align-items-center">
-												<div class="avatar avatar-sm flex-shrink-0 me-2">
-													<img class="avatar-img rounded" src="assets/images/avatar/03.jpg" alt="avatar" />
-												</div>
-												<p class="mb-0">
-													By Nix Maxwell
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- Review item -->
-								<div class="swiper-slide">
-									<div class="card bg-transparent h-100">
-										<div class="card-body p-0">
-											<!-- Rating star -->
-											<ul class="list-inline mb-2">
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star-half-alt text-warning"></i>
-												</li>
-											</ul>
-											<!-- Content -->
-											<p class="heading-color fw-normal">
-												The best Bootstrap theme
-												we've ever used - it's easy
-												to customize and comes with
-												all the features we need.
-											</p>
-										</div>
-
-										<div class="card-footer bg-transparent p-0">
-											<!-- Avatar -->
-											<div class="d-flex align-items-center">
-												<div class="avatar avatar-sm flex-shrink-0 me-2">
-													<img class="avatar-img rounded" src="assets/images/avatar/01.jpg" alt="avatar" />
-												</div>
-												<p class="mb-0">
-													By Dennis Barrett
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- Review item -->
-								<div class="swiper-slide">
-									<div class="card bg-transparent h-100">
-										<div class="card-body p-0">
-											<!-- Rating star -->
-											<ul class="list-inline mb-2">
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star-half-alt text-warning"></i>
-												</li>
-											</ul>
-											<!-- Content -->
-											<p class="heading-color fw-normal">
-												Webestica helped us create a
-												stunning website that
-												reflects our brand
-												perfectly.
-											</p>
-										</div>
-
-										<div class="card-footer bg-transparent p-0">
-											<!-- Avatar -->
-											<div class="d-flex align-items-center">
-												<div class="avatar avatar-sm flex-shrink-0 me-2">
-													<img class="avatar-img rounded" src="assets/images/avatar/02.jpg" alt="avatar" />
-												</div>
-												<p class="mb-0">
-													By Nix Maxwell
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- Review item -->
-								<div class="swiper-slide">
-									<div class="card bg-transparent h-100">
-										<div class="card-body p-0">
-											<!-- Rating star -->
-											<ul class="list-inline mb-2">
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star text-warning"></i>
-												</li>
-												<li class="list-inline-item me-0">
-													<i class="fas fa-star-half-alt text-warning"></i>
-												</li>
-											</ul>
-											<!-- Content -->
-											<p class="heading-color fw-normal">
-												I highly recommend ProDWEx to
-												anyone looking for a
-												high-quality professional Development Courses
-											</p>
-										</div>
-
-										<div class="card-footer bg-transparent p-0">
-											<!-- Avatar -->
-											<div class="d-flex align-items-center">
-												<div class="avatar avatar-sm flex-shrink-0 me-2">
-													<img class="avatar-img rounded" src="assets/images/avatar/05.jpg" alt="avatar" />
-												</div>
-												<p class="mb-0">
-													By Carolyn Ortiz
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Pagination -->
-							<div class="swiper-pagination swiper-pagination-primary position-relative text-start"></div>
-						</div>
-						<!-- Slider END -->
-					</div>
-
-					<!-- Testimonials image -->
-					<div class="col-sm-10 col-lg-6 col-xl-5 position-relative ms-xl-auto">
-						<!-- Image -->
-						<img src="assets/images/about/03.jpg" class="rounded" alt="testimonial-img" />
-
-						<!-- SVG decoration -->
-						<figure class="position-absolute top-50 start-0 translate-middle ms-n5 d-none d-xl-block">
-							<svg width="144" height="166" viewBox="0 0 144 166" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path class="fill-mode"
-									d="M113.199 50.9244C112.596 46.339 111.938 41.4066 111.26 36.313C112.477 36.3608 113.16 36.4563 113.239 37.7452C113.369 39.8372 113.688 41.9264 113.989 44.0007C114.229 45.6329 114.566 47.2491 114.897 49.0506C117.03 47.6646 117.874 46.1495 117.754 43.8625C117.641 41.7025 118.148 39.5274 118.187 37.3447C118.221 35.5034 117.932 33.6609 117.853 31.811C117.829 31.3058 118.035 30.7983 118.146 30.2141C119.83 30.6233 119.847 31.8334 119.855 32.9165C119.897 35.9832 119.846 39.0464 119.837 42.1101C119.837 42.3492 119.859 42.5836 119.875 42.8375C122.111 41.9771 122.784 40.9163 122.955 38.5496C123.128 36.2147 123.525 33.8969 123.718 31.5671C123.824 30.3267 123.712 29.0814 123.71 27.8129C125.609 27.9977 125.795 28.2023 125.63 29.7908C125.378 32.1883 125.114 34.5929 124.879 37.0052C124.83 37.4706 124.935 37.945 124.983 38.5602C126.484 38.2771 127.287 37.8324 127.854 36.2239C128.914 33.2062 129.092 30.0932 129.676 27.0238C129.805 26.33 129.876 25.621 130.006 24.6052C130.829 24.9658 131.427 25.2262 131.756 25.364C131.26 28.4149 130.848 31.1862 130.345 33.9443C130.06 35.5121 130.568 36.5179 131.95 37.3262C134.454 38.8228 136.874 40.4429 139.316 42.0169C139.513 42.1411 139.64 42.3718 139.879 42.6526C139.608 43.091 139.335 43.5392 139.074 43.9802C138.723 43.8885 138.454 43.8806 138.277 43.7615C136.522 42.5855 134.718 41.4798 133.055 40.1926C130.88 38.5119 128.793 38.5274 126.425 40.2157C128.777 43.1693 132.676 43.9498 135.203 46.7932C134.962 47.1564 134.722 47.5196 134.379 48.0328C130.718 46.4208 127.533 44.1018 124.116 41.5972C122.968 42.721 121.793 43.8689 120.334 45.3063C123.046 46.8053 125.495 48.1525 127.944 49.4997C128.508 49.8134 129.18 50.0307 129.603 50.4843C129.954 50.8566 130.013 51.5061 130.36 52.4906C125.841 51.569 122.873 48.6621 118.973 47.2059C118.045 48.2834 117.073 49.4117 115.864 50.8104C118.379 51.9876 120.706 53.0846 123.041 54.1525C123.403 54.32 123.991 54.2241 124.184 54.4824C124.526 54.9254 124.654 55.5513 124.866 56.0952C124.383 56.2703 123.817 56.6835 123.432 56.562C122.211 56.1702 121.037 55.6033 119.87 55.0487C117.99 54.1518 116.123 53.2063 114.36 52.3401C101.683 64.3771 98.5715 79.9025 96.6302 95.9314C98.838 96.7685 100.8 97.4687 102.733 98.2442C105.629 99.3964 107.415 101.766 109.175 104.159C112.643 108.818 113.566 114.173 113.972 119.829C114.177 122.71 112.879 124.366 111.236 126.109C109.163 128.301 106.714 129.781 103.514 129.432C100.468 129.093 98.4789 127.419 97.3542 124.631C95.5645 120.203 95.1947 115.523 95.0572 110.83C94.951 107.372 95.1356 103.918 95.1638 100.464C95.1655 99.8203 95.0939 99.1779 95.0524 98.4603C93.7898 97.9119 92.5297 98.0709 91.25 98.2249C85.6593 98.8938 80.6937 101.275 75.9535 104.068C71.1493 106.907 66.5711 110.117 63.3385 114.833C62.6662 115.811 62.0884 116.865 61.467 117.888C63.1573 118.673 64.6318 119.526 66.2098 120.063C68.5452 120.85 70.6979 122.058 72.4806 123.605C73.9072 124.84 74.7815 126.794 75.68 128.536C76.2551 129.643 76.4419 130.96 76.7886 132.183C77.2903 134.009 76.8058 135.265 75.2357 136.33C70.9711 139.217 66.3749 137.516 63.3267 134.515C59.5648 130.819 57.9099 126.354 58.8783 121.056C58.9376 120.75 58.8995 120.418 58.9114 119.735C56.044 119.827 53.2131 119.7 50.4457 120.047C39.6355 121.399 29.0725 123.678 19.2226 128.607C15.317 130.558 11.2246 132.149 7.23048 133.921C6.44252 134.266 5.70244 134.707 4.77628 135.182C8.44174 136.14 11.7953 137.017 15.2073 137.909C15.1894 139.172 14.7731 139.729 13.5952 139.494C12.8832 139.349 12.1639 139.192 11.4442 139.077C8.9676 138.71 6.49146 138.301 4.00173 138.025C2.4322 137.853 0.871129 137.809 0.406275 135.723C2.35553 129.622 4.3726 123.342 6.45539 116.85C7.20773 117.119 7.83587 117.346 8.51997 117.597C6.46861 122.933 3.95908 127.911 3.54167 133.809C5.90092 132.753 8.06434 131.728 10.2659 130.797C16.6519 128.122 22.9218 125.094 29.4786 122.921C35.9446 120.777 42.5734 118.966 49.4688 118.565C51.1413 118.462 52.8063 118.149 54.486 118.058C56.0899 117.978 57.7044 118.058 59.7423 118.071C62.8516 111.556 68.2989 106.775 74.7006 103.044C80.9918 99.378 87.3981 95.9081 95.2331 96.3353C95.5427 94.036 95.8141 91.6437 96.1881 89.2573C97.7904 78.8668 100.196 68.7487 106.203 59.9151C108.283 56.8625 110.728 54.0824 113.199 50.9244ZM96.5665 98.087C96.4799 99.374 96.3642 100.414 96.3387 101.468C96.1764 107.745 95.9505 114.026 97.1035 120.252C97.2721 121.2 97.4403 122.19 97.8642 123.039C98.8148 124.94 99.834 126.817 102.03 127.662C106.876 129.521 112.689 124.576 112.545 120.547C112.401 116.675 112.304 112.824 110.609 109.19C107.868 103.339 103.835 99.1664 96.5665 98.087ZM60.8018 120.073C59.5762 123.526 60.0775 126.827 61.4557 129.921C62.583 132.46 64.8013 134.173 67.2834 135.436C69.8578 136.743 72.7973 136.534 74.5229 134.834C74.9303 134.431 75.3948 133.69 75.2872 133.225C74.4812 129.616 73.8495 125.938 70.0607 123.897C67.1494 122.325 64.3622 120.557 60.8018 120.073Z"
-									fill="#202124" />
-							</svg>
-						</figure>
-
-						<!-- Message decoration -->
-						<div class="col-11 col-sm-8 position-absolute top-0 start-0 mt-n2 mt-sm-7 ms-n2 ms-sm-n7">
-							<div class="bg-dark rounded d-flex align-items-center px-3 py-2">
-								<!-- Avatar -->
-								<div class="avatar avatar-sm flex-shrink-0 me-2">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/09.jpg" alt="avatar" />
-								</div>
-								<p class="text-white small mb-0">
-									The best educational platform you've ever visited
-									🔥
-								</p>
-							</div>
-						</div>
-
-						<!-- Message decoration -->
-						<div
-							class="bg-white rounded shadow-sm d-flex align-items-center position-absolute bottom-0 start-0 mb-sm-5 ms-sm-n5 px-3 py-2">
-							<!-- Avatar -->
-							<div class="avatar avatar-sm flex-shrink-0 me-2">
-								<img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="avatar" />
-							</div>
-							<p class="text-dark small mb-0">
-								Excellent Proffesional Courses 💗
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- ======================= Testimonials END -->
-
-
-
 
 
 
@@ -1728,8 +1409,10 @@ About END -->
 								fill="#202124" />
 							<path d="M52.8514 38.7208L47.2773 46.6982L47.4766 46.837L53.0507 38.8596L52.8514 38.7208Z"
 								fill="#202124" />
-							<path d="M59.6794 36.1172L53.5391 45.0894L53.7397 45.2262L59.88 36.254L59.6794 36.1172Z" fill="#202124" />
-							<path d="M66.3562 33.5847L59.6758 43.5107L59.8775 43.646L66.5579 33.72L66.3562 33.5847Z" fill="#202124" />
+							<path d="M59.6794 36.1172L53.5391 45.0894L53.7397 45.2262L59.88 36.254L59.6794 36.1172Z"
+								fill="#202124" />
+							<path d="M66.3562 33.5847L59.6758 43.5107L59.8775 43.646L66.5579 33.72L66.3562 33.5847Z"
+								fill="#202124" />
 							<path d="M70.4459 34.1845L65.8281 41.9414L66.037 42.0653L70.6548 34.3084L70.4459 34.1845Z"
 								fill="#202124" />
 							<path
@@ -1932,17 +1615,20 @@ About END -->
 											class="fab fa-fw fa-facebook-f lh-base"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a class="btn btn-xs btn-icon btn-primary" href="#"><i class="fab fa-fw fa-instagram lh-base"></i></a>
+									<a class="btn btn-xs btn-icon btn-primary" href="#"><i
+											class="fab fa-fw fa-instagram lh-base"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a class="btn btn-xs btn-icon btn-primary" href="#"><i class="fab fa-fw fa-twitter lh-base"></i></a>
+									<a class="btn btn-xs btn-icon btn-primary" href="#"><i
+											class="fab fa-fw fa-twitter lh-base"></i></a>
 								</li>
 								<li class="list-inline-item">
 									<a class="btn btn-xs btn-icon btn-primary" href="#"><i
 											class="fab fa-fw fa-linkedin-in lh-base"></i></a>
 								</li>
 								<li class="list-inline-item">
-									<a class="btn btn-xs btn-icon btn-primary" href="#"><i class="fab fa-fw fa-youtube lh-base"></i></a>
+									<a class="btn btn-xs btn-icon btn-primary" href="#"><i
+											class="fab fa-fw fa-youtube lh-base"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -1969,17 +1655,17 @@ About END -->
 					</a>
 					<ul class="dropdown-menu min-w-auto" aria-labelledby="languageSwitcher">
 						<li>
-							<a class="dropdown-item me-4" href="#"><img class="fa-fw me-2" src="assets/images/flags/uk.svg"
-									alt="" />English</a>
+							<a class="dropdown-item me-4" href="#"><img class="fa-fw me-2"
+									src="assets/images/flags/uk.svg" alt="" />English</a>
 						</li>
 						<li>
-							<a class="dropdown-item me-4" href="#"><img class="fa-fw me-2" src="assets/images/flags/gr.svg"
-									alt="" />German
+							<a class="dropdown-item me-4" href="#"><img class="fa-fw me-2"
+									src="assets/images/flags/gr.svg" alt="" />German
 							</a>
 						</li>
 						<li>
-							<a class="dropdown-item me-4" href="#"><img class="fa-fw me-2" src="assets/images/flags/sp.svg"
-									alt="" />French</a>
+							<a class="dropdown-item me-4" href="#"><img class="fa-fw me-2"
+									src="assets/images/flags/sp.svg" alt="" />French</a>
 						</li>
 					</ul>
 				</div>
